@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SOP Search | National Safety Council</title>
+    <meta
+      name="description"
+      content="Fast search across National Safety Council customer support SOPs."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="preload"
+      href="assets/fonts/funnel-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#results">Skip to results</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <p class="eyebrow">National Safety Council</p>
+        <h1>Support SOP Search</h1>
+        <p class="lede">
+          Find the right procedure while you are on the call. Results open the
+          original Scribe guide in a new tab.
+        </p>
+
+        <form class="search-form" role="search" onsubmit="return false;">
+          <label class="visually-hidden" for="search-input"
+            >Search procedures</label
+          >
+          <div class="field">
+            <svg
+              class="field-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M10.5 3a7.5 7.5 0 1 0 4.55 13.46l4.24 4.25a1 1 0 0 0 1.42-1.42l-4.25-4.24A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"
+              />
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              enterkeyhint="go"
+              placeholder="Search: reset password, add a learner, export CSV&hellip;"
+              role="combobox"
+              aria-expanded="false"
+              aria-controls="results-list"
+              aria-autocomplete="list"
+              aria-describedby="search-help"
+              aria-activedescendant=""
+            />
+            <button
+              id="clear-button"
+              class="clear-button"
+              type="button"
+              hidden
+              aria-label="Clear search"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 10.59 6.7 5.29 5.29 6.7 10.59 12l-5.3 5.3 1.41 1.41L12 13.41l5.3 5.3 1.41-1.41L13.41 12l5.3-5.3-1.41-1.41L12 10.59Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <p id="search-help" class="visually-hidden">
+            Results update as you type. Use the up and down arrow keys to move
+            through results, and Enter to open the selected guide.
+          </p>
+        </form>
+
+        <nav id="category-nav" class="category-nav" aria-label="Categories">
+          <button
+            class="tile tile-all is-active"
+            type="button"
+            data-category=""
+            aria-pressed="true"
+          >
+            <span class="tile-label">All guides</span>
+            <span class="tile-count" id="count-all"></span>
+          </button>
+          <!-- category tiles injected by app.js -->
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap" id="main">
+      <div
+        id="status"
+        class="status"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+
+      <section id="suggestions" class="suggestions" hidden>
+        <h2 class="suggestions-title">Did you mean</h2>
+        <div id="suggestion-chips" class="chips"></div>
+      </section>
+
+      <section id="results" class="results" aria-labelledby="results-heading">
+        <h2 id="results-heading" class="visually-hidden">Results</h2>
+        <ul id="results-list" class="results-list" role="listbox"></ul>
+      </section>
+
+      <section id="empty" class="empty" hidden aria-labelledby="empty-title">
+        <h2 id="empty-title">No matching procedure</h2>
+        <p>
+          Nothing matched that search. Try a shorter phrase, or pick a category
+          above to browse everything in it.
+        </p>
+      </section>
+
+      <noscript>
+        <p class="notice">
+          Search needs JavaScript. The full guide list is available in
+          <a href="data/search-index.json">search-index.json</a>.
+        </p>
+      </noscript>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Internal resource for customer support. Guides open in Scribe. If a
+          procedure looks wrong, report it to the SOP owner rather than editing
+          the source.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

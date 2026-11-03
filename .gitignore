@@ -1,0 +1,15 @@
+# Operating system
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Scraper working files (never publish a session profile)
+tools/node_modules/
+tools/.browser-profile/
+tools/.scrape-state.json
+tools/.progress.json
+tools/scrape-report.json

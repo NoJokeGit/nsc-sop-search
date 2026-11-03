@@ -1,0 +1,6 @@
+node_modules/
+.browser-profile/
+.scrape-state.json
+.scrape-report.json
+.progress.json
+scrape-report.json

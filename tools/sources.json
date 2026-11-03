@@ -1,0 +1,37 @@
+{
+  "_comment": "Hand-maintained list of the Scribe hub Pages that hold the SOPs. The scraper reads each Page, finds every embedded guide, and files it under that Page's category. Add a Page here when a new SafetyAtlas surface gets its own Scribe hub.",
+  "pages": [
+    {
+      "category": "NSC Admin",
+      "url": "https://scribehow.com/page/SafetyAtlas_NSC_Admin__UTzUSJTIRdecKtKHc-PnNA"
+    },
+    {
+      "category": "Company Administrator",
+      "url": "https://scribehow.com/page/SafetyAtlas_Company_Administrator__gWYZB_vHQIiLyfYBftoxNQ"
+    },
+    {
+      "category": "Company Learner",
+      "url": "https://scribehow.com/page/SafetyAtlas_Company_Learner__8pldsAaLRtmykEF4LND9vQ"
+    },
+    {
+      "category": "Retail Learner",
+      "url": "https://scribehow.com/page/SafetyAtlas_Retail_Learner__T6bbT0uxTA6o3eYg04c8-w"
+    },
+    {
+      "category": "STEVE Chapter",
+      "url": "https://scribehow.com/page/SafetyAtlas_STEVE_Chapter__hvNTrx2-TOmLsocXR4vjSA"
+    },
+    {
+      "category": "STEVE Training Center",
+      "url": "https://scribehow.com/page/SafetyAtlas_STEVE_Training_Center__meeSxEUzRZasfGoKKqpoLg"
+    },
+    {
+      "category": "STEVE Instructor Admin",
+      "url": "https://scribehow.com/page/SafetyAtlas_STEVE_Instructor_Admin__xjlbJGMeTB6Z-zBKfg3f1A"
+    },
+    {
+      "category": "STEVE Instructor",
+      "url": "https://scribehow.com/page/SafetyAtlas_STEVE_Instructor__oBm256SbTRaCYQz9-ml-HA"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "nsc-sop-guide-tools",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Build-time tooling for the NSC SOP search site. Not served to browsers.",
+  "scripts": {
+    "test": "node --test test-search.mjs",
+    "scrape": "node scrape.js"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}

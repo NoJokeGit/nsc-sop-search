@@ -1,0 +1,693 @@
+{
+  "generated": "2026-11-03T23:35:11.509Z",
+  "count": 50,
+  "guides": [
+    {
+      "id": "ns1lqfjxSpCHT2kDveoIng",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Accessing_Chapter_Payment_Settings_in_SafetyAtlas__ns1lqfjxSpCHT2kDveoIng",
+      "category": "STEVE Chapter",
+      "tags": [
+        "chapter",
+        "payment settings",
+        "payroc",
+        "merchant id",
+        "chapter payment"
+      ],
+      "title": "Accessing Chapter Payment Settings in SafetyAtlas",
+      "text": "Navigate to https://steve-admin-uat.nsc.org/ Click Payment Settings There is visibility to the Payroc Account Number, Merchant ID, Terminal ID, and the NSC Split Percentage."
+    },
+    {
+      "id": "Q0syA5kURqugxjVRNpVBbQ",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Admin_Users_Management_TC__Q0syA5kURqugxjVRNpVBbQ",
+      "category": "STEVE Training Center",
+      "tags": [
+        "admin",
+        "administrator",
+        "admin users",
+        "permissions",
+        "role"
+      ],
+      "title": "Admin Users Management (TC)",
+      "text": "Navigate to https://steve-admin.nsc.org/atlas/courses Click \"Admin Users\" Administrators can be searched by First Name, Last Name, or Email. Administrators can also be filtered based on the drop-down menus for: Permissions Role, Admin Type, and Status. Administrator's can be created by clicking on \"Add New\" Enter information for all required fields. \"Permissions Role\" is a dropdown. \"Read Only\" they can view inforamtion but not make edits.\\ \"Full Admin\" they can view information and make edits. Click \"Save\" To update an existing administrator, click on the desired admin's First Name or Last Name. Click \"Edit\" Make the desired changes. Click \"Save Changes\" A notification will appear stating the changes have been applied. Find the desired administrator, then click \"Status\" indicator. In the pop-up enter why the administrator is being disabled and click \"Disable\" A notification will appear stating the changes have been applied."
+    },
+    {
+      "id": "k-AzI85iTqKuncjNZ3m-FA",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Assign_Unassigned_Seats_in_SafetyAtlas__k-AzI85iTqKuncjNZ3m-FA",
+      "category": "Company Administrator",
+      "tags": [
+        "seat",
+        "seats",
+        "assign",
+        "assignment",
+        "allocate",
+        "enroll",
+        "learner seat"
+      ],
+      "title": "Assign Seats in SafetyAtlas",
+      "text": "Navigate to <https://safetyatlas.nsc.org/> Click this profile icon. Click \"My Organization\" Click \"Seat Management\" Click \"Has Unassigned Seats\" The tiles showing have opened seats. Click \"Assign\" for the desired training. All learners will display. Learners can be searched by name or email. Learners can be sorted by Department and Location. Click desired department. All learners in the department can be selected by clicking this button. All learners in the department can be UNselected by clicking this button. Sorting by location by clicking on this button. Click desired location. Click this button to select the desired learner. To remove filters click this icon for Department and Location. Click \"All Departments\" Click \"All Locations\" Learners selected with filters on will remain selected. They can be unselected by clicking this button. Click this button to select desired learners. Once all desired learners are selected, click \"Continue\" If learner(s) has a course assigned a notification will display. Click \"Continue\" to assigne the course again.\\ Click \"Cancel\" to return to learner list and deselect the learner(s). Click this button. Click \"Continue\" Select the length of time the learner(s) will have access to the training. No due date: A check box is selected\\ Quick range: 30 days, 60 days, 90 days\\ Custom date: Due date is selected using the calendar icon Click on desired range. Specific dates can be selected by clicking on the Date. Use the calendar to select the desired date. Click \"Continue\" Click \"Assign Courses\" A notice will appear notifing of the courses being sent to the Learners. Click the \"X\" to close the notification. Click \"Seat Managment\" Click \"Assigned Courses\" Click the \"Search by learner or course...\", enter the learner's name, learner's email address, or the course title. Click the learner to the right of the desired course. To update the expiration date, click the pencil icon. Click the date field. Select the desired date from the calendar. Click \"Save\" A pop-up appears confirming the change. Click \"Unassign\" Click \"Unassign\" in the pop-up."
+    },
+    {
+      "id": "1HAYH_pKSOWZQ8LvgD345g",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Bulk_Invite_Employees_in_SafetyAtlas__1HAYH_pKSOWZQ8LvgD345g",
+      "category": "Company Administrator",
+      "tags": [
+        "invite",
+        "bulk invite",
+        "invite employees",
+        "add learners",
+        "csv invite",
+        "import learners"
+      ],
+      "title": "Bulk Invite Employees in SafetyAtlas",
+      "text": "Login to \"SafetyAtlas\" & open the SafetyAtlas profile menu. Click on \"Organization Profile\" Click \"Learner Management\" Click \"Add New\" Select \"Upload CSV\" Download the CSV template by selecting \"Template.csv\" Save the document, noting where on the device the file is being saved. Open the downloaded file. Depending on the device settings will determine how the notification of the finished download is shown. Fill in all columns for the desired users and save the document. Ensure the location and name of the document is known. Return to SafetyAtlas \"Learner Management\" and click \"Add New\" Click \"Upload CSV\" Click \"Choose file\" Locate the CSV file that was downloaded and edited to included the users' information. Click \"Open\" If their is incorrect information an error will appear allowing a download of the error to be accessed. Click \"Download CSV\" to view the error. Click \"Save\" Click \"Open bulk-invite-errors.csv\" Validation Error will appear in the row to column to the far right. Example: N2 Paste the copied role into cell D2 Open and Update the CSV Upload document. Example: Update column D to say \"User\" or \"Admin\" Click \"Save\" Click \"Re-upload Corrected CSV\" Click \"Choose file\" Click the most recent version of the CSV file. Click \"Open\" A notification appears, stating the employees have been uploaded. Confirm that the employees were invited. Open \"Pending Invitations\" The users will appear at the top of the Pending Invitations list."
+    },
+    {
+      "id": "fo_XL-jGQf676G6R90DO_w",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Certificate_Configurator_CH__fo_XL-jGQf676G6R90DO_w",
+      "category": "STEVE Chapter",
+      "tags": [
+        "certificate",
+        "certificates",
+        "template",
+        "completion certificate",
+        "design certificate"
+      ],
+      "title": "Certificate Configurator (CH)",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click Certificate Configurator. Certificates can be searched based on their name. Certificates can be sorted by selecting the column title of Template, Status, or Updated. Click on the desired certificate template. Example: \"VLT Certificate\" A preview of the certificate is visible at the top of the screen, click \"Edit\" to make changes. The section of \"Template details\" allows for changes to the basic certificate information. Once the desired changes are made click \"^\" to minimize the section. \"Section 2\" is the main body of the certificate. Line items can be updated, moved, added, or removed from the section. Once the desired changes are made click \"^\" to minimize the section. \"Section 3\" is the certificat footer. Line items can be updated, moved, added, or removed from the section. Once the desired changes are made click \"^\" to minimize the section. Click \"Save Template\" Click \"Save Template\" The error notification appears in the top right corner of the screen. Click \"Add new\" A preview of the certificate is visible at the top of the screen.\\ As changes are made to the sections the certificate will update in real time. \"Template name\" and \"Background image\" are both required fields. \\ \"Available\" defaults to active.\\ \"Description\" is an optional text field that can be used to provide additional informatoin about the certificate. Select the \"Certificate Title\" field to input the desired title and click \"Done\" Select the \"Oraniztion Name\" field to input the desired name and click \"Done\" Fields can be reordered by using the arrows on the right hand side or by dragging and dropping with the dots on the left hand side. Select the \"Completion Seal\" field to input the desired word(s) for the Seal and click \"Done\" Section 1 has an option to \"Add to section\"\\ All fields for Section 1 are automatically created and added. If a section was removed it can be re-applied. Each field is indicated as \"Static\" or \"Dynamic\". \"Static\" means the wording in the text box will remain the same on all certificates.\\ \"Dynamic\" means the information is pulled from the Student's profile. Additional fields can be added to the section by selecting \"Add to section\" Fields that are not already on the certificate will appear in black. Fields that are on the certificate will appear in grey and state \"USED\" \"Section 3\" is the footer/bottom portion of the certificate. Additional field(s) can be added by selecting \"Add to section\" and clicking on the desired field. Click \"Save Template\" If a required field is missed a notification will appear in the top right stating, \"Please fix the highlighted errors before saving.\" Red text appears in the field sections that need to be adjusted. Once the called out field sections have been update, click \"Save Template\" A notification appears stating the template has been created. The created certificate template will appear at the top of the list of templates."
+    },
+    {
+      "id": "SXBMfPxjQWu-UVYrk5L8Rg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Chapter_Management__SXBMfPxjQWu-UVYrk5L8Rg",
+      "category": "NSC Admin",
+      "tags": [
+        "chapter",
+        "chapters",
+        "chapter management"
+      ],
+      "title": "Chapter Management",
+      "text": "Navigate to https://steve-admin.nsc.org/ensure Module is set to \"SAFETY ATLAS\" Click \"Chapter Management\" Click the desired Chapter or Partner. Example: \"Safety & Health Council of Northern New England\" Chapter/Partner information is visible and can be updated. To update information click \"Edit\" \"Description\" is an editable field. \"Administrators & Status\" is an editable section. \"Ordering\" allows for the chapter/partner to order materials directly from NSC. \"Payment Settings\" is required information for a Chapter or Partner to be supported by SafetyAtlas and requires a contract with Payroc. \"Associated Courses\" show all courses offered through the Chapter or Partner. To view course informaton click on the desire course, Example: \"24-Hour Hazwoper\" The page will update to \"Course Managment\" and allow the ability to search for the desired course."
+    },
+    {
+      "id": "Dz0Owp5bQ6i9otCD-yx67g",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Class_Management__Dz0Owp5bQ6i9otCD-yx67g",
+      "category": "STEVE Instructor Admin",
+      "tags": [
+        "class",
+        "roster",
+        "class list",
+        "session",
+        "attendance"
+      ],
+      "title": "Class Management",
+      "text": "Login to SafetyAtlas STEVE as the Instructor Administrator Click Class Management. Class Management is the only difference between Instructor and Admin Instructor. Created classes are visbile and able to be Edited The class status is visible on the far right To edit an existing class, click the course name. Fields will be visible but not all are editable after publication. Classroom Setup is able to be updated after publication Virtual Setup is able to be updated after publication Key information regarding the class can be added to the class Click \"Publish\" Changes will be visible in Classes Search for the Class Code to view the live changes Click Class Management. Click Add New Click the course selection field Select desired course. Example: Workplace Risk Assessment Class Modality and Details automatically load Instructors will provide a list of instructors who can teach the course and select who will be teaching Classroom setup is not automatically filled and all sections must be filled in Virtual setup is not automatically filled and all sections must be filled in Select Delivery Platform. If External URL is selected the URL will be required. Provide URL field is in Session Details \"Class notes\" allows for additional information regarding the class to be provided to the learners Click Publish."
+    },
+    {
+      "id": "AxVJyp7KR-6jZfhxMqfXkQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Instuctor_Managing_Class_Enrollments_and_Student_Communications__AxVJyp7KR-6jZfhxMqfXkQ",
+      "category": "STEVE Instructor",
+      "tags": [
+        "class",
+        "roster",
+        "student communications",
+        "my classes"
+      ],
+      "title": "Class Management and Student Communications",
+      "text": "Click Classes \"My Classes\" shows classes that have been accepted by the instructor to teach. The classes can be searched or filtered based on class name and date range. Each class has its own tile showing the details of the class. Click on Session to see the course name, date, start time, and end time in a pop-up. Close the session details. Click View Details for a class to view additional inforamtion. To see all learners enrolled in the training click View Roster The roster includes the number of learners, the learner's names, and contact information. The roster can be printed by clicking \"Print Roster\". Depending on the device settings will determine how the roster prints and if it is able to be saved as a PDF. Click Communicate, to send email notifications to the learners. Select the students that the communication is being sent to. If it is for all learners, click \"Select All\". Click the \"Subject\" field to enter the email subject line. Click the text box under \"Mail\" to type the email message. Click Share Communication. A notification will appear stating if the communication was successfully sent. \"Communication sent successfully\" All class communications can be viewedunder \"Communication Log\" Click Submit Attendance Each learner has a tab next to their name. Click \"v\" to view the learner's attendance details. Checkmark each session that was Attended Open the session status menu Click attendance type that matches that learner and session. When \"Left Early\" is selected a reason must be selected. Click \"Personal Reasons\" Select course Status. Select Completed - Pass or Completed - Failed Input the Grade the learner received. Click Save attendance Return to the class details page Click Pending Acceptance Classess available to teach will show and are able to be searched by course name and filtered by date range. Open the session details for each class by selecting \"Session\". Class tiles show the class details and option to Reject or Accept the class. Close the session details dialog. Click Accept for Classes wanted by the Instructor. Confirm the class assignment by clicking Accept A notification appears stating the class has been accepted and the class will then be visible in \"My Courses\" Open CH classroom BY NSC Click \"Completed\" to view previously taught classes. Click View Details for the desired class Click View Submitted Roster Click \"Close\""
+    },
+    {
+      "id": "RWGv0AAhTsq8iyPBPjbrGw",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Course_Management_TC__RWGv0AAhTsq8iyPBPjbrGw",
+      "category": "STEVE Training Center",
+      "tags": [
+        "course",
+        "course management",
+        "training center course",
+        "curriculum"
+      ],
+      "title": "Course Management (TC)",
+      "text": "Navigate to https://steve-admin.nsc.org/ and login to the administrator account. Click Course Management in the sidebar Courses can be searched based on Title/Name, Modality (how the course is taken), price, and if it is available to schedule. Click the desired course. \"Course Details\" tab shows all information related to the course. This is a published class meaning most of the sections and fields cannot be changed. \"Course details\" section shows what the student will see on the web page before purchase. Pricing can be changed after publication. \"Instructors authorized to teach this course\" will show all instructors who can teach the course and who was invited to teach the training. \"Refund Policy\" can be changed and viewed after publication. Click \"Continue\" to move forward or \"Publish\" to apply the changes. If resources are available for the course, they will appear in Resources. Click \"Continue\" to move forward or \"Publish\" to apply the changes. Previous versions are visible for review, click \"Publish\" Confirm publishing the new course version by clicking Publish \"Version Histoy\" will update to view the old publication and the current version. Click \"Back to Courses\" Click \"Add New\" \"Course Details\" has created courses that can be populated. \"Course Author\" Select NSC as the course author Open the Course Title dropdown Select the course that is being created. Example: “Effective Safety Management Practices I (ESMP I), Virtual 2-Day Course” Most of the sections and fields will populate with the course information. If images are associated with the course, they will also load. Prefilled fields include \"Pricing\" can be changed. If \"Volume pricing\" is available, it can also be changed. Select the instructors authorized to teach the course Click \"Credentials & Certifications Meets certification requirementsTurn on if this course satisfies a recognized certification.Certifications *Qualifi...\" Select the refund policy that the course will follow. The refund policy can be viewed by clicking on the eye icon. Click \"Continue\" If resources are available for the course they can be selected from the drop-down. Click \"Save as Draft\" or \"Publish\" Confirm publishing the course by clicking Publish A notification will appear confirming the course has been published. Click Back to Courses"
+    },
+    {
+      "id": "9dx2IL6jTRGAp0MUg4EFNw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/DDC_Impersonate_and_Skip__9dx2IL6jTRGAp0MUg4EFNw",
+      "category": "NSC Admin",
+      "tags": [
+        "impersonate",
+        "impersonation",
+        "ddc",
+        "skip"
+      ],
+      "title": "DDC Impersonate & Skip",
+      "text": "Navigat tohttps://steve-admin.nsc.org/ enusring the Module is set to \"SAFETY ATLAS\" Select \"Student Management\" Click the \"Search\" field, enter the student's name or email address and click the magnifying glass to search. Click the name of the correct account. Example: \"Megan Evans\" Click \"Classes\" Click on \"View Progress\" option. Click the person icon. Click anywhere inside the course window. Press [[ctrl]] + [[shift]] + [[\\~]] Click into the text field and type \"Jump@123\"\\ Click \"Validate\" Click into the text field, using the side menu type the next slide number, and click \"Jump\" Click \"SAVE AND EXIT\" Click \"Back\" Click \"Notes\" Click the \"Add a note...\" field and enter the account/course changes that were made. Click \"Add\""
+    },
+    {
+      "id": "diUcKbI9SX6V9o2TnsJXkg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Financials__diUcKbI9SX6V9o2TnsJXkg",
+      "category": "NSC Admin",
+      "tags": [
+        "financials",
+        "finance",
+        "billing",
+        "payments",
+        "invoices"
+      ],
+      "title": "Financials",
+      "text": "Navigate to https://steve-admin.nsc.org/Navigate ensure the Module is set to SAFETY ATLAS Click \"Financials\" in the sidebar. Deposits can be searched based on order number, type, or status. Deposits can be filtered based on Status. Click \"Status\" drop-down and click on the desired status type. Deposits can be filtered based on Type. Click \"Type\" drop-down and click on the desired deposit type. Deposits can be filtered based on Date Type. Click \"Date Type\" drop-down and click on the desired date type. Click this icon. Results can be reduced to a specific date. Click the Date Range field and select the desired date. Example: September 9, 2026 Results can be viewed inside SafetyAtlas or Exported to Excel. Sort the results in SafetyAtlas based on column type by clicking on the column title. To view additional order details, click on the desired order. Example: NSC-MTTWGAUU6618. The order summary appears. The bottom of the screen displays which products are eligible for refund and which have already been refunded. To apply a refund to eligible items, select the checkbox for the desired item. Example: \"E-Book: Fundamentals of Industrial Hygiene 7th Edition\" Set the refund quantity. Click \"Refund\" Click \"Total Order ($)\" to show the financial records in ascending price order. Click the \"Order Number\" for the desired financial transaction. The summary will show who issued the refund."
+    },
+    {
+      "id": "PFulMgfqRPG7y3eHu5l61A",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Health_Snapshot__PFulMgfqRPG7y3eHu5l61A",
+      "category": "Company Administrator",
+      "tags": [
+        "health snapshot",
+        "dashboard",
+        "overview",
+        "seats",
+        "activity"
+      ],
+      "title": "Health Snapshot",
+      "text": "Login to the Organization Profile Click \"Health Snapshot\" Filters allow for the displayed information to reflect data for specific departments, location, and time ranges. Subscription Seats and Learning Seats display how many seats (training spots) are remaining for the organization. The tile details show the subscription types, trainings, and navigate to the details for edits with additional details."
+    },
+    {
+      "id": "B9UuxugjR-OPsLCB7Ohhog",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Create_Organization_Registration_Fields__B9UuxugjR-OPsLCB7Ohhog",
+      "category": "Company Administrator",
+      "tags": [
+        "registration fields",
+        "custom fields",
+        "form fields",
+        "add field"
+      ],
+      "title": "How To Create Organization Registration Fields",
+      "text": "Navigate to Organization's Profile. Click this icon. Click \"+ Add New Section\". In the pop-up enter the title of the new registration section. Click \"Add Section\" To add fields click \"+\". Field type can be selected and it will update the Field settings below. Click the desired filed type.\\ This example is for \"Dropdown\" Click the \"e.g. Employee ID\" field. Type the Field Label. This is what the learner will see when they accept the Organization's training invitation. If the field is required for registration, click the check box. Click the \"Type an option and press Enter\" field. Type the Drop-Down opton. Example: \"Michigan\" Click \"Add \"Michigan\"\" To enter all Drop-Down options that will appear for the Learner. Click the text field and enter the next Drop-Down option. Type \"Indiana\" Click \"Add \"Indiana\"\" Once all Drop-Down options are entered, click \"Add Field\" Created Fields can be edited by clicking the pencil icon. Click the portion that needs to be altered \"e.g. Employee ID\" field. Click \"Save Changes\" To add additional Fields to a Section, click the \"+\" in the Section heading. If a field is Required it will state it in the field row. To add an additional section, click \"+ Add New Section\". Type the Sections title. Click \"Add Section\" Add fields to the section by selecting the \"+\". Click on the Field Type. Select the desired field type. \\ For this example \"Email\". Click theField Label, this is what the learner will see when they accept the training invitation. Type the field name, example \"Work Email\". To have the field be Mandatory, click on the check box. Click \"Add Field\" Click \"Save changes\""
+    },
+    {
+      "id": "Ttw-ucEJQhe83WiYG1ssqA",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Generate_And_Export_Organization_Reports__Ttw-ucEJQhe83WiYG1ssqA",
+      "category": "Company Administrator",
+      "tags": [
+        "report",
+        "reports",
+        "export",
+        "export report",
+        "csv",
+        "download report"
+      ],
+      "title": "How To Generate And Export Organization Reports",
+      "text": "Navigate to https://safety-atlas-uat.nsc.org/company/reports \"User Reports\" shows total number of Learners and their account status. The Learners can be searched and filtered. The list can be further limited based on a date range. Click \"Columns\" to add additional information to the results. Click the checkbox next to the desired column addition. Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column. Click the column again to have it sort in the opposite direction. Click \"Export\" to have the report exported as a .csv file. \"Usage Reports\" shows the all courses, total purchased, and how many are in each status. The courses can be searched by name and filtered by date. Click \"MM/DD/YYYY\" to select the date range. Use the calendar to select the date. Move to different months with the arrows. Select the day. \"Export\" allows the list to be downloaded by .csv. \"Assessment Reports\" view all completed courses. \"Select a course\" shows all courses with completed trainings. Click \"MM/DD/YYYY\" to select the date range. Use the calendar to select the date. Move to different months with the arrows. Select the day. \"Export\" allows the list to be downloaded by .csv. \"Inventory Reports\" see all seats available and their status. \"Search by course name\" shows the all courses, total purchased, and how many are in each status. Click \"MM/DD/YYYY\" to select the date range. \"Export\" allows the list to be downloaded by .csv."
+    },
+    {
+      "id": "BqMRCe-tScu3EmM0EC1ayw",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Log_In_to_the_NSC_SafetyAtlas_Portal__BqMRCe-tScu3EmM0EC1ayw",
+      "category": "Company Learner",
+      "tags": [
+        "login",
+        "log in",
+        "sign in",
+        "locked out",
+        "cant log in",
+        "can't log in",
+        "password",
+        "access",
+        "portal",
+        "credentials"
+      ],
+      "title": "How to Log In to the NSC SafetyAtlas Portal",
+      "text": "Navigate to <https://safetyatlas.nsc.org/auth/sign-in> Click the \"Email address\" field and enter the email address. Click \"Continue\" The email address will automatically fill on the next screen. Click \"Send OTP\" Switch to email inbox. Refresh the email box. Open the most recent email from NSC to retrieve the 6 digit pin number. Subject, \"NSC Sign-in code\" Return to tab \"Welcome to NSC!\" Click the \"Authentication code\" field and enter the 6 digit code from the email. Click \"Continue\" Click the \"Set up authenticator\" field or \"Skip for now\" Click \"Continue\" The screen will update to the SafetyAtlas home page."
+    },
+    {
+      "id": "9e-xc5ojSqWEpNAH76aS8Q",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Manage_and_Share_Your_SafetyAtlas_Certificates__9e-xc5ojSqWEpNAH76aS8Q",
+      "category": "Company Learner",
+      "tags": [
+        "certificate",
+        "share certificate",
+        "download certificate",
+        "completion record",
+        "learner certificate"
+      ],
+      "title": "How to Manage and Share Your SafetyAtlas Certificates",
+      "text": "Login to learner's profile Open the profile menu. Click \"My Profile\" \"Completion Record\" displays a tile for each completion with the option to download, email, share, or view the certificate. Click the icon to Download the certificate Click the icon to Email the certificate Click the icon to Share the certificate using a link that can be sent through different applications Click \"View Certificate\" to view the certificate as a PDF pop-up The certificate will apear in a pop-up. The option to Download, Email, and Share appear in the pop-up. Select the 'x' to close the completion certificate view to return to the profile Click \"My Wallet\" Navigate down the center portion of the screen to Completed Courses. Select Defensive Driving: Fundamentals for the public wallet. Click \"Save Changes\" Click \"Preview Safety Wallet\" The QR automatically updates when \"Save Change\" is selected. If a change is made after the QR is downloaded or shared, the change will be visible. Open My Courses. Click the \"Completed\" tab. Click \"View Certificate\" next to the desired course. The certificate will apear in a pop-up. The option to Download, Email, and Share appear in the pop-up."
+    },
+    {
+      "id": "AzjHJzTzS4aamJTbMnh7zg",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_To_Purchase_And_Manage_Training_For_Your_Organization__AzjHJzTzS4aamJTbMnh7zg",
+      "category": "Company Administrator",
+      "tags": [
+        "training",
+        "purchase",
+        "buy training",
+        "courses",
+        "products"
+      ],
+      "title": "How To Purchase And Manage Training For Your Organization",
+      "text": "Navigate to Click \"Trainings\" or \"Safety Products\" \\ Click \"Explore Trainings\" The page of courses can be updated to show courses based on who the course is for (individual or company/organization) by selecting \"Who is this for?\" Results can be Sorted, showing the results in a different order. Relevance Categories: Relevance, Newest, Price: Low to High, Price: High to Low, or Title A-Z Open the Advanced Filters panel to select different Filters Filter Categories: Language, Industry, Education Type (certificate, certification, , course, workshop), Training Topic, Availability (bundles, bulk pricing, subscriptions) Courses and Materials will show in tiles with short descriptions. To view the long description and add the item to the shopping cart click \"View details\" Details about the course, pricing, refund policy, and related trainings and products are visible. Selecting \"Read Refund Policy\" will show the refund policy for the course. Click \"Close\" returns to the course details. Edit the course quantity by typeing the desired amount or using the \"+\" or \"-\" Click \"Add to cart\" All items in My Cart will appear. To continue shopping select \"My Cart\" Click the profile icon. Click \"My Organization\" Click \"Subscripton Management\" Click the desired Subscription Click \"Purchase more seats\" Enter the desired number of seats and select \"Continue to cart\" Click \"Proceed to checkout\" Checkout does display which account the purchase will link to. Enter required Billing Details and review Order Details. Click \"Place Order\" Click the profile icon. Click My Orders. All orders appear in the center of the page and can be searched or filtered Click on the Order ID to see details about an order Order details shows the details of the order. **Items in this order** include details of the items and the price. If an item meets the refund requirements the refund can be requested\\ **Order Summary** includes the total amount spent, which organization(s) were paid, and which payment method was used Order Summary can be viewed and downloaded, click \"Print Confirmation\" The Order Summary will display and can be downloaded by clicking on \"Download PDF\" Click \"Email a Copy\"and an email copy of the order summary will be sent to the email address on file for the account. A notification will appear confirming the order confirmation was sent, click 'x' to close the notification. Orders status can be reviewed and tracked. Orders with products can use the Status History to see if the items have been shipped. Support can be reached by selecting \"Need help with this order?\" The pop-up will reflect the correct company contact to receive support."
+    },
+    {
+      "id": "4Unbr-g_RLqNO30E0EWnXA",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_to_Reschedule_a_Students_Course__4Unbr-g_RLqNO30E0EWnXA",
+      "category": "NSC Admin",
+      "tags": [
+        "reschedule",
+        "reschedule student",
+        "change class date",
+        "move class",
+        "postpone class"
+      ],
+      "title": "How to Reschedule a Student's Course",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Student Management\" Search for the student by typing their first name, last name, or email address. Click the Student Name for the desired student: Example: \"Sept twofive\" Click \"Classes\" Click \"Reschedule\" for the enrolled class."
+    },
+    {
+      "id": "DyGrQCItQS6E2AFSAx0L3w",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_to_Reschedule_Seats_in_SafetyAtlas__DyGrQCItQS6E2AFSAx0L3w",
+      "category": "Company Administrator",
+      "tags": [
+        "seat",
+        "reschedule seat",
+        "move seat date",
+        "change seat",
+        "seat expiry"
+      ],
+      "title": "How to Reschedule Seats in SafetyAtlas",
+      "text": "Navigate to https://safetyatlas.nsc.org/logging into your organizations's profile. Click \"Seat Management\" Click \"Assigned Courses\" Search for the learn based on their name.\\ Search for the course based on the course title. Sort based on the course type. Click on the learner name for the correct learner and course. Example: \"koly Rack\" Click \"Reschedule\""
+    },
+    {
+      "id": "tzdiu8f8TZW95KOd54GKSw",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Request_a_Refund_on_NSC_Safety_Atlas__tzdiu8f8TZW95KOd54GKSw",
+      "category": "Retail Learner",
+      "tags": [
+        "orders",
+        "my orders",
+        "order history",
+        "review order"
+      ],
+      "title": "How to Review My Orders on NSC SafetyAtlas",
+      "text": "Navigate to <https://safetyatlas.nsc.org/> Click the profile icon. Click \"My Orders\" All orders appear in the center of the page and can be searched or filtered. Click on the Order ID to see details about an order Order details shows the details of the order. **Items in this order** include details of the items and the price. If an item meets the refund requirements the refund can be requested\\ **Order Summary** includes the total amount spent, which organization(s) were paid, and which payment method was used The order confirmation can be printed or emailed. The Print Confirmation does allow for the information to be saved as a PDF. Orders status can be reviewed and tracked. Orders with products can use the Status History to see if the items have been shipped. Click Need help with this order? Support can be reached by selecting \"Need help with this order?\" The pop-up will reflect the correct company contact to receive support"
+    },
+    {
+      "id": "NSgJ4pQ2RCy7UsGsu0Qq9w",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Navigate_and_Purchase_Training_on_Safety_Atlas__NSgJ4pQ2RCy7UsGsu0Qq9w",
+      "category": "Retail Learner",
+      "tags": [
+        "search trainings",
+        "purchase",
+        "shop",
+        "catalog",
+        "products"
+      ],
+      "title": "How to Search and Purchase Trainings and Products on SafetyAtlas",
+      "text": "Navigate to <https://safetyatlas.nsc.org/> Click \"Explore Trainings\" The page of courses can be updated to show courses based on who the course is for (individual or company/organization) by selecting \"Who is this for?\" Results can be Sorted, showing the results in a different order. Click \"Sort: Relevance\" and select the desired sort option. Open the Advanced Filters panel to select different Filters Filter Categories: Language, Industry, Education Type (certificates, workshops, courses), Training Topic, Availability (bundles, bulk pricing, subscriptions) Courses & Materials will show in tiles with short descriptions. To view the long description and add the item to the shopping cart click \"View details\" Select quantity and then click \"Add to cart\" Online Self-Paced training will prompt to 'Bundle' with other Online Self-Paced courses. If a shown training is desired, select \"Add this item to bundle\" in the course tile. Click \"Add Bundle deal\" once all desired courses are selected. Click \"Skip Bundle\" if no course shown is desired. The page will direct to My Cart. To continue shopping, select the back arrow by My Cart. Click \"Safety\" to return to full list of trainings. Once you \"View details\" for the desired training, click \"View Available Slots\" Inputting the learners address or selecting a location will populate the different training times and closest locations. Once the information is entered, click \"Search\" A map will show the class location and below will be available times and how many Seats are remaining. To select **1 seat**, click on the square in the top right of the course time tile.\\ If **2 or more learners** are taking the training, the quantity can be increased for each time slot. Click \"Continue to Cart\" The page will direct to My Cart. If the training selected has already passed, the item will appear in red outline with a reason. Click \"Remove\" for the red outlined training to be able to \"Proceed to checkout\" Click \"Remove\" in the pop-up to have the training or item removed from the cart. To continue shopping, select the back arrow by My Cart. Once you \"View details\" for the desired training, click \"View Available Slots\" To select **1 seat**, click on the square in the top right of the course time tile.\\ If **2 or more learners** are taking the training, the quantity can be increased for each time slot. Click \"Continue to Cart\" The page will direct to My Cart."
+    },
+    {
+      "id": "oK7cZy6sTGKQjs9hmYdkWg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Unassign_A_User_From_A_Safety_Course__oK7cZy6sTGKQjs9hmYdkWg",
+      "category": "Company Administrator",
+      "tags": [
+        "unassign",
+        "remove seat",
+        "revoke course",
+        "take away access"
+      ],
+      "title": "How To Unassign A User From A Safety Course",
+      "text": "Navigate to https://safetyatlas.nsc.org/ Click \"Seat Management\" Click \"Assigned Courses\" Click the \"Search by learner or course...\" field. The \"Assigned Courses\" can be searched by Learner's name or by the Course name. Search results can be sorted by \"Course\" or \"Assigned On\" Click the Learner's name next to the desired course. Example: \"Alan alex\" for Chapter test in Assigned Status. Click \"Unassign\" Click \"Unassign\" To verify the seat has been unassigned, click \"Seat Assignments\" Find the course tile to see the Assigned and Unassigned quantity."
+    },
+    {
+      "id": "x_NEZIzOTR6iY8PHoX_Egg",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instructor_Management_TC__x_NEZIzOTR6iY8PHoX_Egg",
+      "category": "STEVE Training Center",
+      "tags": [
+        "instructor",
+        "instructors",
+        "instructor management",
+        "training center instructor"
+      ],
+      "title": "Instructor Management (TC)",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Instructor ManagementInstructor Management\" Instructors can be searched by First Name, Last Name, Email, Entity, Seniority, Languages, and Status. Instructors can be filtered based on email domain. To filter by \"Email Domain\" open the drop-down and select the desired domain. Email Domain: Is the part of an email address that comes after the \"@\" symbol. The instructor list can be sorted alphabetically by any of the column titles. Click on a column title to have list sort alphabetically by that column. To view information about an instructor clcik on First Name or Last Name of the desired instructor. Example: \"Test Twentytwo\" \"Instructor Details\" shows the personal information, assignment type, teaching languages, courses they can teach, certificates, permission level within SafetyAtlas STEVE. \"Classes\" tab shows all courses the instructor has accepted to teach. The classes can be searched by course or class code. Classes can be filtered based on status and sorted alphabetically by selecting the column title. \"Notes\" tab shows all notes applied to the instructor's profile. Click \"Add Note\" to add a note to the profile. Enter the note into the text box then click \"Save Note\" A notification will appear stating the note has been added. \\ Each note states who made the note and when. \\ The notes can be editited after they are saved by clicking on \"Edit\". Go to \"Instructor Details\" tab. Click \"Edit\" to update the Instructor's information. Click \"Personal Information First Name *Middle Initial Last Name Address City State DelawareZIP PhoneUGEmail *\" Seniority can be changed by opening the drop-down and clicking the new level. Exmaple: \"Lead\" The language the instructor is profiecent in teaching in can be changed by opening the \"Teaching Language drop-down, then select (or deselect) the language. A language can also be removed by selecting the \"X\" within the grey language box below the drop-down. \"Course Permissions\" reflects the courses the instructor is able to teach. They can be managed the same way as \"Teaching Languages\" To add courses, open the drop-down and select the desired course. To remove a course, select the \"X\" inside the grey box with the course name. To add \"Instructor Certifications\" click \"Add Certification\" Enter the required certificate information. Instructors have different levels of \"Permissions\" into SafetyAtlas STEVE which can be applied or removed by selecting the toggle. Click \"Save Changes\" to apply the Instructor profile edits. Click \"Add New\" Input all personal information, assignment type, teaching language(s), course permissions, instructor certifications and set permissions. Click \"Save\" Click \"Expiring Soon\" Instructors that are expiring can be searched or filtered. Click \"ExpiredExpired\" Instructors that have expired certificates can be searched or filtered. Expired certificates show in the \"Certifications\" column. To view the intructor's certificates click on the First Name or Last Name. On \"Instructor Details\" tab go down to \"Instructor Certifications\" and find the Expiration Date that is a past date. To add new certificates or updated an existing certificate, click \"Edit\" Click \"Add Certification\" to add new certificate. Click \"Save Changes\" to apply change."
+    },
+    {
+      "id": "AHR6TwY4R7-nx3G4Eo7BEg",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instuctor_Managing_Class_Enrollments_and_Student_Communications__AHR6TwY4R7-nx3G4Eo7BEg",
+      "category": "STEVE Instructor",
+      "tags": [
+        "instructor login",
+        "instructor profile",
+        "steve login",
+        "training center instructor"
+      ],
+      "title": "Instuctor Login and Profile",
+      "text": "Navigate to Enter the Login ID and Password Click Login Click Edit Edit the desired personal details fields. Click \"Save\""
+    },
+    {
+      "id": "fZnTJWrWRY-fjbAIv0WLog",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Location_Management__fZnTJWrWRY-fjbAIv0WLog",
+      "category": "STEVE Chapter",
+      "tags": [
+        "location",
+        "locations",
+        "site",
+        "branch",
+        "training center location"
+      ],
+      "title": "Location Management",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Location Management\" Locations can be searched based on Location Name, Address, and Phone. Locations can also be filtered based on Status. Enter the search criteria then click the magnifying glass icon. Click the location name that best matches the search. Example: \"Alaska Addiction Rehabilitation Services (AARS)\" \"Location Details\" tab shows the locations name, description, address, email, partnered entity, operating hours, and classrooms. To update the location details, click \"Edit Location\" The location Name and Short Description can be altered. All address fields and contact fields are editable. Parent Entity can be selected while training center and any special notes can be input. Operating Hours can be adjusted based on the day of the week, including days the location is closed. \"Add Classroom\" to create classrooms at a location. Once all desired changes have been made, click \"Save Changes\" \"Classes\"tab shows all classes scheduled for the location. Click \"Add New\" to add a class. Open the course selector and select the desired course. Example: \"Pediatric First Aid, CPR and AED Training\" Open the instructor selector and select all Instructors who the class will be offered to. Set the \"Number of sessions\" Set the \"Session duration (hours)\" Set \"Available seats\" Set the \"Registration cutoff date\" using the calendar. Set the Session \"Date\" using the calendar. Set Session \"Start time\" and the \"End time\" will automatically upate to match the \"Session duration (hours)\" from the above section. Click \"Select location\" and select the Location. Example: \"Alaska Addiction Rehabilitation Services (AARS)\" Click \"Publish\" Return to Location Management. Search and reopen the Location Name. Click the \"Classes\" tab. Verify the published class in the Classes tab. Click the \"Calendar\" tab. The current week will display with any courses that are happening. \\ Click \"Month\" to view courses and location operational hours for the month. There is a color index at the top of the screen to show what each color represents. Click the \"Admins\" tab. View all active administrator(s) for the location and what level of administrator they are. To add a new administrator, click \"Add New\" Fill in all the required fields and click\"Save\" A notification appears stating the successful creation of the administrator account. Return to Location Management. Search and reopen the Location Name. Return to \"Admins\" tab to verify the new administrator in the Admins list. Admin information can be updated by clicking on the admin's name. Example: \"September S Second\" Click \"Edit\" to make changes. Click the \"Notes\" tab. Click \"Add Note\" Enter the note and click \"Save Note\""
+    },
+    {
+      "id": "w1vB7T5jQU2Qi67UiCFpcw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Manage_Organization_Locations_in_SafetyAtlas__w1vB7T5jQU2Qi67UiCFpcw",
+      "category": "Company Administrator",
+      "tags": [
+        "location",
+        "locations",
+        "add location",
+        "site",
+        "branch"
+      ],
+      "title": "Manage Organization Locations in SafetyAtlas",
+      "text": "Login to the Organization's account. Click on Location Management. Tiles display quick reference information about the locations supported by the company. Locations can be added by selecting \"Add New\" Enter the new location's information into the fields. Once the information is input click on \"Save Location\" The locaton will appear in the lit of Locations. To Edit or Disable a location, click on the Location's name. Click \"Edit\" All fields refering to the location are editable. Click the toggle to Disable the location. Click \"Save Changes\" The locations that are Active will no longer display the Disabled location. To change the locations that are visible, update the filter. Click the desired location status type.\" Disabled locations can be edited or changed back to Active."
+    },
+    {
+      "id": "WvkMEljHQ6OMGEUQYIASAg",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Managing_Organization_Admin_Permissions__WvkMEljHQ6OMGEUQYIASAg",
+      "category": "Company Administrator",
+      "tags": [
+        "admin",
+        "permissions",
+        "role",
+        "access level",
+        "add administrator",
+        "admin rights"
+      ],
+      "title": "Managing Organization Admin Permissions",
+      "text": "Login to the Organization account. Click \"Admin Management\" To view or manage an administrator click on the Admin's name. Click \"Edit\" Under Role change \"Admin\" to \"User\". Click \"User\" Click \"Save\" Click \"Add New\" Click the \"Search by name or email\" field. Type in the Learner/User's name or email address and click on the name in the drop-down. Click \"Save\" Admin Management page will show the new admin."
+    },
+    {
+      "id": "I03H0gHMTIKnOxnXXQLU-w",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Move_Course_Seat_From_A_Retail_Accunt_To_An_Organization_Account__I03H0gHMTIKnOxnXXQLU-w",
+      "category": "NSC Admin",
+      "tags": [
+        "seat",
+        "move seat",
+        "transfer seat",
+        "retail to organization",
+        "reassign"
+      ],
+      "title": "Move Course Seat From A Retail Account To An Organization Account",
+      "text": "Navigate to NSC Operating System, Module SafetyAtlas, and click on \"Student Management\" Search for the user based on name or email address. Click on the \"Student's Name\" in blue that is left of the correct \"User Type\" Click \"Classes\" Scroll the class table horizontally to view the expiry details and click on the pencil icon. Click the pencil icon for the enrolled course. Click the calendar icon and select today's date. Click the \"Time\" field entering a time within the next 15 minutes.\\ Open the AM/PM selector for the expiry time and select the correct option. Click \"Save\" Click \"Notes\" Add and save a note for the student. State why the date/time change was made and where the course is being credited to. Click \"Organization Management\" Use the Search field to locate the Organization Name and select the correct Organization Name in blue. Click \"Admins\" to reconfirm the person requesting the change is an administrator for the Organization. Click \"Courses\" Click \"Manage\" for the selected course. Confirm \" Add Seats\" is green, meaning it is selected.\\ Set \"Seats To Add\" to be the same quantity that was on the retail account. Click the Notes field and enter where the code(s) are coming from and why. Click the Order ID field and enter the associated SalesForce Order Number and/or SafetyAtlas Order Number. Click \"Confirm\" Click Back to return to the organization’s Courses tab. Click View Notes for the selected course. Shows all Seat changes that have manually occured and what they are associated with. Click \"Close\" to dismiss the course notes dialog."
+    },
+    {
+      "id": "VGqwbJVYT7mYAi2C3uDIkA",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Moving_Course_from_Retail_Learner_account_to_a_Different_Retail_Account__VGqwbJVYT7mYAi2C3uDIkA",
+      "category": "NSC Admin",
+      "tags": [
+        "move course",
+        "retail learner",
+        "transfer course",
+        "different account"
+      ],
+      "title": "Moving Course from Retail Learner account to a Different Retail Account",
+      "text": "Copy the order number from the email. In SalesForce search the order number and select the matching Salesforce order result. The bottom of the order confirms it is a SafetyAtlas order and provides the SafetyAtlas Order number (Order Reference Number). \\ \\ Copy the order reference number from Salesforce. Access NSC Operating System, check it is in module \"SafetyAtlas\" and click \"Financials\" Click the deposits report search field, enter the SalesForce Order Reference Number, and search the deposits report. Open the matching deposit record by clicking on the blue \"Order Number\" Confirm the \"Owner Type\",the \"Placed By\", and \"Ordered On\". Open the person associated with the deposit. Click on the name next to \"Placed By\" Copy the person's email address. Search the email address and view the different \"User Type\". Open the matching student record by clicking on the \"Student Name\" in blue. Click \"Edit profile\" Update the First Name, Last Name, and Email to the desired learner's informatin and click \"Save Changes\" Search \"Student Management\" using the learner's email address and click on the \"Student Name\" in blue. Click \"Classes\" Click \"Register for Class\" Open the drop-down, type the course name, and click on the course title. Open the \"Search Student\" drop-down, enter the student's name, and \\ click on the correct account. Select \"Enroll at no cost (admin override)\" and \"Complete Registration\" Click \"Notes\" Click the notes search field. Enter the reason for adding the course and the associated order. Then click \"Add Note\" Return to ordering Student account. Click the notes search field. Enter which account the course was moved to and why, then click \"Add Note\" Click \"Classes\" Use the scroll bar to move to the right of the classes. Click the pencil icon next to the \"Expires on\" date and time. In the pop-up, click the pencil icon. Enter a new expiry date of today. Click the \"Time\" field to select a time within the next 10 minutes. Click \"Save\" Return to SalesForce order and click \"New\" in the order's Notes section. Enter the changes that were performed onto the order and click \"Done\" Click \"Reply All\" Enter an update of the escalation and send the response."
+    },
+    {
+      "id": "UXaNRwS7Ty-5jdmDsifMOw",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Navigating_Course_Management_in_SafetyAtlas__UXaNRwS7Ty-5jdmDsifMOw",
+      "category": "Company Learner",
+      "tags": [],
+      "title": "Navigating Course Management in SafetyAtlas",
+      "text": "Login to <https://safetyatlas.nsc.org/> Click the Profile Icon The account menu opens, click on \"My Profile\" Click \"My Courses\" Courses are trainings that have been purchased/assigned to a learner/individual. Courses/Trainings that have been purchased but not started, can be viewed in the Enrolled section. First time access to the training is started by clicking \"Start Course\" Resume a course that has been started. Click the In Progress tab, then access the training by Clicking \"Start Course\" Pending is for courses that require an action by the course instructor. The course time has passed but the instructor has not logged the course attendance and/or scores. The Completed tab is where all courses that have been completed and passed are shown. Courses with a completion certificate will have \"View Certificate\" next to the courses title. When \"View Certificate\" is selected, a PDF version of the certificate appears. The Failed tab shows courses that were not successfully completed. \"Retake Course\" allows the learner to repurchase trainings that were Virtual or Classroom. The Expired tab shows all course that were purchased but access to the training has passed. \"Retake Course\" allows the learner to repurchase the course."
+    },
+    {
+      "id": "NCYWZ96fS2ylDFCeY9CdYw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Learner_Management__NCYWZ96fS2ylDFCeY9CdYw",
+      "category": "Company Administrator",
+      "tags": [
+        "learner",
+        "learners",
+        "organization learners",
+        "manage learners",
+        "add learners"
+      ],
+      "title": "Organization Learner Management",
+      "text": "Navigate to <https://safetyatlas.nsc.org/> Click the Profile Icon Click \"Organization Profile\" Click \"Learner Management\" to overview and interact with learners' account and status. Click \"Add New\" to invite an additional learner to training(s). Click \"By Email\" to invite one employee at a time with their full details. \\ Click \"Upload CSV\" to invite many employees at once. \"Pending Invitations\" show employees who have been sent an invitation but not yet accepted. Click the employee's name to view additional details about the employee and course invitation. The employee details can be updated, the invitation can be viewed, complete course certificates are available, and the invitation can be revoked by selecting \"Delete\". Under the Employee profile is \"Training & Certifications\" section. Click the \"eye\" icon to view the certifiacate. Click the downward arrow to download the certificate. Click the envelope button to have the certificate sent to the learner's email address on the account. Click the arrow head icon to send the certificate link. Click the 'x' to close the certificate pop-up. \"Disabled Learners\" show employees who have been disabled by an administrator. Click the employee's name to view additional details about the employee, edit the employee's information, and activate the account. Click the toggle to \"Activate\" an account. Once the account has been updated as desired, including \"Activate\", select \"Save Changes\". \"Disabled Learners\" will update to no longer show profiles that have been updated to \"Activate\" and a pop-up will confirm the change."
+    },
+    {
+      "id": "klW-3AxYQZq3KgYyq7BwLw",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Organization_Management_CH__klW-3AxYQZq3KgYyq7BwLw",
+      "category": "STEVE Chapter",
+      "tags": [
+        "organization",
+        "organization management",
+        "company account",
+        "customer account"
+      ],
+      "title": "Organization Management",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Organization Management\" All Organizations within the Chapter can be searched by Organization Name or Location. Organizations can also be filtered based on Size, NSC Membership, and Status. Click the Organization name. Example \"Greenfiled Road\" \"Organization Details\" tab shows, and allows edits, to the organization's information. Click \"Edit\" to make changes. Click \"Upload logo\" to add or change the organization's logo. Organization Information can be updated. Address & Location information can be updated. Training Scope can be updated, with \"Primary Training Needs\" being a drop-down field. Click \"Save changes\" Click \"Orders\" All orders placed by the Organization are visible. \\ \\ Orders can be searched based on order number or item name. \\ Orders can be filtered based on date, type, payment status, and status.\\ Columns can be sorted chronologically by clicking the column header of date or amount. Click \"Courses\" All courses purchased by the organization are visible. Courses can be searched based on course name. \\ Orders can be filtered based on availability.\\ Columns can be sorted alphabetically by clicking the column header of Course Name, Format, Total Seats, Assigned Seats, or Available Seats. \"View Notes\" shows the history of the course's inventory with reference to the Order Number. Click the pencil icon of a note to make changes and then \"Save\" Click \"Close\" Click \"Manage\" next to the desired course. Click \"Add Seats\" Update the \"Seats to add\" and input the \"Order ID\" with \"Notes\" Click \"Confirm\" The \"Course Management\" tab will show the updated \"Total Seats\" Open \"View Notes\" The most recent change will show at the top of the pop-up. Click \"Learners\" All learners associated with the organization are visible based on their status with the organization. The learner's can be searched for based on first name, last name, or email address. The learner's visible can be filtered based on: has assigned course, past due, and has completions. Columns can be sorted alphabetically by clicking the column header of First Name, Last Name, Email, Department, Location, Assigned, Completed, Overdue, or Status. \"Learners\" tab allows for NSC Administrator to add a learner to an organization. Click \"Add New\" to invite a new learner to the organization. This is also a feature that the organization administrator has. The ability to add learner(s)/employee(s), has two options. 1. Add a single employee by selecting \"By Email\" 2. Add multiple employees by selecting \"Upload CSV\" Click on the option that best fits the customer's request. This example is for an individual, click on \"By Email\" Fill in the information for all required fields. Required fields are marked with a red astrict. \"Role\" defaults to \"User\" but can be updated to \"Admin\" When all desired fields and required fields are entered, select \"Send Invite\" A notification at the top of the screen will appear confirming the invitation, or stating why it was not sent. \"Pending Invitations\" shows learners who have been invited to join the organization but have not responded to the email invitation. \"Disabled Learners\" show the learners who have had their accounts disabled but were part of the organization. Click \"Admins\" All the organization administrators are visible, including their administrator access type. Selecting an administrators Full Name will show additional details. A user can their administrator access removed by selecint \"Disable Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. Administrator's can also be returned to Learner status by using the toggle under \"Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. A notification appears in the corner of the screen confirming the status change. Organization administrator's can be added to an organization by clicking \"Add new\" Click the drop-down for \"Search Employee\" and click on the desired organization learner that is becoming an administrator. \\ Example: \"an example learner (example@nsc.org)\" Click \"Save\" A notification appears on the screen confirming the administrator access has been granted and the person appears in the list of administrators in the center of the screen. Click \"Seats\" Seats are viewed by \"Seat Assignments\" or \"Assigned Courses\" There is a quick view of total purchased, assigned, and unassigend (available). The seats can be searched based on \"Course Name\" and filtered based on Availability. Each course displays on a tile reflecting an overview of the course and the seat division. To assign a course seat to a learner, select \"Assign\" on the correct course tile. The organization's learners will appear on the screen with the ability to search based on a learner's name or email address. The learners can be filtered based on Department and/or Location. The list of learners can be sorted based on the quantity of coures Assigned, Completed, and Overdue. To select individual learners click on the box to the left of the learner's name. To select all learners click on the box to the left of \"Name\" in the green banner. Once the desired learner(s) are selected click \"Continue\" The length of time the learner(s) have access to course can be selected. \"No due date\" means the learner(s) will have access to the course material indefinetly. \"Quick range\" gives the options of 30 days, 60 days, or 90 days of acess. \"Due date\" can be manually updated to be a unique period of time. Once the desired course access period has been determined, click \"Continue\" The screen will show an overview of the selections made. If something is not correct click \"Back\" If everything is correct click\"Assign courses\" A notification appears on the screen confirming the course assingment. The course tile automatically updates to reflect the updated seat assignment(s). \"Assigned Coures\" shows each learner and the course(s) they have been assigned. The list can be searched by a learner's name, learner's email address, or the course name. The list can be filtered based on the course format: classroom, hybrid, online, virtual, and webinar. The results can be sorted based on Learner, Course, Assigned On, or Status. To view details about a learner's course select the learner's name next to the desired course. The course \"Due Date\" can be updated by selecting the pencil icon. The course can also be removed from the learner and returned to inventory by clicking \"Unassign\" Click \"Locations\" Shows all locations associated with the organization. The locations can be searched by address and location name. The location list can sorted by Location, Time Zone, and Status. Locations can be updated and disable by clicking on the Location name. To update a location's information click \"Edit\" Once the changes are made click on \"Save Changes\"\\ If no changes are needed click on \"Cancel\" If a location is no longer in use by an organization it can be deactivated. To deactiate a location click on the \"Status\" A pop-up will ask if the location should be disabled, click on \"Disable\" Click \"Save Changes\" The tiles on the \"Loctations\" tab will update to reflect the \"Disabled\" location. To view disabled location click the toggle for \"Show Disabled\" The disabled location(s) will show. To edit a disabled location, including enabling the location, click the location name. Click \"Edit\" Click the toggle next to \"Status\" Click \"Save Changes\" A notification appears on the screen confirming the change,the tiles for the locations update, and the location is returned to the list of active locations. Locations can be added by clicking on \"Add New\" Fill in all required fields. Click \"Save Location\" The location will be respresented on the Location Management screen. Click \"Reports\" Learners can be searched and filtered. Click \"Columns\" to add additional information to the results by selecting the desired column(s). Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column Click \"Export\" to have the report exported as a .csv file. \"Usage Reports\" shows the all courses, total purchased, and how many are in each status. The courses can be searched by name and filtered by date. \"Export\" allows the list to be downloaded by .csv. \"Assessment Reports\" view all completed courses. \"Select a course\" shows all courses with completed trainings. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. Click \"Get Report\" \"Export\" allows the list to be downloaded by .csv. \"Inventory Reports\" see all seats available and their status. \"Search by course name\" shows the all courses, total purchased, and how many are in each status. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. \"Export\" allows the list to be downloaded by .csv. Click \"Custom Profile Fields\" \"Custom Profile Fields\" are optional custom fields new users are presented with when creating accounts. Existing Sections can be viewed by selecting the Section header. To add additional registration sections, click \"+Add New Section\" In the pop-up enter the title of the new registration section and click \"Add Section\" Click the \"+\" to the right of the section heading to add a new registration field. \"Field Type\" can be selected and it will update the field options below. \"Field Label\" is the wording the learner will see when presented with the registration page. Fields can have the option of being \"Mandatory Field\" and \"Allow Editing Field\" Fill in the different field type options based. Example: \"Dropdown Options\" needs to have the different options the learner will be presented with typed. Once the \"Add New Field\" options have been set, click \"Add Field\" Click \"Field NameField TypeLocationDropdownRequired\" Click this icon. Click this button. Click \"Save Changes\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes. Fields and sections can be removed from registration by clicking the trash can icon and \"Delete Section\" from the pop-up. Click \"Delete Section\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes."
+    },
+    {
+      "id": "abGBUl2KQu2Sp7uDF9G5IA",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Organization_Profile_Details_in_Safety_Atlas__abGBUl2KQu2Sp7uDF9G5IA",
+      "category": "Company Administrator",
+      "tags": [
+        "organization",
+        "profile",
+        "company details",
+        "update address",
+        "account details"
+      ],
+      "title": "Organization Profile Details",
+      "text": "Navigate to <https://safetyatlas.nsc.org/>and login as the Organization Administrator. Click the profile avatar. Click \"Organization Profile\" The Organization's name is visible. The organization can upload, remove, and change the logo for the company. File type and size is provided on the tile. Organization Progress indicates company's progress in utilizing the NSC tools and assesments. NSC Membership is visible with the current membership level. If an organization is not a NSC Member, it will ask the company to become a member. Organization Creation information is visible. Current Subscription plan is visible with a quick view of seats and expiration date. Individual Course inventory is visible with a quick view of seats and expiration date. The Organization Information section can be changed by clicking on \"Edit\". Organization Name is visible but cannot be changed. Organization size options are available to be selected. The address can be updated. Their is the option to include an Organization Email and Mobile Phone Number. Organization Locations are visible and the Headquarters is able to change to a different existing Location. Departments are provided in a drop-down for selection. Primary Training Needs can be selected and deselected. Additional Notes/Requirements can be typed. When Learners/Employees are notified of assigned trainings, the default email message sent to the Learner/Employee can be created. Click Save Changes. A notification will appear stating the changes have been applied. If a Organization no longer wants to be partnered with NSC, they can Toggle the organization status control. A Pop-Up will appear requiring a statement about why the Organization account is being disabled. Click \"Submit\" to disable the organization's account.\\ Click \"Cancel\" to preserve the organization's account. Organization Admins show all the administrators that are associated with the Organization. Click \"Admin Management\" to be directed to Admin Management page to add or remove administrators."
+    },
+    {
+      "id": "V7jPzpx7RhypNUSHC5hQyQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Subscription_Management__V7jPzpx7RhypNUSHC5hQyQ",
+      "category": "Company Administrator",
+      "tags": [
+        "subscription",
+        "subscriptions",
+        "seats",
+        "renewal",
+        "billing"
+      ],
+      "title": "Organization Subscription Management",
+      "text": "Click on Subscription Management. Tiles display quick reference information about the seats available to the company. Click on the desired subscription to manage subscriptoin and assign seats. Overview of the subscription shows and allows for additional seats to be purchased and have seats assigned to learners. Click \"Purchase more seats\" Click the \"Number of seats\" field entering the desired number of seats. Click \"Continue to cart\""
+    },
+    {
+      "id": "Yhxh8ExjTiKD3bm8Od7Uvg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Product_Management__Yhxh8ExjTiKD3bm8Od7Uvg",
+      "category": "NSC Admin",
+      "tags": [
+        "product",
+        "products",
+        "product management",
+        "catalog"
+      ],
+      "title": "Product Management",
+      "text": "Navigate to https://steve-admin.nsc.org/Navigate ensure the Module is set to \"SAFETYATLAS\" Click Product Management in the sidebar. Products are visible in Product Management but the original location for products is either Kentico, Salesforce, or Intacct. Products can be searched by Product Name.\\ Products can be filtered based on which catalog they come from (Kentico or SalesForce). Click the desired Product Name. Example: \"Compact First Aid Kit\" The product details are visible including the Product Code/SKU. Click the Pencil icon to make limited changes to the product. Not all fields are able to be changed within SafetyAtlas due to the information being provided from an external catalog (SalesForce, Kentico, and Intacct). Changes can be made to \"Additional Notes\" field and the \"Hero Image\" Click \"Cancel\" to close the editable format. \\ Click \"Save\" to apply changes to the product. Click \"Back to Product Management\" to return to all products."
+    },
+    {
+      "id": "NKUFTzQUQYKSZr8tF7WoHw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_An_Organization_in_SafetyAtlas__NKUFTzQUQYKSZr8tF7WoHw",
+      "category": "Company Administrator",
+      "tags": [
+        "register",
+        "registration",
+        "new organization",
+        "sign up",
+        "onboarding",
+        "create account"
+      ],
+      "title": "Registering An Organization in SafetyAtlas",
+      "text": "Have the user navigate to https://safetyatlas.nsc.org/ Add trainings or products to the cart. Click \"View Details\" then click \"Add to cart\" Click \"Others in my organization\" Select if you want to become an NSC Member. Review item(s) in the cart and click \"Proceed to checkout\" Enter the email address associated with the company and click \"Continue\" Input information into **all** fields. Select \"Yes\" and enter the \"Organization Name\" into the text field. To assign the courses to employees, click the \"Yes\" Select the check box to agree to the \"Terms of Use\" and \"Privacy Policy\" Click \"Continue\" Login to the account and click the profile icon. Click \"NSC Business\" Click \"Register Your Organization\" Enter the email address and click \"Continue\" Fill in the fields, select the check box, and click \"Next\" Input the \"Organization Name\", select the \"Oragnization Size\", and select the \"Number of people to train\" Enter the \"Organization Address\" Click Next Select what the \"Primary Training Needs\" are for the organization and click \"Submit\" Click \"Go to Organization Dashboard\" Click the profile icon Click \"Organization Profile\" Review or edit the Organization Profile. Click the profile icon and then click \"Switch profile\" The user can switch between the personal account and the organization account."
+    },
+    {
+      "id": "B7PyAU6TQSeHUN8f8UA9PQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_Students_for_Courses__B7PyAU6TQSeHUN8f8UA9PQ",
+      "category": "NSC Admin",
+      "tags": [
+        "register",
+        "registration",
+        "enroll student",
+        "add student to class",
+        "sign up student"
+      ],
+      "title": "Registering Students for Courses",
+      "text": "Navigate to https://steve-admin.nsc.organd ensure STEVE reflects \"SAFETYATLAS\" Click \"Registration\" Click the class selection field. Type the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click the desired course. Example: \"Workplace Risk Assessment — 09-03-2026 - 09-04-2026 — Atlanta Safety Institute (50 of 50 seats available) - Classroom\" Select \"Existing Student\" Click \"Search by name, email, or phone...\" Type the Student's name, email, or phone number and click on the student. Example: \"AugTest AddAssign — test@example.com — 8333672576\" There are multiple \"Payment\" options. Select \"Card •••• ####\" from the card options. Confirm Billing Details and click \"Complete Registration\" Click \"RegistrationRegistration\" Open the class selection field. Type in the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click desired course. Example: \"Defensive Driving 11th Ed Online - L (English) (Self-Paced)\" Click \"New Student\" Enter the Student's First Name, Last Name, and Email. Phone number is optional but strongly encouraged. Click \"Continue\" There are multiple \"Payment\" options. Select \"Offline Payment\" as the payment method. In \"Notes (optional)\" input they payment type and key information. Click \"Complete Registration\" Click Student Management Click the \"Search\" field. Type in the Student's Name or Email Address and click the search icon. Click on the desired Student Name. Example: \"AugTest AddAssign\" Click \"Classes\" The added class will appear based on the class date(s). Example: \"Workplace Risk Assessment\" In the Student's email inbox, emails come in from no-reply@nsc.org"
+    },
+    {
+      "id": "1etima9PQiyxhluRSZC03g",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_Students_for_Courses_TC__1etima9PQiyxhluRSZC03g",
+      "category": "STEVE Training Center",
+      "tags": [
+        "register",
+        "registration",
+        "enroll student",
+        "add student to class",
+        "training center"
+      ],
+      "title": "Registering Students for Courses (TC)",
+      "text": "Click \"RegistrationRegistration\" Click the class selection field. Type the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click the desired course. Example: \"Workplace Risk Assessment — 09-03-2026 - 09-04-2026 — Atlanta Safety Institute (50 of 50 seats available) - Classroom\" Select \"Existing Student\" Click \"Search by name, email, or phone...\" Type the Student's name, email, or phone number and click on the student. Example: \"AugTest AddAssign — test@example.com — 8333672576\" There are multiple \"Payment\" options. Select \"Use a new card\" from the card options. Input the card information. Confirm Billing Details and click \"Complete Registration\" Click \"RegistrationRegistration\" Open the class selection field. Type in the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click desired course. Example: \"Defensive Driving 11th Ed Online - L (English) (Self-Paced)\" Click \"New Student\" Enter the Student's First Name, Last Name, and Email. Phone number is optional but strongly encouraged. Click \"Continue\" There are multiple \"Payment\" options. Select \"Offline Payment\" as the payment method. In \"Notes (optional)\" input they payment type and key information. Click \"Complete Registration\" Click Student Management Click the \"Search\" field. Type in the Student's Name or Email Address and click the search icon. Click on the desired Student Name. Example: \"AugTest AddAssign\" Click \"Classes\" The added class will appear based on the class date(s). Example: \"Workplace Risk Assessment\" In the Student's email inbox, emails come in from no-reply@nsc.org"
+    },
+    {
+      "id": "SN5kZbFbR6GoLhxUHUutZQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Resource_Library_CH__SN5kZbFbR6GoLhxUHUutZQ",
+      "category": "STEVE Chapter",
+      "tags": [
+        "resource library",
+        "resources",
+        "documents",
+        "downloads"
+      ],
+      "title": "Resource Library (CH)",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Resource Library\" in the sidebar. Resource Library shows all resources for the different courses. Resources can be searched by the Resource Title.\\ Resources can be filtered based on Status and Visibility.\\ Resources can be sorted alphabetically or chronologically by clicking the column title of Resource Title, Type, or Updated On. Click on the desired Resource title to view additional information. Example: \"QRG Company Admin\" Click \"Edit\" to update the resource. File, Resource Title, Resource Description, and Availability of resource are available to upated. Click \"Save changes\" A notification will appear notifing of the rescource change. Clicking \"Save changes\" or \"Delete\" will result in the error. Click this icon. Click \"Cancel\" to return to the Resource Library. Click the down arrow icon to download the file. Click the box icon to archieve the resource. Click \"Add New\" Open the drop-down and select the file type. Under Select a file, click on \"Click to choose a file (one at a time)\" The device's file explorer will open and the desired resource file can be selected. In the \"Resource title\" text box enter the desired resource name. In the \"Resource description\" text box enter the description of what the resource provides to the learner. Toggle the \"Availabilty of resource\" to be Public (default) or Private. Click \"Save resource\""
+    },
+    {
+      "id": "3k51_A75Qr66U0AN-ycDvg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Resource_Library_NSC__3k51_A75Qr66U0AN-ycDvg",
+      "category": "NSC Admin",
+      "tags": [
+        "resource library",
+        "resources",
+        "documents",
+        "downloads"
+      ],
+      "title": "Resource Library (NSC)",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Resource Library\" in the sidebar. Resource Library shows all resources for the different courses. Resources can be searched by the Resource Title.\\ Resources can be filtered based on Status and Visibility.\\ Resources can be sorted alphabetically or chronologically by clicking the column title of Resource Title, Type, or Updated On. Click on the desired Resource title to view additional information. Example: \"QRG Company Admin\" Click \"Edit\" to update the resource. File, Resource Title, Resource Description, and Availability of resource are available to upated. Click \"Save changes\" A notification will appear notifing of the rescource change. Click the down arrow icon to download the file. Click the box icon to Archieve the resource. Click \"Add New\" Open the drop-down and select the file type. Under Select a file, click on \"Click to choose a file (one at a time)\" The device's file explorer will open and the desired resource file can be selected. In the \"Resource title\" text box enter the desired resource name. In the \"Resource description\" text box enter the description of what the resource provides to the learner. Toggle the \"Availabilty of resource\" to be Public (default) or Private. Click \"Save resource\""
+    },
+    {
+      "id": "6HcVAkYUQFuVV83KazJqtg",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/SafetyAtlas_TI_Impersonate_andSkip__6HcVAkYUQFuVV83KazJqtg",
+      "category": "NSC Admin",
+      "tags": [
+        "impersonate",
+        "impersonation",
+        "ti",
+        "skip"
+      ],
+      "title": "SafetyAtlas TI Impersonate &Skip",
+      "text": "Navigate to https://steve-admin.nsc.org/ensuring the Module is set to SAFETYATLAS. Click \"Student Management\" Search for the student with their first name, last name, or email address in the Search field. Click the student's name. Click \"Classes\" Confirm the course is visible in SafetyAtlas. Example: \"First Aid CPR AED Workplace eLearning 9th Edition\" Switch to the TI LMS1 Administrator account. Click \"Learners\" Search for the student's name or email address in the \"Search for Learners\" field. Click on the correct learner's name. Example: \"Megan Evans\" Click \"Impersonate this User\" in the top right. Click \"Yes\" to confirm impersonation. From within the learner's account open the correct course and use the skip menu to move the course forward."
+    },
+    {
+      "id": "I3EQgdY9RNykatzKqWf9sQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Managing_Course_Seats__I3EQgdY9RNykatzKqWf9sQ",
+      "category": "NSC Admin",
+      "tags": [
+        "seat",
+        "inventory",
+        "seat count",
+        "quota",
+        "allocation",
+        "available seats"
+      ],
+      "title": "Seat (Course Inventory) Management",
+      "text": "Navigate to https://steve-admin.nsc.org/ and in SAFETY ATLAS module. Click Organization Management. Click the Organization name. Example: \"Acme Corporation\" Click the \"Course Management\" tab. To add a new course type to an organization, click \"Add new\" Search for the course name. Select the check box next to the desired course. Set the number of seats for the selected course. Click \"Continue\" Review the course name, format, and quanitity; then click \"Confirm & Add\" To adjust the quantity of seats, click \"Manage\" Adjust \"Seats to add\" to reflect how many seats are being added to the course. Enter the Order ID related to the seat inventory change. If it is not from an order include why the change is happening in \"Notes\" Click Confirm. To view all changes to a course seat inventory, click \"View Notes\" A pop-up will appear with the Order ID and Note related to a change, click \"Close\" Click \"Manage\" for the desired course. Select \"Remove Seats\" Adjust \"Seats to remove\" to refelect how many seats are to be removed. Enter the note including the **Quantity** being removed. Click Confirm. To make edits to a note, click \"View Notes\" Click the pencil icon for the note that needs to be changed. Click the field that is being changed. Click \"Save\" Confirm changes have been applied, click \"Close\""
+    },
+    {
+      "id": "mTXBWA3BQxGzEqkZeDS8Zw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Student_Management__mTXBWA3BQxGzEqkZeDS8Zw",
+      "category": "NSC Admin",
+      "tags": [
+        "student",
+        "lookup",
+        "find student",
+        "search student",
+        "student profile",
+        "learner lookup"
+      ],
+      "title": "Student Management",
+      "text": "Navigate to https://steve-admin.nsc.org Update STEVE to reflect \"SAFETYATLAS\" Click Student Management. Click the \"Search\" field. Type in the Student's Name or Email Address and click the search icon. Click on the desired Student Name. Example: \"AugTest AddAssign\" Student information can be updated by clicking on \"Edit\" To edit a field, click the field. Example: City - Albany Enter the updated information and click \"Save Changes\" To view the classess the student is registered in, click \"Classes\" Course details are visible with a scroll bar that shows additional options. Click the pencil icon to change the course expiration date. Click this icon to download the course's completion certificate. Click this icon to regenerate the course certificate with account updates, such as the spelling of the learner's name. Click this icon. Click \"Remove Access\" to have the course seat removed from the learner. To view the course location/progress click \"View Progress\" Click \"Launch as student\" icon. Click \"Back\" to return to the learner's classes. To review payment type for classes, click \"Financial\" To view the subject line of emails sent the student, click \"Emails\" To view account changes, class registrations done by an administrator, or add a note, click \"Notes\" To enter a note, click on the text box, enter the note, and click \"Add\" Classes can be added to a Student's account, click \"Register for Class\" Open the class selection field. Type in the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click the desired course. Example: \"Chapter002_Defensive Driving: Fundamentals — 09-01-2026 - 09-02-2026 (20 of 20 seats available) - Virtual\" Select Existing Student. Click \"Search by name, email, or phone...\" Type the Student's name, email, or phone number and click on the student. Example: \"AugTest AddAssign — test@example.com — 8333672576\" Select the Enroll at no cost (admin override) checkbox. Click \"Complete Registration\" In \"Student Management\" on the student's account under the \"Classes\" tab, click \"Reschedule\" next to the course that needs to be rescheduled. If no future course is available a notification will appear. Click \"Cancel\" to close the notification. If there are future courses available a notification will appear, the course times will be visible when the \"v\" icon is clicked. Click the updated class. Example: \"Chapter002_Defensive Driving: Fundamentals (SEAT-COV-OPEN-359) — 11-08-2026 (15 of 20 seats available)\" Click \"Confirm Reschedule\" A notification appears that notifies the reschedule was successfull. The updated course will appear in \"Classes\" with the previous courses status updated to \"rescheduled\" To confirm the reschedule notification was sent, click \"Emails\" The most recent email appears at the bottom. To view the most recent email at the top, click on the column title \"Date\" In the Student's email inbox, emails come in from no-reply@nsc.org"
+    },
+    {
+      "id": "KEGLHM8USdqqdFeT4g9UMw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Student_Management_TC__KEGLHM8USdqqdFeT4g9UMw",
+      "category": "STEVE Training Center",
+      "tags": [
+        "student",
+        "lookup",
+        "find student",
+        "search student",
+        "training center student"
+      ],
+      "title": "Student Management (TC)",
+      "text": "Click Student Management. Student's can be sorted based on Training Center or SafetyAtlas. Click the \"Search\" field. Type in the Student's Name or Email Address and click the search icon. Click on the desired Student Name. Example: \"AugTest AddAssign\" Student information can be updated by clicking on \"Edit\" To edit a field, click the field. Example: City - Albany Enter the updated information and click \"Save Changes\" To view the classess the student is registered in, click \"Classes\" To review payment type for classes, click \"Financial\" To view the subject line of emails sent the student, click \"Emails\" To view account changes, class registrations done by an administrator, or add a note, click \"Notes\" To enter a note, click on the text box, enter the note, and click \"Add\" Classes can be added to a Student's account, click \"Register for Class\" Open the class selection field. Type in the course name to narrow the Class Selection. Click \"Load More\" to view additional results. Click the desired course. Example: \"Chapter002_Defensive Driving: Fundamentals — 09-01-2026 - 09-02-2026 (20 of 20 seats available) - Virtual\" Select Existing Student. Click \"Search by name, email, or phone...\" Type the Student's name, email, or phone number and click on the student. Example: \"AugTest AddAssign — test@example.com — 8333672576\" Select the Enroll at no cost (admin override) checkbox. Click \"Complete Registration\" In \"Student Management\" on the student's account under the \"Classes\" tab, click \"Reschedule\" next to the course that needs to be rescheduled. If no future course is available a notification will appear. Click \"Cancel\" to close the notification. If there are future courses available a notification will appear, the course times will be visible when the \"v\" icon is clicked. Click the updated class. Example: \"Chapter002_Defensive Driving: Fundamentals (SEAT-COV-OPEN-359) — 11-08-2026 (15 of 20 seats available)\" Click \"Confirm Reschedule\" A notification appears that notifies the reschedule was successfull. The updated course will appear in \"Classes\" with the previous courses status updated to \"rescheduled\" To confirm the reschedule notification was sent, click \"Emails\" The most recent email appears at the bottom. To view the most recent email at the top, click on the column title \"Date\" In the Student's email inbox, emails come in from no-reply@nsc.org"
+    },
+    {
+      "id": "reM1aIfdSWmmp_F4qglJwQ",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Training_Center_Management_TC__reM1aIfdSWmmp_F4qglJwQ",
+      "category": "STEVE Training Center",
+      "tags": [
+        "training center",
+        "my training center",
+        "center management"
+      ],
+      "title": "Training Center Management (TC)",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"My Training Center\" The Training Center inforamtion displays and can be updated by clicking on \"Edit\" Click the text field that needs to be updated. Images have an option to \"Replace\" but an error will appear preventing the image from being replaced. Logos can be removed by clicking on \"Remove\" Logo locations without an image have an option to upload an image, but an error will appear preventing the image from being added. All address fields can be updated. \"Payment and Settings\" is visible but not editable. Click \"Save Changes\" A notification appears confirming the changes were applied."
+    },
+    {
+      "id": "FZ7gJpVASeGmuB-e58PefA",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Training_Centers_NSC__FZ7gJpVASeGmuB-e58PefA",
+      "category": "NSC Admin",
+      "tags": [
+        "training center",
+        "training centers",
+        "centers list"
+      ],
+      "title": "Training Centers (NSC)",
+      "text": "Navigate to https://steve-admin.nsc.org/ and ensure Module is set to SAFETYATLAS Click Training Centers. Training Centers can be searched by their Name or Address. \\ Training Centers can be filtered by their status. \\ Training Centers can be sorted alphabetically by selected the column title of Name or Address. Open the Details tab to view the Training Center's general information. Click Edit Training Center to make changes to the general information. The Training Center can be deactivated, the name can be updated, and can be a private or public location; with the Description is optional. The training center's full address and contact information is required. However, a direct contact name and notes are optional. Ordering refers to who the Training Center orders supplies through. It can be a Chapter, NSC Directly, or both. Payment and Settings are set based on who the payroc account is through and is required for all Training Centers. Click \"Cancel\" to exit edit mode or \"Save Changes\" to apply changes. Open the Locations tab to view all locations associated with the Training Center. Locations can be searched based on name. Locations can be filtered by status. Click Add New to create a location. The location Name and full address are required. Options fields are: Short Description, Phone, and Email. Parent Entity, Training Center, and Operating Hours are required. Operating Hours can be set based on day of the week and includes an option to be Not Open. Locations can have different rooms then can be createad by clicking \"Add Classroom\" Click \"Cancel\" to exit the location form or \"Create Location\" to save the location. Open the Admins tab to view all administrators for the Training Center. Admins can be searched based on name. \\ Admins can be filtered by Type and Status. Click \"Add New\" to create an administrator. Fill in all required fields. Click \"Cancel\" to exit the admin form or \"Save\" to create the Admin account. Open the Notes tab. All notes for the Training Center are visible and addtitional notes can be added by clicking \"Add Note\" Type the note into the text box. \\ Select the check box if the note can be viewed by Chapters. Click \"Cancel\" to close the note dialog and not have the note save.\\ Click \"Save Note\" to close the note dialog and save the note."
+    },
+    {
+      "id": "76hUD2WnShWZM8Q1xyu27Q",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instructor_Managing_Training_Material_Orders_and_Inventory__76hUD2WnShWZM8Q1xyu27Q",
+      "category": "STEVE Instructor",
+      "tags": [
+        "training material",
+        "materials",
+        "inventory",
+        "order materials"
+      ],
+      "title": "Training Material Management",
+      "text": "Login to SafetyAtlas STEVE profile Click Training Materials. Inventory shows the materials that are available and allows additional materials to be ordered. The materials are sorted by category across the top of the page. Click on the material type desired. In the training material tile select \"Adjust\" to update the inventory. Enter the \"New Quantity\" and \"Reason\" for the quantity change Click \"Save Adjustment\" \"On Hand\" quantity will show updated on the training material tile. In the training material tile, click the text field and enter the desired quantity of the training material. Click Add to Cart for the selected materials. Once all items are in the cart, click the Cart icon. Click Checkout in the shopping cart pop-up. Open the Shipment Location selector. Select the training location. Example: Dallas Safety Training Center The expanded checkout form will display payment and billing details. Billing Details Shipping Address Shipping Method Once payment, billing, and shipping information is filled in; click on Place Order. To review past orders, click Order on SafetyAtlas. Ordering training materials that are not available at the trainibng center can be purchased indepently through SafetyAtlas account.\\ \\ Click \"Go to SafetyAtlas Shop\" or \"SafetyAtlas > My Orders\" to be navigated to the SafetyAtlas profile. Click Orders. Orders can be searched or filtered. Open the Status filter. Select Processed from the Status filter. Click Mark Received for the order. Enter quantity that was received and click \"Confirm Received\" A notice appears verifing the change in order status. Open the Status filter. Select Received from the Status filter to view orders that are placed, processed, and Marked Received. Click order # for the desired order to view additional information. Click View All Orders to return."
+    },
+    {
+      "id": "mAaIZ_RoSe-imcvP9z84rg",
+      "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Your_Safety_Wallet_Profile_Information__mAaIZ_RoSe-imcvP9z84rg",
+      "category": "Company Learner",
+      "tags": [
+        "profile",
+        "wallet",
+        "my profile",
+        "update profile",
+        "safety wallet"
+      ],
+      "title": "Updating Your Profile and Wallet Information",
+      "text": "Navigate to Click the profile avatar Click My Profile Click Edit Profile Profile image can be Uploaded, Changed, or Removed. File can be JPG, JPEG, PNG or WEBP with a maximum size of 5 MB. Personal Details and Address have required fields that are marked with a red asterisk. The fields can be updated but not cleared of information. \"About\" is a text box that allows a learner to input personal information on how safety training in the work place applies to their role. \"Skills\" is a list of skills that apply to a work place. They are listed in a drop down menu for selection. A Skill can be removed fromt the list by selecting the red 'x' inside the skill title. After desired changes have been made, \"Save Changes\" will apply the changes. General personal information is visible on the left hand panel. The ability to \"Preview & Share Safety Wallet\" is accessible from My Profile page. Safety Wallet is sharable through the QR code that can be scanned, downloaded, or shared through a link. My Wallet does update when \"Save Changes\" is selected. Click \"My Wallet\" Information on \"My Profile\" populates on \"My Wallet\" Completed Courses allows the selection of which certificates are visible to individuals with access to the learner's \"My Wallet\". Changes can be made to \"Wallet Configuration\" and \"Completed Courses\" Once the desired changes have been made, selecting \"Save Changes\" applies them to \"My Wallet\". Click \"Update\" to confirm changes. To view the updated Wallet display, or share the My Wallet QR code. Click \"Preview Safety Wallet\" Safety Wallet is sharable through the QR code that can be scanned, downloaded, or shared through a link. My Wallet does update when \"Save Changes\" is selected."
+    },
+    {
+      "id": "GH176qZqSay5J8SRMW5EKw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/View_Refund_Policies_in_SafetyAtlas__GH176qZqSay5J8SRMW5EKw",
+      "category": "NSC Admin",
+      "tags": [
+        "refund",
+        "refunds",
+        "refund policy",
+        "money back",
+        "cancellation"
+      ],
+      "title": "View Refund Policies in SafetyAtlas",
+      "text": "Navigate to https://steve-admin.nsc.org Update STEVE to reflect \"SAFETYATLAS Click \"Refund Policy ManagementRefund Policy Management\" \"Refund Policy Management\" shows the details for all refunds policies by NSC, chapter, and partner courses. Click the \"Search refund policies\" field and input the Refund Policy Title. If the Refund Policy Title is unknown; navigate to Course Managment select the course and move down to Refund Policy. Click the search icon to narrow the Refund Policy Titles. Click the desired policy. Example: \"NSC Standard Refund Policy\" \"Refund Policy\" tab shows the information inforatmion visible to the student regarding the refund policy. \"Linked Courses (#)\" shows all courses associated with the selected refund policy. The courses can be searched by course title, course code, format, or status. \"Version History\" tab shows how many versions of the policy have been posted and when the policy was updated. To view past versions, click the eye icon. The refund policy details will show how they used to be displayed. Click \"Back\" to return to the refund policy."
+    },
+    {
+      "id": "F0TdJKmfSiGwByNPQX5Rsw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/View_Refund_Policies_in_SafetyAtlas_TC__F0TdJKmfSiGwByNPQX5Rsw",
+      "category": "STEVE Training Center",
+      "tags": [
+        "refund",
+        "refunds",
+        "refund policy",
+        "money back",
+        "cancellation",
+        "training center refund"
+      ],
+      "title": "View Refund Policies in SafetyAtlas (TC)",
+      "text": "Click \"Refund Policy Management\" \"Refund Policy Management\" shows the details for all refunds policies. Click the \"Search refund policies\" field and input the Refund Policy Title. If the Refund Policy Title is unknown; navigate to Course Managment select the course and move down to Refund Policy. Click the search icon to narrow the Refund Policy Titles. Click the desired policy. Example: \"NSC Standard Refund Policy\" \"Refund Policy\" tab shows the information inforatmion visible to the student regarding the refund policy. \"Linked Courses (#)\" shows all courses associated with the selected refund policy. The courses can be searched by course title, course code, format, or status. \"Version History\" tab shows how many versions of the policy have been posted and when the policy was updated. To view past versions, click the eye icon. The refund policy details will show how they used to be displayed. Click \"Back\" to return to the refund policy. To restore a past version, click the circle arrow icon. A pop-up appears with the option to \"Restore\" or \"Cancel\" A notification appears stating the refund policy version has been restored."
+    }
+  ]
+}

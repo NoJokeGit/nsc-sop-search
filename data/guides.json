@@ -1,0 +1,205 @@
+{
+  "_comment": "Per-guide overrides, hand-maintained. The scraper fills everything from Scribe; this file adds the wording a caller actually uses, as tags. Tags are weighted above body text in search, so this is the main lever for making customer phrasing find the right SOP. Ids match the Scribe guide id (the part after '__' in the viewer URL).",
+  "guides": [
+    {
+      "id": "BqMRCe-tScu3EmM0EC1ayw",
+      "tags": ["login", "log in", "sign in", "locked out", "cant log in", "can't log in", "password", "access", "portal", "credentials"]
+    },
+    {
+      "id": "AHR6TwY4R7-nx3G4Eo7BEg",
+      "tags": ["instructor login", "instructor profile", "steve login", "training center instructor"]
+    },
+    {
+      "id": "k-AzI85iTqKuncjNZ3m-FA",
+      "tags": ["seat", "seats", "assign", "assignment", "allocate", "enroll", "learner seat"]
+    },
+    {
+      "id": "DyGrQCItQS6E2AFSAx0L3w",
+      "tags": ["seat", "reschedule seat", "move seat date", "change seat", "seat expiry"]
+    },
+    {
+      "id": "I03H0gHMTIKnOxnXXQLU-w",
+      "tags": ["seat", "move seat", "transfer seat", "retail to organization", "reassign"]
+    },
+    {
+      "id": "I3EQgdY9RNykatzKqWf9sQ",
+      "tags": ["seat", "inventory", "seat count", "quota", "allocation", "available seats"]
+    },
+    {
+      "id": "oK7cZy6sTGKQjs9hmYdkWg",
+      "tags": ["unassign", "remove seat", "revoke course", "take away access"]
+    },
+    {
+      "id": "mTXBWA3BQxGzEqkZeDS8Zw",
+      "tags": ["student", "lookup", "find student", "search student", "student profile", "learner lookup"]
+    },
+    {
+      "id": "KEGLHM8USdqqdFeT4g9UMw",
+      "tags": ["student", "lookup", "find student", "search student", "training center student"]
+    },
+    {
+      "id": "4Unbr-g_RLqNO30E0EWnXA",
+      "tags": ["reschedule", "reschedule student", "change class date", "move class", "postpone class"]
+    },
+    {
+      "id": "B7PyAU6TQSeHUN8f8UA9PQ",
+      "tags": ["register", "registration", "enroll student", "add student to class", "sign up student"]
+    },
+    {
+      "id": "1etima9PQiyxhluRSZC03g",
+      "tags": ["register", "registration", "enroll student", "add student to class", "training center"]
+    },
+    {
+      "id": "Dz0Owp5bQ6i9otCD-yx67g",
+      "tags": ["class", "roster", "class list", "session", "attendance"]
+    },
+    {
+      "id": "AxVJyp7KR-6jZfhxMqfXkQ",
+      "tags": ["class", "roster", "student communications", "my classes"]
+    },
+    {
+      "id": "NKUFTzQUQYKSZr8tF7WoHw",
+      "tags": ["register", "registration", "new organization", "sign up", "onboarding", "create account"]
+    },
+    {
+      "id": "abGBUl2KQu2Sp7uDF9G5IA",
+      "tags": ["organization", "profile", "company details", "update address", "account details"]
+    },
+    {
+      "id": "klW-3AxYQZq3KgYyq7BwLw",
+      "tags": ["organization", "organization management", "company account", "customer account"]
+    },
+    {
+      "id": "w1vB7T5jQU2Qi67UiCFpcw",
+      "tags": ["location", "locations", "add location", "site", "branch"]
+    },
+    {
+      "id": "fZnTJWrWRY-fjbAIv0WLog",
+      "tags": ["location", "locations", "site", "branch", "training center location"]
+    },
+    {
+      "id": "1HAYH_pKSOWZQ8LvgD345g",
+      "tags": ["invite", "bulk invite", "invite employees", "add learners", "csv invite", "import learners"]
+    },
+    {
+      "id": "WvkMEljHQ6OMGEUQYIASAg",
+      "tags": ["admin", "permissions", "role", "access level", "add administrator", "admin rights"]
+    },
+    {
+      "id": "Q0syA5kURqugxjVRNpVBbQ",
+      "tags": ["admin", "administrator", "admin users", "permissions", "role"]
+    },
+    {
+      "id": "Ttw-ucEJQhe83WiYG1ssqA",
+      "tags": ["report", "reports", "export", "export report", "csv", "download report"]
+    },
+    {
+      "id": "fo_XL-jGQf676G6R90DO_w",
+      "tags": ["certificate", "certificates", "template", "completion certificate", "design certificate"]
+    },
+    {
+      "id": "9e-xc5ojSqWEpNAH76aS8Q",
+      "tags": ["certificate", "share certificate", "download certificate", "completion record", "learner certificate"]
+    },
+    {
+      "id": "GH176qZqSay5J8SRMW5EKw",
+      "tags": ["refund", "refunds", "refund policy", "money back", "cancellation"]
+    },
+    {
+      "id": "F0TdJKmfSiGwByNPQX5Rsw",
+      "tags": ["refund", "refunds", "refund policy", "money back", "cancellation", "training center refund"]
+    },
+    {
+      "id": "PFulMgfqRPG7y3eHu5l61A",
+      "tags": ["health snapshot", "dashboard", "overview", "seats", "activity"]
+    },
+    {
+      "id": "V7jPzpx7RhypNUSHC5hQyQ",
+      "tags": ["subscription", "subscriptions", "seats", "renewal", "billing"]
+    },
+    {
+      "id": "NCYWZ96fS2ylDFCeY9CdYw",
+      "tags": ["learner", "learners", "organization learners", "manage learners", "add learners"]
+    },
+    {
+      "id": "UXaNRw7KR-6jZfhxMqfXkQ",
+      "tags": ["course", "courses", "course management", "learner courses"]
+    },
+    {
+      "id": "AzjHJzTzS4aamJTbMnh7zg",
+      "tags": ["training", "purchase", "buy training", "courses", "products"]
+    },
+    {
+      "id": "tzdiu8f8TZW95KOd54GKSw",
+      "tags": ["orders", "my orders", "order history", "review order"]
+    },
+    {
+      "id": "NSgJ4pQ2RCy7UsGsu0Qq9w",
+      "tags": ["search trainings", "purchase", "shop", "catalog", "products"]
+    },
+    {
+      "id": "mAaIZ_RoSe-imcvP9z84rg",
+      "tags": ["profile", "wallet", "my profile", "update profile", "safety wallet"]
+    },
+    {
+      "id": "B9UuxugjR-OPsLCB7Ohhog",
+      "tags": ["registration fields", "custom fields", "form fields", "add field"]
+    },
+    {
+      "id": "x_NEZIzOTR6iY8PHoX_Egg",
+      "tags": ["instructor", "instructors", "instructor management", "training center instructor"]
+    },
+    {
+      "id": "RWGv0AAhTsq8iyPBPjbrGw",
+      "tags": ["course", "course management", "training center course", "curriculum"]
+    },
+    {
+      "id": "reM1aIfdSWmmp_F4qglJwQ",
+      "tags": ["training center", "my training center", "center management"]
+    },
+    {
+      "id": "FZ7gJpVASeGmuB-e58PefA",
+      "tags": ["training center", "training centers", "centers list"]
+    },
+    {
+      "id": "76hUD2WnShWZM8Q1xyu27Q",
+      "tags": ["training material", "materials", "inventory", "order materials"]
+    },
+    {
+      "id": "SN5kZbFbR6GoLhxUHUutZQ",
+      "tags": ["resource library", "resources", "documents", "downloads"]
+    },
+    {
+      "id": "3k51_A75Qr66U0AN-ycDvg",
+      "tags": ["resource library", "resources", "documents", "downloads"]
+    },
+    {
+      "id": "SXBMfPxjQWu-UVYrk5L8Rg",
+      "tags": ["chapter", "chapters", "chapter management"]
+    },
+    {
+      "id": "ns1lqfjxSpCHT2kDveoIng",
+      "tags": ["chapter", "payment settings", "payroc", "merchant id", "chapter payment"]
+    },
+    {
+      "id": "diUcKbI9SX6V9o2TnsJXkg",
+      "tags": ["financials", "finance", "billing", "payments", "invoices"]
+    },
+    {
+      "id": "Yhxh8ExjTiKD3bm8Od7Uvg",
+      "tags": ["product", "products", "product management", "catalog"]
+    },
+    {
+      "id": "9dx2IL6jTRGAp0MUg4EFNw",
+      "tags": ["impersonate", "impersonation", "ddc", "skip"]
+    },
+    {
+      "id": "6HcVAkYUQFuVV83KazJqtg",
+      "tags": ["impersonate", "impersonation", "ti", "skip"]
+    },
+    {
+      "id": "VGqwbJVYT7mYAi2C3uDIkA",
+      "tags": ["move course", "retail learner", "transfer course", "different account"]
+    }
+  ]
+}
