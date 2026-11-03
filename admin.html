@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Guide Maintenance</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/admin.css" />
+  </head>
+  <body>
+    <!-- ---------- gate ---------- -->
+    <div id="gate" class="gate">
+      <canvas id="rain" class="gate-rain" aria-hidden="true"></canvas>
+      <form id="gate-form" class="gate-card" autocomplete="off">
+        <p class="gate-kicker">Restricted</p>
+        <h1 class="gate-title">BOB ONLY</h1>
+        <p class="gate-copy">Guide maintenance console. Enter the passphrase to continue.</p>
+
+        <label class="visually-hidden" for="gate-pass">Passphrase</label>
+        <input
+          id="gate-pass"
+          class="gate-input"
+          type="password"
+          inputmode="numeric"
+          autocomplete="off"
+          placeholder="passphrase"
+          aria-describedby="gate-error"
+        />
+
+        <button class="gate-button" type="submit">AUTHENTICATE</button>
+        <p id="gate-error" class="gate-error" role="alert" hidden>
+          Incorrect passphrase.
+        </p>
+      </form>
+    </div>
+
+    <!-- ---------- console ---------- -->
+    <div id="console" class="console" hidden>
+      <canvas id="rain2" class="console-rain" aria-hidden="true"></canvas>
+
+      <header class="bar">
+        <div class="bar-brand">
+          <span class="bar-dot" aria-hidden="true"></span>
+          <span class="bar-name">SOP::MAINTENANCE</span>
+        </div>
+        <div class="bar-meta">
+          <span id="conn" class="pill pill-idle">CHECKING LINK</span>
+          <button id="lock" class="bar-lock" type="button">LOCK</button>
+        </div>
+      </header>
+
+      <main class="grid">
+        <section class="panel panel-wide">
+          <h2 class="panel-title">PULL NEW SCRIBES</h2>
+          <p class="panel-copy">
+            Re-reads every Scribe hub page, adds guides that are new, refreshes ones
+            that changed, and keeps the current entry for any guide that fails.
+          </p>
+          <div class="panel-actions">
+            <button id="pull" class="pull" type="button">
+              <span class="pull-label">RUN PULL</span>
+            </button>
+            <label class="switch">
+              <input id="dry" type="checkbox" />
+              <span>dry run</span>
+            </label>
+            <label class="switch">
+              <input id="force" type="checkbox" checked />
+              <span>force refresh</span>
+            </label>
+          </div>
+          <p id="config-note" class="panel-note" hidden>
+            No run endpoint configured. Set <code>BOB_ENDPOINT</code> in
+            <code>assets/admin.js</code>, or use the GitHub link below.
+          </p>
+        </section>
+
+        <section class="panel">
+          <h2 class="panel-title">INDEX</h2>
+          <dl class="stats">
+            <div><dt>guides</dt><dd id="stat-guides">--</dd></div>
+            <div><dt>steps</dt><dd id="stat-steps">--</dd></div>
+            <div><dt>built</dt><dd id="stat-built">--</dd></div>
+            <div><dt>size</dt><dd id="stat-size">--</dd></div>
+          </dl>
+        </section>
+
+        <section class="panel">
+          <h2 class="panel-title">CATEGORIES</h2>
+          <ul id="cats" class="cats"></ul>
+        </section>
+
+        <section class="panel panel-wide">
+          <h2 class="panel-title">
+            RUN LOG
+            <button id="clear-log" class="mini" type="button">clear</button>
+          </h2>
+          <pre id="log" class="log" aria-live="polite"></pre>
+        </section>
+
+        <section class="panel panel-wide">
+          <h2 class="panel-title">DIRECT</h2>
+          <p class="panel-copy">
+            The button above needs the run service. These links always work with
+            your GitHub login.
+          </p>
+          <div class="panel-actions">
+            <a
+              id="gh-run"
+              class="mini-link"
+              href="https://github.com/NoJokeGit/nsc-sop-search/actions"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Actions &nearr;</a
+            >
+            <a
+              class="mini-link"
+              href="https://github.com/NoJokeGit/nsc-sop-search/commits/main"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Recent commits &nearr;</a
+            >
+            <a class="mini-link" href="./">Back to search</a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="assets/admin.js"></script>
+  </body>
+</html>

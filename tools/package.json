@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Build-time tooling for the NSC SOP search site. Not served to browsers.",
   "scripts": {
-    "test": "node --test test-search.mjs",
+    "test": "node --test test-search.mjs test-answers.mjs",
     "scrape": "node scrape.js"
   },
   "devDependencies": {

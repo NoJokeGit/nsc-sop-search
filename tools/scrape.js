@@ -43,7 +43,12 @@ const PATHS = {
   profile: join(here, ".browser-profile"),
 };
 
-const CHANNELS = ["msedge", "chrome"]; // Edge first: never default to Chrome.
+/**
+ * Browser preference. Edge first (never default to Chrome on Windows), then
+ * Chrome, then Playwright's bundled Chromium, which is all a Linux CI
+ * runner has available.
+ */
+const CHANNELS = ["msedge", "chrome", null];
 
 /**
  * Text scrubbed from every guide before it reaches the index.
@@ -238,13 +243,13 @@ async function launch(headful) {
   for (const channel of CHANNELS) {
     try {
       return await chromium.launchPersistentContext(PATHS.profile, {
-        channel,
+        ...(channel ? { channel } : {}),
         headless: !headful,
         viewport: { width: 1440, height: 1000 },
         args: ["--disable-blink-features=AutomationControlled"],
       });
     } catch (error) {
-      errors.push(`${channel}: ${error.message.split("\n")[0]}`);
+      errors.push(`${channel ?? "bundled chromium"}: ${error.message.split("\n")[0]}`);
     }
   }
   throw new Error(
@@ -478,17 +483,18 @@ async function harvest(page, guide, knownHash) {
   }
 
   const title = redact(cleanTitle(payload.title) || titleFromSlug(guide.slug));
-  // Flatten links so "Navigate to [https://x](https://y)" reads naturally.
-  const text = redact(
-    steps
-      .map((step) => step.text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1"))
-      .join(" "),
-  );
+  // Flatten markdown links so "Navigate to [https://x](https://y)" reads
+  // naturally, and scrub personal data from every step before it is stored.
+  const cleanSteps = steps.map((step) => ({
+    number: step.number,
+    text: redact(step.text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")),
+  }));
+  const text = cleanSteps.map((step) => step.text).join(" ");
   const hash = hashEntry(title, text);
 
   if (knownHash === hash) return { status: "unchanged", hash };
 
-  return { status: "ok", title, text, steps, hash, url: guide.url };
+  return { status: "ok", title, text, steps: cleanSteps, hash, url: guide.url };
 }
 
 /* ---------------- phase 3 ---------------- */
@@ -502,6 +508,9 @@ function buildEntry(guide, result, override) {
     tags,
     title: override?.title ?? result.title,
     text: result.text,
+    // Numbered steps are kept so the site can point at "step 7" rather than
+    // only quoting flattened prose.
+    steps: result.steps.map((step) => ({ n: step.number, t: step.text })),
   };
 }
 
@@ -598,7 +607,16 @@ async function readJson(path) {
 }
 
 async function writeProgress(data) {
-  await writeAtomic(PATHS.progress, { ...data, updated: new Date().toISOString() });
+  // Progress is cosmetic. On Windows a rename fails with EPERM while another
+  // process is reading the file, and that must never abort a scrape.
+  try {
+    await writeAtomic(PATHS.progress, {
+      ...data,
+      updated: new Date().toISOString(),
+    });
+  } catch {
+    // ignore
+  }
 }
 
 async function writeAtomic(path, data) {

@@ -1,5 +1,6 @@
 import { createEngine } from "./search.js";
 import { buildSnippetAll } from "./snippet.js";
+import { buildAnswer } from "./answers.js";
 
 const els = {
   input: document.getElementById("search-input"),
@@ -9,6 +10,9 @@ const els = {
   results: document.getElementById("results"),
   status: document.getElementById("status"),
   empty: document.getElementById("empty"),
+  answer: document.getElementById("answer"),
+  answerLink: document.getElementById("answer-link"),
+  answerSteps: document.getElementById("answer-steps"),
   suggestions: document.getElementById("suggestions"),
   suggestionChips: document.getElementById("suggestion-chips"),
   countAll: document.getElementById("count-all"),
@@ -196,6 +200,7 @@ function render() {
 
   state.results = results;
   setSelected(-1);
+  renderAnswer(query, results);
   renderResults(query, results);
   renderStatus(query, results);
   renderSuggestions(query, results);
@@ -218,6 +223,47 @@ function renderStatus(query, results) {
   }
 
   els.status.textContent = `${results.length} result${plural(results.length)} for \u201c${query}\u201d${scope}.`;
+}
+
+function renderAnswer(query, results) {
+  const answer =
+    query && !state.category
+      ? buildAnswer(query, results, state.synonyms)
+      : null;
+
+  if (!answer) {
+    els.answer.hidden = true;
+    els.answerSteps.replaceChildren();
+    return;
+  }
+
+  els.answerLink.textContent = answer.guide.title;
+  els.answerLink.href = answer.guide.url;
+
+  els.answerSteps.replaceChildren();
+  for (const step of answer.steps) {
+    const li = document.createElement("li");
+
+    const badge = document.createElement("span");
+    badge.className = "answer-step-n";
+    badge.setAttribute("aria-hidden", "true");
+    badge.textContent = String(step.n);
+
+    const text = document.createElement("span");
+    text.className = "answer-step-t";
+    text.textContent = step.t;
+
+    // Screen readers get the step number as words, not a bare digit.
+    const label = document.createElement("span");
+    label.className = "visually-hidden";
+    label.textContent = `Step ${step.n}: `;
+
+    li.append(badge, label, text);
+    li.setAttribute("aria-label", `Step ${step.n}: ${step.t}`);
+    els.answerSteps.append(li);
+  }
+
+  els.answer.hidden = false;
 }
 
 function renderResults(query, results) {

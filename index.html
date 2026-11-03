@@ -104,6 +104,19 @@
         aria-atomic="true"
       ></div>
 
+      <section id="answer" class="answer" hidden aria-labelledby="answer-title">
+        <div class="answer-head">
+          <p class="answer-kicker">Likely answer</p>
+          <h2 id="answer-title" class="answer-source">
+            <a id="answer-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+          </h2>
+        </div>
+        <ol id="answer-steps" class="answer-steps"></ol>
+        <p class="answer-note">
+          Steps quoted from the guide. Always check the full procedure before acting.
+        </p>
+      </section>
+
       <section id="suggestions" class="suggestions" hidden>
         <h2 class="suggestions-title">Did you mean</h2>
         <div id="suggestion-chips" class="chips"></div>
@@ -139,6 +152,11 @@
         </p>
       </div>
     </footer>
+
+    <a class="bob-dock" href="admin.html" title="Guide maintenance" aria-label="Open the guide maintenance dashboard">
+      <span class="bob-dock-dot" aria-hidden="true"></span>
+      BOB ONLY
+    </a>
 
     <script type="module" src="assets/app.js"></script>
   </body>

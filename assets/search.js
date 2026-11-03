@@ -403,9 +403,21 @@ function buildMatches(entry, candidates) {
   }
   if (!ranges.length) return [];
 
-  ranges.sort((a, b) => a[0] - b[0]);
+  // Snap each range out to whole words. A prefix match inside a longer word
+  // ("assign" in "Unassigned") otherwise paints a highlight that slices the
+  // word in half, which reads as a typo rather than an emphasis.
+  const isWordChar = (char) => /[A-Za-z0-9']/.test(char);
+  const snapped = ranges.map(([start, end]) => {
+    let left = start;
+    let right = end;
+    while (left > 0 && isWordChar(text[left - 1])) left--;
+    while (right < text.length - 1 && isWordChar(text[right + 1])) right++;
+    return [left, right];
+  });
+
+  snapped.sort((a, b) => a[0] - b[0]);
   const merged = [];
-  for (const range of ranges) {
+  for (const range of snapped) {
     const last = merged[merged.length - 1];
     if (last && range[0] <= last[1] + 1) {
       last[1] = Math.max(last[1], range[1]);

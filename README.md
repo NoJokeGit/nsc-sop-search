@@ -16,9 +16,12 @@ GitHub Pages.
 | Part | State |
 | --- | --- |
 | Home page, search, keyboard, empty states | Built |
-| Search test suite | Built, 44 checks passing |
+| Search test suite | Built, 56 checks passing |
 | `scrape.js` (Scribe → `search-index.json`) | Built, 50 guides, 0 failures |
 | Real guide data | Live in `data/search-index.json` |
+| Likely-answer panel | Built (quotes real steps, no model involved) |
+| Maintenance console | Built at `admin.html`, password-gated |
+| Scheduled refresh | Weekly, Fridays 14:00 UTC |
 
 The index is generated. Do not hand-edit `data/search-index.json`; edit
 `data/guides.json` (tags, category, title overrides) or `data/synonyms.json`
@@ -178,8 +181,12 @@ site. Details land in `tools/scrape-report.json`.
 
 ```bash
 cd tools
-node --test test-search.mjs
+npm test
 ```
+
+Two suites run: `test-search.mjs` (ranking quality, typos, categories) and
+`test-answers.mjs` (the likely-answer panel, including that it stays silent
+when unsure).
 
 No install needed — it uses Node's built-in test runner and imports the same
 `assets/search.js` the browser loads, so tests cannot drift from production.
@@ -214,6 +221,32 @@ All weights live in one place, `CONFIG` at the top of `assets/search.js`:
 | `minScore` | Results below this are dropped |
 
 Change one value at a time and re-run the tests.
+
+## Maintenance console (`admin.html`)
+
+A separate page, reached from the **BOB ONLY** button at the bottom-right of the
+search page. It shows index statistics, category counts, a run log, and a
+**RUN PULL** button that re-reads Scribe.
+
+The passphrase is `123`. **It is not real security** ? it lives in
+`assets/admin.js` and anyone can read it. What actually protects the run is the
+Cloudflare Worker holding a scoped GitHub token; see `worker/README.md`.
+
+If the Worker is not deployed, leave `endpoint` empty in `assets/admin.js`.
+The console still works and the DIRECT links let you trigger a run on GitHub.
+
+## Refresh schedule
+
+`.github/workflows/refresh-index.yml` runs:
+
+- **On demand** ? from the console, or Actions ? *Refresh guide index* ? *Run workflow*
+- **Every Friday at 14:00 UTC**
+
+Each run re-reads the hub pages, refreshes the index, runs both test suites, and
+commits `data/search-index.json` if anything changed. Pages then redeploys
+automatically.
+
+A guide that fails keeps its previous entry, so a bad run cannot empty the site.
 
 ## Publish to GitHub Pages
 

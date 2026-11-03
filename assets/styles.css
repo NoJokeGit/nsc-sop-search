@@ -19,16 +19,24 @@
   --accent: #f7941d;
   --ink: #0f0f0f;
   --ink-muted: #5b6670;
-  --surface: #ffffff;
-  --surface-tint: #f4f6f4;
-  --page: #fafafa;
-  --border: #d2d9de;
-  --border-soft: #e5e7eb;
+  --ink-placeholder: #857f74;
+  --surface: #fdfdfb;
+  --surface-tint: #f7f5ee;
+  --surface-sunken: #e4e1d8;
+  --page: #eceae3;
+  --border: #cdc7bd;
+  --border-soft: #ded8cc;
+  --border-hover: #b3ab9c;
   --focus: #0b63c5;
+  --badge-bg: #e8efdf;
+  --badge-border: #c9d8b8;
+  --badge-hover: #dbe7cc;
+  --highlight: #f7e6bd;
+  --note-bg: #f6ecd8;
   --radius: 12px;
   --radius-lg: 18px;
-  --shadow: 0 1px 2px rgba(16, 28, 36, 0.06), 0 8px 24px rgba(16, 28, 36, 0.07);
-  --shadow-lift: 0 2px 6px rgba(16, 28, 36, 0.08), 0 18px 40px rgba(16, 28, 36, 0.12);
+  --shadow: 0 1px 2px rgba(52, 44, 30, 0.07), 0 8px 24px rgba(52, 44, 30, 0.08);
+  --shadow-lift: 0 2px 6px rgba(52, 44, 30, 0.09), 0 18px 40px rgba(52, 44, 30, 0.13);
 }
 
 *,
@@ -80,7 +88,7 @@ body {
   z-index: 20;
   padding: 10px 16px;
   background: var(--navy);
-  color: #fff;
+  color: #ffffff;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
@@ -94,8 +102,8 @@ body {
 /* ---------- header ---------- */
 
 .site-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border-soft);
+  background: transparent;
+  border-bottom: 1px solid var(--border);
   padding: 40px 0 28px;
 }
 
@@ -158,11 +166,11 @@ h1 {
 }
 
 #search-input::placeholder {
-  color: #7a858e;
+  color: var(--ink-placeholder);
 }
 
 #search-input:hover {
-  border-color: #a9b6c0;
+  border-color: var(--border-hover);
 }
 
 #search-input:focus {
@@ -223,7 +231,7 @@ h1 {
   font-weight: 600;
   color: var(--navy);
   background: var(--surface-tint);
-  border: 1.5px solid var(--border-soft);
+  border: 1.5px solid var(--border);
   border-radius: 999px;
   cursor: pointer;
   transition:
@@ -233,12 +241,12 @@ h1 {
 }
 
 .tile:hover {
-  border-color: #a9b6c0;
-  background: #eef2ee;
+  border-color: var(--border-hover);
+  background: var(--surface);
 }
 
 .tile.is-active {
-  color: #fff;
+  color: #ffffff;
   background: var(--green);
   border-color: var(--green);
 }
@@ -297,14 +305,14 @@ main {
   font-size: 0.94rem;
   font-weight: 600;
   color: var(--green-dark);
-  background: #eaf4ee;
-  border: 1.5px solid #c6e0d0;
+  background: var(--badge-bg);
+  border: 1.5px solid var(--badge-border);
   border-radius: 999px;
   cursor: pointer;
 }
 
 .chip:hover {
-  background: #dcefe3;
+  background: var(--badge-hover);
   border-color: var(--green);
 }
 
@@ -333,7 +341,7 @@ main {
 }
 
 .result:hover {
-  border-color: #a9b6c0;
+  border-color: var(--border-hover);
   box-shadow: var(--shadow);
 }
 
@@ -379,7 +387,7 @@ main {
 mark {
   padding: 0 2px;
   color: var(--ink);
-  background: #fdf0d5;
+  background: var(--highlight);
   border-radius: 3px;
   font-weight: 650;
 }
@@ -392,9 +400,102 @@ mark {
   font-weight: 700;
   letter-spacing: 0.02em;
   color: var(--green-dark);
-  background: #eaf4ee;
-  border: 1px solid #c6e0d0;
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
   border-radius: 999px;
+}
+
+/* ---------- likely answer ---------- */
+
+.answer {
+  margin: 4px 0 22px;
+  padding: 20px 22px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--green);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.answer-kicker {
+  margin: 0 0 4px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+}
+
+.answer-source {
+  margin: 0 0 14px;
+  font-size: 1.06rem;
+  font-weight: 650;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+}
+
+.answer-source a {
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.answer-source a:hover {
+  text-decoration: underline;
+}
+
+.answer-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.answer-steps li {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.answer-step-n {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  background: var(--badge-bg);
+  border: 1px solid var(--badge-border);
+  border-radius: 50%;
+  font-variant-numeric: tabular-nums;
+}
+
+.answer-step-t {
+  font-size: 0.97rem;
+  line-height: 1.45;
+  color: var(--navy);
+  padding-top: 2px;
+}
+
+.answer-note {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+@media (max-width: 620px) {
+  .answer {
+    padding: 16px 16px 14px;
+  }
+
+  .answer-steps li {
+    grid-template-columns: 26px 1fr;
+    gap: 10px;
+  }
 }
 
 /* ---------- empty ---------- */
@@ -422,7 +523,7 @@ mark {
 
 .notice {
   padding: 16px;
-  background: #fff4e0;
+  background: var(--note-bg);
   border-radius: var(--radius);
 }
 
@@ -430,8 +531,8 @@ mark {
 
 .site-footer {
   padding: 26px 0 40px;
-  border-top: 1px solid var(--border-soft);
-  background: var(--surface);
+  border-top: 1px solid var(--border);
+  background: transparent;
 }
 
 .site-footer p {
@@ -493,5 +594,61 @@ mark {
 
   .result-open {
     font-size: 0.74rem;
+  }
+}
+
+/* ---------- maintenance dock ---------- */
+
+.bob-dock {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 10px 16px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #cfd8d0;
+  background: #17211c;
+  border: 1px solid #2c3a32;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px rgba(20, 28, 24, 0.28);
+  transition:
+    color 140ms ease,
+    border-color 140ms ease,
+    transform 140ms ease;
+}
+
+.bob-dock:hover {
+  color: #9df0b8;
+  border-color: #3f6b52;
+  transform: translateY(-1px);
+}
+
+.bob-dock-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 8px #4ade80;
+}
+
+@media (max-width: 620px) {
+  .bob-dock {
+    right: 12px;
+    bottom: 12px;
+    padding: 9px 13px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bob-dock {
+    transition: none;
   }
 }

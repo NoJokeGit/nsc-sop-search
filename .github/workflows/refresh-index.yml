@@ -1,0 +1,102 @@
+name: Refresh guide index
+
+# Re-reads the Scribe hub pages and commits the refreshed index. GitHub Pages
+# then redeploys automatically.
+#
+# Runs on demand (from the maintenance console, or the Actions tab) and every
+# Friday at 14:00 UTC.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-fetch every guide (ignore the change hash)"
+        type: boolean
+        default: true
+      dry_run:
+        description: "Discover only, do not write the index"
+        type: boolean
+        default: false
+      limit:
+        description: "Only process the first N guides (blank = all)"
+        type: string
+        required: false
+  schedule:
+    - cron: "0 14 * * 5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-index
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: tools/package-lock.json
+
+      - name: Install tooling
+        working-directory: tools
+        run: npm ci --no-audit --no-fund
+
+      # The scraper prefers Edge then Chrome. Runners have neither, so install
+      # the bundled Chromium that Playwright manages.
+      - name: Install Chromium
+        working-directory: tools
+        run: npx playwright install --with-deps chromium
+
+      - name: Discover guides
+        working-directory: tools
+        run: node scrape.js --dry-run
+
+      - name: Refresh index
+        if: ${{ inputs.dry_run != true }}
+        working-directory: tools
+        env:
+          SCRAPE_FORCE: ${{ inputs.force }}
+          SCRAPE_LIMIT: ${{ inputs.limit }}
+        run: |
+          ARGS=""
+          if [ "${SCRAPE_FORCE}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ -n "${SCRAPE_LIMIT}" ]; then ARGS="$ARGS --limit ${SCRAPE_LIMIT}"; fi
+          echo "running: node scrape.js ${ARGS}"
+          node scrape.js ${ARGS}
+
+      - name: Run search tests
+        if: ${{ inputs.dry_run != true }}
+        run: node --test tools/test-search.mjs tools/test-answers.mjs
+
+      - name: Commit refreshed index
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/search-index.json
+          if git diff --cached --quiet; then
+            echo "No guide changes."
+            exit 0
+          fi
+          COUNT=$(node -e "console.log(require('./data/search-index.json').guides.length)")
+          git commit -m "Refresh guide index (${COUNT} guides)"
+          git push
+
+      - name: Upload scrape report
+        if: ${{ always() && inputs.dry_run != true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: scrape-report
+          path: tools/scrape-report.json
+          if-no-files-found: ignore
+          retention-days: 14
