@@ -1,8 +1,12 @@
 # NSC Support SOP Search
 
+**Live: <https://nojokegit.github.io/nsc-sop-search/>**
+
 A single-page search layer over the National Safety Council customer support
 SOPs that live in Scribe. There are **no guide pages on this site** — clicking a
 result opens the original Scribe guide in a new tab.
+
+Share that URL with staff. It works on phones; there is nothing to install.
 
 Plain HTML, CSS and vanilla JavaScript. No backend, no build step, hosted on
 GitHub Pages.
