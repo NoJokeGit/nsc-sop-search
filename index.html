@@ -23,7 +23,61 @@
 
     <header class="site-header">
       <div class="wrap">
-        <p class="eyebrow">National Safety Council</p>
+        <div class="header-top">
+          <p class="eyebrow">National Safety Council</p>
+
+          <div class="admin-dock">
+            <button
+              id="admin-trigger"
+              class="admin-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="admin-pop"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-3.6 0-7 1.9-7 4.3V21h14v-2.7c0-2.4-3.4-4.3-7-4.3Z"
+                  fill="currentColor"
+                />
+              </svg>
+              Admin login
+            </button>
+
+            <div id="admin-pop" class="admin-pop" hidden>
+              <form id="admin-form" class="admin-form" autocomplete="off">
+                <label class="admin-label" for="admin-pass">Admin password</label>
+                <div class="admin-row">
+                  <input
+                    id="admin-pass"
+                    class="admin-input"
+                    type="password"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                    aria-describedby="admin-error"
+                  />
+                  <button class="admin-go" type="submit" aria-label="Sign in">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path
+                        d="M9 5l7 7-7 7"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <p id="admin-error" class="admin-error" role="alert" hidden>
+                  Incorrect password.
+                </p>
+              </form>
+              <span class="admin-caret" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+
         <h1>Support SOP Search</h1>
         <p class="lede">
           Find the right procedure while you are on the call. Results open the
@@ -152,44 +206,6 @@
         </p>
       </div>
     </footer>
-
-    <div class="admin-dock">
-      <div id="admin-pop" class="admin-pop" hidden>
-        <form id="admin-form" class="admin-form" autocomplete="off">
-          <label class="admin-label" for="admin-pass">Admin password</label>
-          <div class="admin-row">
-            <input
-              id="admin-pass"
-              class="admin-input"
-              type="password"
-              autocomplete="off"
-              autocapitalize="off"
-              spellcheck="false"
-              aria-describedby="admin-error"
-            />
-            <button class="admin-go" type="submit" aria-label="Sign in">
-              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
-          </div>
-          <p id="admin-error" class="admin-error" role="alert" hidden>
-            Incorrect password.
-          </p>
-        </form>
-        <span class="admin-caret" aria-hidden="true"></span>
-      </div>
-
-      <button
-        id="admin-trigger"
-        class="admin-trigger"
-        type="button"
-        aria-expanded="false"
-        aria-controls="admin-pop"
-      >
-        admin login
-      </button>
-    </div>
 
     <script type="module" src="assets/app.js"></script>
     <script type="module" src="assets/admin-gate.js"></script>

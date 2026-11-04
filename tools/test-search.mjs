@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -104,10 +105,30 @@ describe("no false positives", () => {
 
 describe("category filter", () => {
   it("filters results to one category", () => {
-    const results = engine.search("organization", { category: "NSC Admin" });
-    assert.ok(results.length > 0, "expected results inside NSC Admin");
+    const results = engine.search("organization", { category: "orgs" });
+    assert.ok(results.length > 0, "expected results inside Organizations & locations");
     for (const result of results) {
-      assert.equal(result.item.category, "NSC Admin");
+      assert.equal(result.item.category, "orgs");
+    }
+  });
+
+  it("every guide belongs to a declared category", () => {
+    const taxonomy = JSON.parse(
+      readFileSync(join(here, "../data/categories.json"), "utf8"),
+    );
+    const declared = new Set(taxonomy.categories.map((entry) => entry.id));
+    for (const guide of index.guides) {
+      assert.ok(
+        declared.has(guide.category),
+        `unknown category "${guide.category}" on ${guide.id}`,
+      );
+    }
+  });
+
+  it("badges carry a scope with no LMS name in it", () => {
+    for (const guide of index.guides) {
+      assert.ok(guide.scope, `missing scope on ${guide.id}`);
+      assert.doesNotMatch(guide.scope, /steve/i);
     }
   });
 });

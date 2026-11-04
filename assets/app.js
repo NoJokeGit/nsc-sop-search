@@ -23,6 +23,7 @@ const state = {
   engine: null,
   synonyms: [],
   category: "",
+  taxonomy: { categories: [] },
   query: "",
   results: [],
   selected: -1,
@@ -46,13 +47,15 @@ async function init() {
   });
 
   try {
-    const [index, synonyms] = await Promise.all([
+    const [index, synonyms, taxonomy] = await Promise.all([
       loadJson("data/search-index.json"),
       loadJson("data/synonyms.json").catch(() => ({ groups: [] })),
+      loadJson("data/categories.json").catch(() => ({ categories: [] })),
     ]);
 
     state.index = index.guides ?? index;
     state.synonyms = synonyms.groups ?? [];
+    state.taxonomy = taxonomy;
     state.engine = createEngine(state.index, state.synonyms);
 
     countCategories();
@@ -76,6 +79,12 @@ async function loadJson(path) {
 
 /* ---------------- categories ---------------- */
 
+/** Human name for a category id ("seats" -> "Seats & learners"). */
+function categoryName(id) {
+  const found = state.taxonomy.categories?.find((entry) => entry.id === id);
+  return found?.name ?? id;
+}
+
 function countCategories() {
   const counts = new Map();
   for (const entry of state.index) {
@@ -86,24 +95,27 @@ function countCategories() {
 }
 
 function renderCategoryTiles() {
-  const categories = [...state.counts.keys()].sort((a, b) =>
-    a.localeCompare(b),
-  );
+  // Ordered by the taxonomy so the tiles follow the task flow rather than the
+  // alphabet. Any category present in the data but missing from the taxonomy is
+  // appended so nothing becomes unreachable.
+  const declared = (state.taxonomy.categories ?? []).map((entry) => entry.id);
+  const extra = [...state.counts.keys()].filter((id) => !declared.includes(id));
+  const ordered = [...declared, ...extra].filter((id) => state.counts.has(id));
 
-  for (const category of categories) {
+  for (const id of ordered) {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "tile";
-    button.dataset.category = category;
+    button.dataset.category = id;
     button.setAttribute("aria-pressed", "false");
 
     const label = document.createElement("span");
     label.className = "tile-label";
-    label.textContent = category;
+    label.textContent = categoryName(id);
 
     const count = document.createElement("span");
     count.className = "tile-count";
-    count.textContent = String(state.counts.get(category));
+    count.textContent = String(state.counts.get(id));
 
     button.append(label, count);
     els.categories.append(button);
@@ -208,11 +220,11 @@ function render() {
 
 function renderStatus(query, results) {
   const total = state.index.length;
-  const scope = state.category ? ` in ${state.category}` : "";
+  const scope = state.category ? ` in ${categoryName(state.category)}` : "";
 
   if (!query) {
     els.status.textContent = state.category
-      ? `${results.length} guide${plural(results.length)} in ${state.category}.`
+      ? `${results.length} guide${plural(results.length)} in ${categoryName(state.category)}.`
       : `${total} guide${plural(total)}. Type to search, or pick a category.`;
     return;
   }
@@ -317,7 +329,7 @@ function renderResults(query, results) {
 
     const badge = document.createElement("span");
     badge.className = "badge";
-    badge.textContent = item.category;
+    badge.textContent = item.scope ?? categoryName(item.category);
 
     anchor.append(head, snippet, badge);
     li.append(anchor);

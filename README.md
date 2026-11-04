@@ -16,7 +16,7 @@ GitHub Pages.
 | Part | State |
 | --- | --- |
 | Home page, search, keyboard, empty states | Built |
-| Search test suite | Built, 56 checks passing |
+| Search test suite | Built, 58 checks passing |
 | `scrape.js` (Scribe → `search-index.json`) | Built, 50 guides, 0 failures |
 | Real guide data | Live in `data/search-index.json` |
 | Likely-answer panel | Built (quotes real steps, no model involved) |
@@ -107,6 +107,38 @@ Tags are weighted far above body text, so they are the main lever. Example:
 
 The `id` is the part after `__` in the Scribe viewer URL. To find it, search the
 current `data/search-index.json` for the title.
+
+## Categories
+
+Guides are filed by **what the caller is trying to do**, not by which Scribe hub
+page lists them. The six categories and their order live in
+`data/categories.json`:
+
+| id | Name |
+| --- | --- |
+| `access` | Signing in & access |
+| `seats` | Seats & learners |
+| `students` | Students & classes |
+| `courses` | Courses & materials |
+| `orders` | Orders, refunds & reports |
+| `orgs` | Organizations & locations |
+
+A guide's category is set per guide in `data/guides.json`:
+
+```json
+{ "id": "BqMRCe-tScu3EmM0EC1ayw", "category": "access" }
+```
+
+**A newly discovered guide** has no entry yet, so it falls back to
+`fallbackByHub` in `categories.json` ? a rough map from Scribe hub page to
+category. That keeps it reachable instead of hiding it in an "Other" bucket, but
+it is a guess: open `data/guides.json` and set the real category when you have a
+moment.
+
+The result badge shows the guide's **scope** ("Chapter", "Training center",
+"Organization", "Learner"), derived from the hub page it lives on. That detail
+survives the regrouping, and it is why the same procedure at different scopes
+stays distinguishable. The LMS name is never used.
 
 ## Update synonyms
 

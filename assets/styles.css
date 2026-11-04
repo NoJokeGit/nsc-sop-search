@@ -112,12 +112,20 @@ body {
 }
 
 .eyebrow {
-  margin: 0 0 6px;
+  margin: 0;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--green-dark);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 6px;
 }
 
 h1 {
@@ -604,62 +612,74 @@ mark {
 /* ---------- admin entry ---------- */
 
 .admin-dock {
-  position: fixed;
-  right: 16px;
-  bottom: 14px;
-  z-index: 40;
+  position: relative;
+  flex: 0 0 auto;
 }
 
+/* Reads as an ordinary, quiet login button rather than an admin control. */
 .admin-trigger {
-  display: block;
-  padding: 9px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 6px 14px;
   font: inherit;
-  font-size: 0.75rem;
+  font-size: 0.84rem;
+  font-weight: 500;
   line-height: 1;
   color: var(--ink-muted);
   background: transparent;
-  border: 0;
-  border-radius: 6px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
   cursor: pointer;
-  opacity: 0.62;
-  transition: opacity 140ms ease, color 140ms ease;
+  transition:
+    color 140ms ease,
+    border-color 140ms ease,
+    background-color 140ms ease;
+}
+
+.admin-trigger svg {
+  width: 15px;
+  height: 15px;
+  opacity: 0.8;
 }
 
 .admin-trigger:hover,
 .admin-trigger:focus-visible {
-  opacity: 1;
   color: var(--navy);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  border-color: var(--border-hover);
+  background: var(--surface);
 }
 
 .admin-trigger[aria-expanded="true"] {
-  opacity: 1;
   color: var(--navy);
+  border-color: var(--border-hover);
+  background: var(--surface);
 }
 
-/* The bubble sits above the link, anchored to its right edge. */
+/* The bubble hangs below the button, right-aligned to it. */
 .admin-pop {
   position: absolute;
   right: 0;
-  bottom: calc(100% + 8px);
-  width: 232px;
+  top: calc(100% + 9px);
+  width: 244px;
   padding: 12px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(52, 44, 30, 0.16);
+  box-shadow: 0 12px 32px rgba(52, 44, 30, 0.18);
+  z-index: 40;
 }
 
 .admin-caret {
   position: absolute;
-  right: 16px;
-  bottom: -5px;
+  right: 18px;
+  top: -5px;
   width: 9px;
   height: 9px;
   background: var(--surface);
-  border-right: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+  border-top: 1px solid var(--border);
   transform: rotate(45deg);
 }
 
@@ -736,18 +756,19 @@ mark {
 }
 
 @media (max-width: 620px) {
-  .admin-dock {
-    right: 10px;
-    bottom: 8px;
+  .header-top {
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .admin-trigger {
-    font-size: 0.72rem;
-    padding: 8px 9px;
+    min-height: 32px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
   }
 
   .admin-pop {
-    width: 218px;
+    width: min(244px, calc(100vw - 32px));
   }
 }
 

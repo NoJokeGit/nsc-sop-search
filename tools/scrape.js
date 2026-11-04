@@ -36,6 +36,7 @@ const root = join(here, "..");
 const PATHS = {
   sources: join(here, "sources.json"),
   overrides: join(root, "data", "guides.json"),
+  categories: join(root, "data", "categories.json"),
   index: join(root, "data", "search-index.json"),
   state: join(here, ".scrape-state.json"),
   report: join(here, "scrape-report.json"),
@@ -83,6 +84,7 @@ async function main() {
   const overrideById = new Map(
     (overrides.guides ?? []).map((guide) => [guide.id, guide]),
   );
+  const taxonomy = await readJson(PATHS.categories).catch(() => ({}));
 
   const previous = await readJson(PATHS.index).catch(() => ({ guides: [] }));
   const previousById = new Map(
@@ -163,7 +165,12 @@ async function main() {
         harvested.push(cached);
         status = "unchanged";
       } else if (result.status === "ok") {
-        const entry = buildEntry(guide, result, overrideById.get(guide.id));
+        const entry = buildEntry(
+          guide,
+          result,
+          overrideById.get(guide.id),
+          taxonomy,
+        );
         harvested.push(entry);
         state[guide.id] = result.hash;
         status = `${result.steps.length} steps`;
@@ -380,16 +387,20 @@ async function discover(page, pages) {
   }
 
   // The hub Pages overlap: a guide can sit on several. Attribute it to the page
-  // that lists the fewest guides, which is the most specific home for it.
+  // that lists the fewest guides, which is the most specific home for it. That
+  // home is the guide's "hub" (its scope); the task category is applied later
+  // from data/guides.json.
   const pageSizes = new Map(rows.map((row) => [row.category, row.found]));
   for (const guide of guides.values()) {
-    guide.category = [...guide.categories].sort((a, b) => {
+    guide.hub = [...guide.categories].sort((a, b) => {
       const sizeA = pageSizes.get(a) ?? Number.MAX_SAFE_INTEGER;
       const sizeB = pageSizes.get(b) ?? Number.MAX_SAFE_INTEGER;
       if (sizeA !== sizeB) return sizeA - sizeB;
       return a.localeCompare(b);
     })[0];
+    delete guide.categories;
   }
+
 
   return { pages: rows, guides: [...guides.values()], authRequired };
 }
@@ -499,12 +510,30 @@ async function harvest(page, guide, knownHash) {
 
 /* ---------------- phase 3 ---------------- */
 
-function buildEntry(guide, result, override) {
+function buildEntry(guide, result, override, taxonomy = {}) {
   const tags = Array.isArray(override?.tags) ? override.tags : [];
+
+  // A guide is filed by what the caller is trying to do, not by which Scribe
+  // hub page happens to list it. The per-guide category in guides.json wins;
+  // an unclassified guide falls back to a hub-based default so a new discovery
+  // is never dumped into an "Other" bucket.
+  const hub = guide.hub;
+  const category =
+    override?.category ??
+    taxonomy.fallbackByHub?.[hub] ??
+    "orgs";
+
+  // The badge keeps the specific scope, without repeating the LMS name.
+  const scope =
+    taxonomy.scopeLabels?.[hub] ??
+    String(hub ?? "").replace(/^STEVEs+/i, "");
+
   return {
     id: guide.id,
     url: guide.url,
-    category: override?.category ?? guide.category,
+    category,
+    scope,
+    hub,
     tags,
     title: override?.title ?? result.title,
     text: result.text,

@@ -1,0 +1,31 @@
+{
+  "_comment": "Task-based categories. A guide's category is set per-guide in data/guides.json; this file only defines the display order and the fallback used for a newly discovered guide before anyone has classified it.",
+  "categories": [
+    { "id": "access", "name": "Signing in & access" },
+    { "id": "seats", "name": "Seats & learners" },
+    { "id": "students", "name": "Students & classes" },
+    { "id": "courses", "name": "Courses & materials" },
+    { "id": "orders", "name": "Orders, refunds & reports" },
+    { "id": "orgs", "name": "Organizations & locations" }
+  ],
+  "fallbackByHub": {
+    "NSC Admin": "orgs",
+    "Company Administrator": "orgs",
+    "STEVE Chapter": "orgs",
+    "STEVE Training Center": "courses",
+    "STEVE Instructor": "students",
+    "STEVE Instructor Admin": "students",
+    "Company Learner": "access",
+    "Retail Learner": "orders"
+  },
+  "scopeLabels": {
+    "NSC Admin": "NSC",
+    "Company Administrator": "Organization",
+    "STEVE Chapter": "Chapter",
+    "STEVE Training Center": "Training center",
+    "STEVE Instructor": "Instructor",
+    "STEVE Instructor Admin": "Instructor admin",
+    "Company Learner": "Learner",
+    "Retail Learner": "Retail"
+  }
+}

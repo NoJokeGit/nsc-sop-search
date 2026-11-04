@@ -1,11 +1,13 @@
 {
-  "generated": "2026-11-04T00:25:02.249Z",
+  "generated": "2026-11-04T00:38:38.867Z",
   "count": 50,
   "guides": [
     {
       "id": "ns1lqfjxSpCHT2kDveoIng",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Accessing_Chapter_Payment_Settings_in_SafetyAtlas__ns1lqfjxSpCHT2kDveoIng",
-      "category": "STEVE Chapter",
+      "category": "orgs",
+      "scope": "Chapter",
+      "hub": "STEVE Chapter",
       "tags": [
         "chapter",
         "payment settings",
@@ -33,7 +35,9 @@
     {
       "id": "Q0syA5kURqugxjVRNpVBbQ",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Admin_Users_Management_TC__Q0syA5kURqugxjVRNpVBbQ",
-      "category": "STEVE Training Center",
+      "category": "access",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "admin",
         "administrator",
@@ -109,7 +113,9 @@
     {
       "id": "k-AzI85iTqKuncjNZ3m-FA",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Assign_Unassigned_Seats_in_SafetyAtlas__k-AzI85iTqKuncjNZ3m-FA",
-      "category": "Company Administrator",
+      "category": "seats",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "seat",
         "seats",
@@ -287,7 +293,9 @@
     {
       "id": "1HAYH_pKSOWZQ8LvgD345g",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Bulk_Invite_Employees_in_SafetyAtlas__1HAYH_pKSOWZQ8LvgD345g",
-      "category": "Company Administrator",
+      "category": "seats",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "invite",
         "bulk invite",
@@ -416,7 +424,9 @@
     {
       "id": "fo_XL-jGQf676G6R90DO_w",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Certificate_Configurator_CH__fo_XL-jGQf676G6R90DO_w",
-      "category": "STEVE Chapter",
+      "category": "orders",
+      "scope": "Chapter",
+      "hub": "STEVE Chapter",
       "tags": [
         "certificate",
         "certificates",
@@ -556,7 +566,9 @@
     {
       "id": "SXBMfPxjQWu-UVYrk5L8Rg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Chapter_Management__SXBMfPxjQWu-UVYrk5L8Rg",
-      "category": "NSC Admin",
+      "category": "orgs",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "chapter",
         "chapters",
@@ -614,7 +626,9 @@
     {
       "id": "Dz0Owp5bQ6i9otCD-yx67g",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Class_Management__Dz0Owp5bQ6i9otCD-yx67g",
-      "category": "STEVE Instructor Admin",
+      "category": "students",
+      "scope": "Instructor admin",
+      "hub": "STEVE Instructor Admin",
       "tags": [
         "class",
         "roster",
@@ -730,7 +744,9 @@
     {
       "id": "AxVJyp7KR-6jZfhxMqfXkQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Instuctor_Managing_Class_Enrollments_and_Student_Communications__AxVJyp7KR-6jZfhxMqfXkQ",
-      "category": "STEVE Instructor",
+      "category": "students",
+      "scope": "Instructor",
+      "hub": "STEVE Instructor",
       "tags": [
         "class",
         "roster",
@@ -901,7 +917,9 @@
     {
       "id": "RWGv0AAhTsq8iyPBPjbrGw",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Course_Management_TC__RWGv0AAhTsq8iyPBPjbrGw",
-      "category": "STEVE Training Center",
+      "category": "courses",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "course",
         "course management",
@@ -1048,7 +1066,9 @@
     {
       "id": "9dx2IL6jTRGAp0MUg4EFNw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/DDC_Impersonate_and_Skip__9dx2IL6jTRGAp0MUg4EFNw",
-      "category": "NSC Admin",
+      "category": "access",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "impersonate",
         "impersonation",
@@ -1127,7 +1147,9 @@
     {
       "id": "diUcKbI9SX6V9o2TnsJXkg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Financials__diUcKbI9SX6V9o2TnsJXkg",
-      "category": "NSC Admin",
+      "category": "orders",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "financials",
         "finance",
@@ -1211,7 +1233,9 @@
     {
       "id": "PFulMgfqRPG7y3eHu5l61A",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Health_Snapshot__PFulMgfqRPG7y3eHu5l61A",
-      "category": "Company Administrator",
+      "category": "orgs",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "health snapshot",
         "dashboard",
@@ -1243,7 +1267,9 @@
     {
       "id": "B9UuxugjR-OPsLCB7Ohhog",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Create_Organization_Registration_Fields__B9UuxugjR-OPsLCB7Ohhog",
-      "category": "Company Administrator",
+      "category": "orgs",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "registration fields",
         "custom fields",
@@ -1394,7 +1420,9 @@
     {
       "id": "Ttw-ucEJQhe83WiYG1ssqA",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Generate_And_Export_Organization_Reports__Ttw-ucEJQhe83WiYG1ssqA",
-      "category": "Company Administrator",
+      "category": "orders",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "report",
         "reports",
@@ -1511,7 +1539,9 @@
     {
       "id": "BqMRCe-tScu3EmM0EC1ayw",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Log_In_to_the_NSC_SafetyAtlas_Portal__BqMRCe-tScu3EmM0EC1ayw",
-      "category": "Company Learner",
+      "category": "access",
+      "scope": "Learner",
+      "hub": "Company Learner",
       "tags": [
         "login",
         "log in",
@@ -1584,7 +1614,9 @@
     {
       "id": "9e-xc5ojSqWEpNAH76aS8Q",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Manage_and_Share_Your_SafetyAtlas_Certificates__9e-xc5ojSqWEpNAH76aS8Q",
-      "category": "Company Learner",
+      "category": "orders",
+      "scope": "Learner",
+      "hub": "Company Learner",
       "tags": [
         "certificate",
         "share certificate",
@@ -1680,7 +1712,9 @@
     {
       "id": "AzjHJzTzS4aamJTbMnh7zg",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_To_Purchase_And_Manage_Training_For_Your_Organization__AzjHJzTzS4aamJTbMnh7zg",
-      "category": "Company Administrator",
+      "category": "orders",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "training",
         "purchase",
@@ -1832,7 +1866,9 @@
     {
       "id": "4Unbr-g_RLqNO30E0EWnXA",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_to_Reschedule_a_Students_Course__4Unbr-g_RLqNO30E0EWnXA",
-      "category": "NSC Admin",
+      "category": "students",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "reschedule",
         "reschedule student",
@@ -1872,7 +1908,9 @@
     {
       "id": "DyGrQCItQS6E2AFSAx0L3w",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_to_Reschedule_Seats_in_SafetyAtlas__DyGrQCItQS6E2AFSAx0L3w",
-      "category": "Company Administrator",
+      "category": "seats",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "seat",
         "reschedule seat",
@@ -1912,7 +1950,9 @@
     {
       "id": "tzdiu8f8TZW95KOd54GKSw",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Request_a_Refund_on_NSC_Safety_Atlas__tzdiu8f8TZW95KOd54GKSw",
-      "category": "Retail Learner",
+      "category": "orders",
+      "scope": "Retail",
+      "hub": "Retail Learner",
       "tags": [
         "orders",
         "my orders",
@@ -1971,7 +2011,9 @@
     {
       "id": "NSgJ4pQ2RCy7UsGsu0Qq9w",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Navigate_and_Purchase_Training_on_Safety_Atlas__NSgJ4pQ2RCy7UsGsu0Qq9w",
-      "category": "Retail Learner",
+      "category": "orders",
+      "scope": "Retail",
+      "hub": "Retail Learner",
       "tags": [
         "search trainings",
         "purchase",
@@ -2087,7 +2129,9 @@
     {
       "id": "oK7cZy6sTGKQjs9hmYdkWg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Unassign_A_User_From_A_Safety_Course__oK7cZy6sTGKQjs9hmYdkWg",
-      "category": "Company Administrator",
+      "category": "seats",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "unassign",
         "remove seat",
@@ -2142,7 +2186,9 @@
     {
       "id": "x_NEZIzOTR6iY8PHoX_Egg",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instructor_Management_TC__x_NEZIzOTR6iY8PHoX_Egg",
-      "category": "STEVE Training Center",
+      "category": "courses",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "instructor",
         "instructors",
@@ -2301,7 +2347,9 @@
     {
       "id": "AHR6TwY4R7-nx3G4Eo7BEg",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instuctor_Managing_Class_Enrollments_and_Student_Communications__AHR6TwY4R7-nx3G4Eo7BEg",
-      "category": "STEVE Instructor",
+      "category": "access",
+      "scope": "Instructor",
+      "hub": "STEVE Instructor",
       "tags": [
         "instructor login",
         "instructor profile",
@@ -2340,7 +2388,9 @@
     {
       "id": "fZnTJWrWRY-fjbAIv0WLog",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Location_Management__fZnTJWrWRY-fjbAIv0WLog",
-      "category": "STEVE Chapter",
+      "category": "orgs",
+      "scope": "Chapter",
+      "hub": "STEVE Chapter",
       "tags": [
         "location",
         "locations",
@@ -2536,7 +2586,9 @@
     {
       "id": "w1vB7T5jQU2Qi67UiCFpcw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Manage_Organization_Locations_in_SafetyAtlas__w1vB7T5jQU2Qi67UiCFpcw",
-      "category": "Company Administrator",
+      "category": "orgs",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "location",
         "locations",
@@ -2612,7 +2664,9 @@
     {
       "id": "WvkMEljHQ6OMGEUQYIASAg",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Managing_Organization_Admin_Permissions__WvkMEljHQ6OMGEUQYIASAg",
-      "category": "Company Administrator",
+      "category": "access",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "admin",
         "permissions",
@@ -2677,7 +2731,9 @@
     {
       "id": "I03H0gHMTIKnOxnXXQLU-w",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Move_Course_Seat_From_A_Retail_Accunt_To_An_Organization_Account__I03H0gHMTIKnOxnXXQLU-w",
-      "category": "NSC Admin",
+      "category": "seats",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "seat",
         "move seat",
@@ -2785,7 +2841,9 @@
     {
       "id": "VGqwbJVYT7mYAi2C3uDIkA",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Moving_Course_from_Retail_Learner_account_to_a_Different_Retail_Account__VGqwbJVYT7mYAi2C3uDIkA",
-      "category": "NSC Admin",
+      "category": "seats",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "move course",
         "retail learner",
@@ -2944,8 +3002,15 @@
     {
       "id": "UXaNRwS7Ty-5jdmDsifMOw",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Navigating_Course_Management_in_SafetyAtlas__UXaNRwS7Ty-5jdmDsifMOw",
-      "category": "Company Learner",
-      "tags": [],
+      "category": "courses",
+      "scope": "Learner",
+      "hub": "Company Learner",
+      "tags": [
+        "course",
+        "courses",
+        "course management",
+        "learner courses"
+      ],
       "title": "Navigating Course Management in SafetyAtlas",
       "text": "Login to <https://safetyatlas.nsc.org/> Click the Profile Icon The account menu opens, click on \"My Profile\" Click \"My Courses\" Courses are trainings that have been purchased/assigned to a learner/individual. Courses/Trainings that have been purchased but not started, can be viewed in the Enrolled section. First time access to the training is started by clicking \"Start Course\" Resume a course that has been started. Click the In Progress tab, then access the training by Clicking \"Start Course\" Pending is for courses that require an action by the course instructor. The course time has passed but the instructor has not logged the course attendance and/or scores. The Completed tab is where all courses that have been completed and passed are shown. Courses with a completion certificate will have \"View Certificate\" next to the courses title. When \"View Certificate\" is selected, a PDF version of the certificate appears. The Failed tab shows courses that were not successfully completed. \"Retake Course\" allows the learner to repurchase trainings that were Virtual or Classroom. The Expired tab shows all course that were purchased but access to the training has passed. \"Retake Course\" allows the learner to repurchase the course.",
       "steps": [
@@ -2994,7 +3059,9 @@
     {
       "id": "NCYWZ96fS2ylDFCeY9CdYw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Learner_Management__NCYWZ96fS2ylDFCeY9CdYw",
-      "category": "Company Administrator",
+      "category": "seats",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "learner",
         "learners",
@@ -3090,7 +3157,9 @@
     {
       "id": "klW-3AxYQZq3KgYyq7BwLw",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Organization_Management_CH__klW-3AxYQZq3KgYyq7BwLw",
-      "category": "STEVE Chapter",
+      "category": "orgs",
+      "scope": "Chapter",
+      "hub": "STEVE Chapter",
       "tags": [
         "organization",
         "organization management",
@@ -3581,7 +3650,9 @@
     {
       "id": "abGBUl2KQu2Sp7uDF9G5IA",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Organization_Profile_Details_in_Safety_Atlas__abGBUl2KQu2Sp7uDF9G5IA",
-      "category": "Company Administrator",
+      "category": "orgs",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "organization",
         "profile",
@@ -3697,7 +3768,9 @@
     {
       "id": "V7jPzpx7RhypNUSHC5hQyQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Subscription_Management__V7jPzpx7RhypNUSHC5hQyQ",
-      "category": "Company Administrator",
+      "category": "orders",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "subscription",
         "subscriptions",
@@ -3741,7 +3814,9 @@
     {
       "id": "Yhxh8ExjTiKD3bm8Od7Uvg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Product_Management__Yhxh8ExjTiKD3bm8Od7Uvg",
-      "category": "NSC Admin",
+      "category": "courses",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "product",
         "products",
@@ -3800,7 +3875,9 @@
     {
       "id": "NKUFTzQUQYKSZr8tF7WoHw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_An_Organization_in_SafetyAtlas__NKUFTzQUQYKSZr8tF7WoHw",
-      "category": "Company Administrator",
+      "category": "orgs",
+      "scope": "Organization",
+      "hub": "Company Administrator",
       "tags": [
         "register",
         "registration",
@@ -3921,7 +3998,9 @@
     {
       "id": "B7PyAU6TQSeHUN8f8UA9PQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_Students_for_Courses__B7PyAU6TQSeHUN8f8UA9PQ",
-      "category": "NSC Admin",
+      "category": "students",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "register",
         "registration",
@@ -4049,7 +4128,9 @@
     {
       "id": "1etima9PQiyxhluRSZC03g",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_Students_for_Courses_TC__1etima9PQiyxhluRSZC03g",
-      "category": "STEVE Training Center",
+      "category": "students",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "register",
         "registration",
@@ -4177,7 +4258,9 @@
     {
       "id": "SN5kZbFbR6GoLhxUHUutZQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Resource_Library_CH__SN5kZbFbR6GoLhxUHUutZQ",
-      "category": "STEVE Chapter",
+      "category": "courses",
+      "scope": "Chapter",
+      "hub": "STEVE Chapter",
       "tags": [
         "resource library",
         "resources",
@@ -4268,7 +4351,9 @@
     {
       "id": "3k51_A75Qr66U0AN-ycDvg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Resource_Library_NSC__3k51_A75Qr66U0AN-ycDvg",
-      "category": "NSC Admin",
+      "category": "courses",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "resource library",
         "resources",
@@ -4351,7 +4436,9 @@
     {
       "id": "6HcVAkYUQFuVV83KazJqtg",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/SafetyAtlas_TI_Impersonate_andSkip__6HcVAkYUQFuVV83KazJqtg",
-      "category": "NSC Admin",
+      "category": "access",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "impersonate",
         "impersonation",
@@ -4418,7 +4505,9 @@
     {
       "id": "I3EQgdY9RNykatzKqWf9sQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Managing_Course_Seats__I3EQgdY9RNykatzKqWf9sQ",
-      "category": "NSC Admin",
+      "category": "seats",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "seat",
         "inventory",
@@ -4539,7 +4628,9 @@
     {
       "id": "mTXBWA3BQxGzEqkZeDS8Zw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Student_Management__mTXBWA3BQxGzEqkZeDS8Zw",
-      "category": "NSC Admin",
+      "category": "students",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "student",
         "lookup",
@@ -4716,7 +4807,9 @@
     {
       "id": "KEGLHM8USdqqdFeT4g9UMw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Student_Management_TC__KEGLHM8USdqqdFeT4g9UMw",
-      "category": "STEVE Training Center",
+      "category": "students",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "student",
         "lookup",
@@ -4852,7 +4945,9 @@
     {
       "id": "reM1aIfdSWmmp_F4qglJwQ",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Training_Center_Management_TC__reM1aIfdSWmmp_F4qglJwQ",
-      "category": "STEVE Training Center",
+      "category": "courses",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "training center",
         "my training center",
@@ -4910,7 +5005,9 @@
     {
       "id": "FZ7gJpVASeGmuB-e58PefA",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Training_Centers_NSC__FZ7gJpVASeGmuB-e58PefA",
-      "category": "NSC Admin",
+      "category": "courses",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "training center",
         "training centers",
@@ -5024,7 +5121,9 @@
     {
       "id": "76hUD2WnShWZM8Q1xyu27Q",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Instructor_Managing_Training_Material_Orders_and_Inventory__76hUD2WnShWZM8Q1xyu27Q",
-      "category": "STEVE Instructor",
+      "category": "courses",
+      "scope": "Instructor",
+      "hub": "STEVE Instructor",
       "tags": [
         "training material",
         "materials",
@@ -5167,7 +5266,9 @@
     {
       "id": "mAaIZ_RoSe-imcvP9z84rg",
       "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Your_Safety_Wallet_Profile_Information__mAaIZ_RoSe-imcvP9z84rg",
-      "category": "Company Learner",
+      "category": "access",
+      "scope": "Learner",
+      "hub": "Company Learner",
       "tags": [
         "profile",
         "wallet",
@@ -5259,7 +5360,9 @@
     {
       "id": "GH176qZqSay5J8SRMW5EKw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/View_Refund_Policies_in_SafetyAtlas__GH176qZqSay5J8SRMW5EKw",
-      "category": "NSC Admin",
+      "category": "orders",
+      "scope": "NSC",
+      "hub": "NSC Admin",
       "tags": [
         "refund",
         "refunds",
@@ -5331,7 +5434,9 @@
     {
       "id": "F0TdJKmfSiGwByNPQX5Rsw",
       "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/View_Refund_Policies_in_SafetyAtlas_TC__F0TdJKmfSiGwByNPQX5Rsw",
-      "category": "STEVE Training Center",
+      "category": "orders",
+      "scope": "Training center",
+      "hub": "STEVE Training Center",
       "tags": [
         "refund",
         "refunds",
