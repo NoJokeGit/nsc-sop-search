@@ -153,11 +153,46 @@
       </div>
     </footer>
 
-    <a class="bob-dock" href="admin.html" title="Guide maintenance" aria-label="Open the guide maintenance dashboard">
-      <span class="bob-dock-dot" aria-hidden="true"></span>
-      BOB ONLY
-    </a>
+    <div class="admin-dock">
+      <div id="admin-pop" class="admin-pop" hidden>
+        <form id="admin-form" class="admin-form" autocomplete="off">
+          <label class="admin-label" for="admin-pass">Admin password</label>
+          <div class="admin-row">
+            <input
+              id="admin-pass"
+              class="admin-input"
+              type="password"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+              aria-describedby="admin-error"
+            />
+            <button class="admin-go" type="submit" aria-label="Sign in">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <p id="admin-error" class="admin-error" role="alert" hidden>
+            Incorrect password.
+          </p>
+        </form>
+        <span class="admin-caret" aria-hidden="true"></span>
+      </div>
+
+      <button
+        id="admin-trigger"
+        class="admin-trigger"
+        type="button"
+        aria-expanded="false"
+        aria-controls="admin-pop"
+      >
+        admin login
+      </button>
+    </div>
 
     <script type="module" src="assets/app.js"></script>
+    <script type="module" src="assets/admin-gate.js"></script>
+
   </body>
 </html>

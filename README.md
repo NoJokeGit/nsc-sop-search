@@ -21,6 +21,7 @@ GitHub Pages.
 | Real guide data | Live in `data/search-index.json` |
 | Likely-answer panel | Built (quotes real steps, no model involved) |
 | Maintenance console | Built at `admin.html`, password-gated |
+| Run service | Deployed: `sop-pull.nsc-sop-guide.workers.dev` |
 | Scheduled refresh | Weekly, Fridays 14:00 UTC |
 
 The index is generated. Do not hand-edit `data/search-index.json`; edit
@@ -224,16 +225,17 @@ Change one value at a time and re-run the tests.
 
 ## Maintenance console (`admin.html`)
 
-A separate page, reached from the **BOB ONLY** button at the bottom-right of the
-search page. It shows index statistics, category counts, a run log, and a
-**RUN PULL** button that re-reads Scribe.
+A low-key **admin login** link sits at the bottom-right of the search page.
+Clicking it opens a small password bubble; entering the password opens the
+console in a new page. The console shows index statistics, category counts, a run
+log, and a **RUN PULL** button that re-reads Scribe.
 
-The passphrase is `123`. **It is not real security** ? it lives in
-`assets/admin.js` and anyone can read it. What actually protects the run is the
-Cloudflare Worker holding a scoped GitHub token; see `worker/README.md`.
+The password is `Atlas123`. **It is not real security** — it lives in
+`assets/admin-gate.js` and anyone can read it. What actually protects the run is
+the Cloudflare Worker holding a scoped GitHub token; see `worker/README.md`.
 
-If the Worker is not deployed, leave `endpoint` empty in `assets/admin.js`.
-The console still works and the DIRECT links let you trigger a run on GitHub.
+If the Worker is not deployed, the console still works and the DIRECT links let
+you trigger a run on GitHub.
 
 ## Refresh schedule
 

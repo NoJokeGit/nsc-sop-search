@@ -13,3 +13,7 @@ tools/.browser-profile/
 tools/.scrape-state.json
 tools/.progress.json
 tools/scrape-report.json
+
+# Wrangler local cache (account ids, deploy metadata)
+.wrangler/
+worker/.wrangler/

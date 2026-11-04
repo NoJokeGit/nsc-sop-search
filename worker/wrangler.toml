@@ -1,0 +1,20 @@
+# Deploy configuration for the run service.
+#
+#   npx wrangler login
+#   npx wrangler deploy --config worker/wrangler.toml
+#
+# Secrets are NOT stored here. Set them once with:
+#   npx wrangler secret put GITHUB_TOKEN --config worker/wrangler.toml
+#   npx wrangler secret put BOB_PASS     --config worker/wrangler.toml
+
+name = "sop-pull"
+main = "bob-pull.js"
+compatibility_date = "2026-01-01"
+
+# No Durable Objects, no KV, no storage: three routes and a fetch.
+workers_dev = true
+
+[vars]
+# Comma-separated. Local development is included so the console can be tested
+# against the deployed Worker from 127.0.0.1.
+ALLOWED_ORIGIN = "https://nojokegit.github.io,http://127.0.0.1:8787,http://localhost:8787"

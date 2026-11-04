@@ -18,7 +18,17 @@ const WORKFLOW = "refresh-index.yml";
 
 export default {
   async fetch(request, env) {
-    const origin = env.ALLOWED_ORIGIN ?? "https://nojokegit.github.io";
+    // ALLOWED_ORIGIN accepts a comma-separated list so local development can
+    // call the deployed Worker without weakening production.
+    const allowed = (env.ALLOWED_ORIGIN ?? "https://nojokegit.github.io")
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean);
+
+    const requestOrigin = request.headers.get("origin") ?? "";
+    const origin = allowed.includes(requestOrigin)
+      ? requestOrigin
+      : allowed[0];
 
     const cors = {
       "access-control-allow-origin": origin,

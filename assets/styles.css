@@ -45,6 +45,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -597,58 +601,160 @@ mark {
   }
 }
 
-/* ---------- maintenance dock ---------- */
+/* ---------- admin entry ---------- */
 
-.bob-dock {
+.admin-dock {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
+  right: 16px;
+  bottom: 14px;
   z-index: 40;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  min-height: 44px;
-  padding: 10px 16px;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  color: #cfd8d0;
-  background: #17211c;
-  border: 1px solid #2c3a32;
-  border-radius: 999px;
-  box-shadow: 0 6px 20px rgba(20, 28, 24, 0.28);
-  transition:
-    color 140ms ease,
-    border-color 140ms ease,
-    transform 140ms ease;
 }
 
-.bob-dock:hover {
-  color: #9df0b8;
-  border-color: #3f6b52;
-  transform: translateY(-1px);
+.admin-trigger {
+  display: block;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: var(--ink-muted);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.62;
+  transition: opacity 140ms ease, color 140ms ease;
 }
 
-.bob-dock-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 8px #4ade80;
+.admin-trigger:hover,
+.admin-trigger:focus-visible {
+  opacity: 1;
+  color: var(--navy);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.admin-trigger[aria-expanded="true"] {
+  opacity: 1;
+  color: var(--navy);
+}
+
+/* The bubble sits above the link, anchored to its right edge. */
+.admin-pop {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  width: 232px;
+  padding: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(52, 44, 30, 0.16);
+}
+
+.admin-caret {
+  position: absolute;
+  right: 16px;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transform: rotate(45deg);
+}
+
+.admin-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-muted);
+}
+
+.admin-row {
+  display: flex;
+  gap: 6px;
+}
+
+.admin-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+}
+
+.admin-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(0, 132, 61, 0.14);
+}
+
+.admin-go {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: #ffffff;
+  background: var(--green);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-go:hover {
+  background: var(--green-dark);
+}
+
+.admin-go svg {
+  width: 17px;
+  height: 17px;
+}
+
+.admin-error {
+  margin: 8px 0 0;
+  font-size: 0.75rem;
+  color: #b4322c;
+}
+
+.admin-form.is-shaking {
+  animation: admin-shake 300ms ease;
+}
+
+@keyframes admin-shake {
+  0%,
+  100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
 }
 
 @media (max-width: 620px) {
-  .bob-dock {
-    right: 12px;
-    bottom: 12px;
-    padding: 9px 13px;
-    font-size: 0.7rem;
+  .admin-dock {
+    right: 10px;
+    bottom: 8px;
+  }
+
+  .admin-trigger {
+    font-size: 0.72rem;
+    padding: 8px 9px;
+  }
+
+  .admin-pop {
+    width: 218px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .bob-dock {
+  .admin-trigger,
+  .admin-form.is-shaking {
     transition: none;
+    animation: none;
   }
 }

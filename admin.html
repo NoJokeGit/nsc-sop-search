@@ -11,34 +11,30 @@
   <body>
     <!-- ---------- gate ---------- -->
     <div id="gate" class="gate">
-      <canvas id="rain" class="gate-rain" aria-hidden="true"></canvas>
       <form id="gate-form" class="gate-card" autocomplete="off">
         <p class="gate-kicker">Restricted</p>
-        <h1 class="gate-title">BOB ONLY</h1>
-        <p class="gate-copy">Guide maintenance console. Enter the passphrase to continue.</p>
+        <h1 class="gate-title">Guide maintenance</h1>
+        <p class="gate-copy">Enter the admin password to continue.</p>
 
         <label class="visually-hidden" for="gate-pass">Passphrase</label>
         <input
           id="gate-pass"
           class="gate-input"
           type="password"
-          inputmode="numeric"
           autocomplete="off"
-          placeholder="passphrase"
+          placeholder="password"
           aria-describedby="gate-error"
         />
 
-        <button class="gate-button" type="submit">AUTHENTICATE</button>
+        <button class="gate-button" type="submit">SIGN IN</button>
         <p id="gate-error" class="gate-error" role="alert" hidden>
-          Incorrect passphrase.
+          Incorrect password.
         </p>
       </form>
     </div>
 
     <!-- ---------- console ---------- -->
     <div id="console" class="console" hidden>
-      <canvas id="rain2" class="console-rain" aria-hidden="true"></canvas>
-
       <header class="bar">
         <div class="bar-brand">
           <span class="bar-dot" aria-hidden="true"></span>

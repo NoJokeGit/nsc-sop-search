@@ -10,8 +10,8 @@
 const CONFIG = {
   // Filled in once the Cloudflare Worker is deployed. Leave empty to hide the
   // run button and fall back to the direct GitHub links.
-  endpoint: "",
-  passphrase: "123",
+  endpoint: "https://sop-pull.nsc-sop-guide.workers.dev",
+  passphrase: "Atlas123",
   storageKey: "sop-admin-unlocked",
   pollMs: 5000,
 };
@@ -43,7 +43,6 @@ let running = false;
 init();
 
 function init() {
-  startRain("rain", 0.55);
   els.gateForm.addEventListener("submit", onSubmit);
   els.lock.addEventListener("click", lock);
   els.pull.addEventListener("click", onPull);
@@ -85,7 +84,6 @@ function onSubmit(event) {
 function unlock() {
   els.gate.hidden = true;
   els.console.hidden = false;
-  startRain("rain2", 0.5);
   log("console unlocked", "ok");
   loadIndex();
   checkLink();
@@ -282,57 +280,4 @@ function log(message, level) {
   line.textContent = `[${stamp}] ${message}\n`;
   els.log.append(line);
   els.log.scrollTop = els.log.scrollHeight;
-}
-
-/* ---------------- matrix rain ---------------- */
-
-function startRain(id, opacity) {
-  const canvas = document.getElementById(id);
-  if (!canvas) return;
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-  const ctx = canvas.getContext("2d");
-  const glyphs = "01ABCDEF<>{}[]/\\|=+*#$%&";
-  const font = 15;
-  let columns = 0;
-  let drops = [];
-  let raf = 0;
-
-  function size() {
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
-    columns = Math.floor(canvas.width / font);
-    drops = Array.from({ length: columns }, () =>
-      Math.floor(Math.random() * (canvas.height / font)),
-    );
-  }
-
-  function frame() {
-    ctx.fillStyle = `rgba(10, 15, 12, ${0.14 + (1 - opacity) * 0.1})`;
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.font = `${font}px ui-monospace, monospace`;
-    for (let i = 0; i < columns; i++) {
-      const char = glyphs[Math.floor(Math.random() * glyphs.length)];
-      const x = i * font;
-      const y = drops[i] * font;
-      ctx.fillStyle = Math.random() > 0.985 ? "#9df0b8" : "#4ade80";
-      ctx.fillText(char, x, y);
-      if (y > canvas.height && Math.random() > 0.975) drops[i] = 0;
-      drops[i]++;
-    }
-    raf = requestAnimationFrame(frame);
-  }
-
-  size();
-  frame();
-  window.addEventListener("resize", size);
-
-  // Stop when the page is hidden so an idle tab is not burning CPU.
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) {
-      cancelAnimationFrame(raf);
-    } else {
-      raf = requestAnimationFrame(frame);
-    }
-  });
 }
