@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "Build-time tooling for the NSC SOP search site. Not served to browsers.",
+  "description": "Scraper and tests for the SOP search site.",
   "scripts": {
     "test": "node --test test-search.mjs test-answers.mjs",
     "scrape": "node scrape.js"

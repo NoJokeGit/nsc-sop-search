@@ -1,5 +1,5 @@
-/* Maintenance console. Deliberately dark and terminal-flavoured, and kept in
-   its own file so none of it loads for people using the search page. */
+/* Maintenance console. Kept in its own file so none of it loads for people
+   using the search page. */
 
 :root {
   --bg: #0a0f0c;

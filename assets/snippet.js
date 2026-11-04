@@ -1,12 +1,8 @@
 const SNIPPET_LENGTH = 150;
 const LEAD = 46;
 
-/**
- * Build a safe snippet around the best match in a field.
- *
- * Returns plain segments: [{ text, match }]. The caller inserts them with
- * textContent / createElement, so scraped text is never parsed as HTML.
- */
+// Snippet around the best hit in a field. Returns [{ text, match }] segments
+// so the caller can build nodes directly instead of injecting HTML.
 export function buildSnippet(text, matches = []) {
   const source = String(text ?? "").replace(/\s+/g, " ").trim();
   if (!source) return [];
@@ -24,7 +20,7 @@ export function buildSnippet(text, matches = []) {
     );
   }
 
-  // No match on the body text (title/tag hit). Show the opening of the text.
+  // Matched on title or tag, so just show the start of the body.
   const end = Math.min(source.length, SNIPPET_LENGTH);
   const segments = [{ text: source.slice(0, end), match: false }];
   if (end < source.length) segments.push({ text: "\u2026", match: false });
@@ -74,10 +70,7 @@ function withHighlights(window, offset, ranges, hasLead, hasTail) {
   return segments.filter((segment) => segment.text.length > 0);
 }
 
-/**
- * Build a snippet for a multi-range highlight across the whole window.
- * Used when a query matches several terms inside the body text.
- */
+// Same idea, but when several query words hit inside the body text.
 export function buildSnippetAll(text, matches = []) {
   const source = String(text ?? "").replace(/\s+/g, " ").trim();
   if (!source) return [];

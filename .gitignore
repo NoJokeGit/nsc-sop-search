@@ -17,3 +17,8 @@ tools/scrape-report.json
 # Wrangler local cache (account ids, deploy metadata)
 .wrangler/
 worker/.wrangler/
+
+# Local docs, kept off the public repo
+README.md
+NOTES.md
+worker/README.md

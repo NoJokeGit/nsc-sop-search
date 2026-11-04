@@ -13,19 +13,14 @@ async function loadJson(relative) {
   return JSON.parse(await readFile(join(here, relative), "utf8"));
 }
 
-/**
- * Each case is a phrase a support agent or a caller might use, and the guide(s)
- * that should come back first. Real guide titles are used, so this suite fails
- * if the scrape drops a guide or changes a title.
- *
- * More than one accepted title is used only where two SOPs genuinely cover the
- * same request.
- */
+// Phrase someone might actually say, and the guide that should come back first.
+// Titles are real, so this fails if a scrape drops or renames a guide. Where two
+// SOPs cover the same request, either is accepted.
 const CASES = [
   // --- sign-in and passwords ------------------------------------------
   { q: "cant log in", want: ["How to Log In to the NSC SafetyAtlas Portal"] },
   { q: "can't log in", want: ["How to Log In to the NSC SafetyAtlas Portal"] },
-  // "login" alone is genuinely ambiguous: two different login SOPs exist.
+  // Ambiguous on purpose: two different login SOPs exist.
   { q: "login", want: ["How to Log In to the NSC SafetyAtlas Portal", "Instuctor Login and Profile"] },
   { q: "sign in problem", want: ["How to Log In to the NSC SafetyAtlas Portal"] },
   { q: "log in to portal", want: ["How to Log In to the NSC SafetyAtlas Portal"] },

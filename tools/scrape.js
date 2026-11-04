@@ -1,28 +1,11 @@
 #!/usr/bin/env node
-/**
- * Build data/search-index.json from the Scribe hub Pages listed in sources.json.
- *
- * How it works:
- *   1. Discover - open each hub Page and read the guide URLs out of its
- *      __NEXT_DATA__ payload.
- *   2. Harvest  - fetch each guide's HTML and read the server-rendered step
- *      list straight out of the markup. Scribe renders every step into the
- *      document, so no scrolling or waiting for lazy content is needed.
- *   3. Merge    - upsert into search-index.json. A guide that fails keeps its
- *      previous entry; a guide that returns nothing never replaces a good one.
- *
- * Progress is written to tools/.progress.json on every guide, and printed to
- * the console with a live counter, so a long run is never a silent wait.
- *
- * Usage:
- *   node scrape.js                 # incremental (skips unchanged guides)
- *   node scrape.js --force         # re-fetch everything
- *   node scrape.js --headful       # visible browser (debugging)
- *   node scrape.js --only <text>   # only guides whose slug matches <text>
- *   node scrape.js --limit 5       # stop after N guides (smoke test)
- *   node scrape.js --dry-run       # discover + report, write nothing
- *   node scrape.js --login         # open a browser to sign in, then exit
- */
+// Rebuilds data/search-index.json from the hub Pages in sources.json.
+//
+// discover: read the guide URLs out of each hub page's __NEXT_DATA__ payload
+// harvest:  fetch each guide and pull the steps out of the server-rendered HTML
+// merge:    upsert, keeping the old entry whenever a guide fails
+//
+// Flags: --force, --headful, --only <text>, --limit N, --dry-run, --login
 
 import { chromium } from "playwright";
 import { createHash } from "node:crypto";
@@ -44,26 +27,18 @@ const PATHS = {
   profile: join(here, ".browser-profile"),
 };
 
-/**
- * Browser preference. Edge first (never default to Chrome on Windows), then
- * Chrome, then Playwright's bundled Chromium, which is all a Linux CI
- * runner has available.
- */
+// Edge first. Chrome is the fallback, then bundled Chromium, which is all a
+// Linux CI runner has.
 const CHANNELS = ["msedge", "chrome", null];
 
-/**
- * Text scrubbed from every guide before it reaches the index.
- *
- * The site is published publicly, so real people's details must not ship. Keep
- * this list to personal data only -- internal hostnames are kept because the
- * steps are unusable without them.
- */
+// Scrubbed from every guide before it reaches the index. Personal data only.
+// Internal hostnames stay, because the steps are useless without them.
 const REDACTIONS = [
-  // Real staff names and addresses that appear as examples inside Scribe steps.
+  // Staff names and addresses used as examples inside the steps.
   [/\bChance McLain\b/g, "an example learner"],
   [/\b[A-Za-z0-9._%+-]+@nsc\.org\b/gi, (match) =>
     /^no-?reply@/i.test(match) ? match : "example@nsc.org"],
-  // Test mailboxes used while the guides were written.
+  // Test mailboxes from when the guides were written.
   [/\b[A-Za-z0-9._%+-]+@yopmail\.com\b/gi, "test@example.com"],
 ];
 
@@ -156,7 +131,7 @@ async function main() {
       const cached = previousById.get(guide.id);
       const label = `${String(index + 1).padStart(3)}/${targets.length}`;
 
-      // --force ignores the cached hash so categories and overrides can change.
+      // --force skips the hash check so category and tag edits take effect.
       const knownHash = args.force ? null : state[guide.id];
       const result = await harvest(page, guide, knownHash);
 
@@ -200,8 +175,7 @@ async function main() {
 
     // ---------- phase 3: merge ----------
     console.log("\nPhase 3/3  writing index");
-    // A partial run (--limit / --only) must not delete guides it did not look
-    // at. A full run is authoritative, so anything absent is gone.
+    // --limit and --only must not delete guides they never looked at.
     const preserveMissing = Boolean(args.limit || args.only);
     const merged = mergeIndex(harvested, previousById, preserveMissing);
 
@@ -244,7 +218,7 @@ async function main() {
 
 /* ---------------- browser ---------------- */
 
-/** Returns a BrowserContext backed by the persistent profile. */
+// BrowserContext on the saved profile, so a login survives between runs.
 async function launch(headful) {
   const errors = [];
   for (const channel of CHANNELS) {
@@ -386,10 +360,8 @@ async function discover(page, pages) {
     });
   }
 
-  // The hub Pages overlap: a guide can sit on several. Attribute it to the page
-  // that lists the fewest guides, which is the most specific home for it. That
-  // home is the guide's "hub" (its scope); the task category is applied later
-  // from data/guides.json.
+  // A guide can appear on several hub pages. Take the page listing the fewest,
+  // which is the most specific. That is the scope; the category comes later.
   const pageSizes = new Map(rows.map((row) => [row.category, row.found]));
   for (const guide of guides.values()) {
     guide.hub = [...guide.categories].sort((a, b) => {
@@ -417,11 +389,8 @@ function parseGuideUrl(url) {
 
 /* ---------------- phase 2 ---------------- */
 
-/**
- * Read one guide. Scribe renders every step into the server response as a
- * [data-testid="action-instruction"] block, so a single fetch is enough --
- * no scrolling, no lazy loading, no waiting.
- */
+// Read one guide. Scribe puts every step in the server response as an
+// action-instruction block, so one fetch gets the lot. No scrolling needed.
 async function harvest(page, guide, knownHash) {
   let payload;
   try {
@@ -494,8 +463,7 @@ async function harvest(page, guide, knownHash) {
   }
 
   const title = redact(cleanTitle(payload.title) || titleFromSlug(guide.slug));
-  // Flatten markdown links so "Navigate to [https://x](https://y)" reads
-  // naturally, and scrub personal data from every step before it is stored.
+  // Flatten markdown links so the text reads normally, and scrub PII.
   const cleanSteps = steps.map((step) => ({
     number: step.number,
     text: redact(step.text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, "$1")),
@@ -513,17 +481,15 @@ async function harvest(page, guide, knownHash) {
 function buildEntry(guide, result, override, taxonomy = {}) {
   const tags = Array.isArray(override?.tags) ? override.tags : [];
 
-  // A guide is filed by what the caller is trying to do, not by which Scribe
-  // hub page happens to list it. The per-guide category in guides.json wins;
-  // an unclassified guide falls back to a hub-based default so a new discovery
-  // is never dumped into an "Other" bucket.
+  // Category comes from guides.json. A guide nobody has classified yet falls
+  // back to a hub default, so new ones still land somewhere sensible.
   const hub = guide.hub;
   const category =
     override?.category ??
     taxonomy.fallbackByHub?.[hub] ??
     "orgs";
 
-  // The badge keeps the specific scope, without repeating the LMS name.
+  // Badge text. The scope, not the LMS name.
   const scope =
     taxonomy.scopeLabels?.[hub] ??
     String(hub ?? "").replace(/^STEVEs+/i, "");
@@ -537,8 +503,7 @@ function buildEntry(guide, result, override, taxonomy = {}) {
     tags,
     title: override?.title ?? result.title,
     text: result.text,
-    // Numbered steps are kept so the site can point at "step 7" rather than
-    // only quoting flattened prose.
+    // Kept so the site can say step 7 instead of only quoting flat text.
     steps: result.steps.map((step) => ({ n: step.number, t: step.text })),
   };
 }
@@ -600,7 +565,7 @@ function isAuthUrl(url) {
   );
 }
 
-/** Apply every rule in REDACTIONS to a string. */
+// Run every redaction rule over a string.
 function redact(value) {
   let output = String(value ?? "");
   for (const [pattern, replacement] of REDACTIONS) {
@@ -636,8 +601,8 @@ async function readJson(path) {
 }
 
 async function writeProgress(data) {
-  // Progress is cosmetic. On Windows a rename fails with EPERM while another
-  // process is reading the file, and that must never abort a scrape.
+  // Cosmetic. On Windows the rename can fail while something else has the file
+  // open, and that should never kill a run.
   try {
     await writeAtomic(PATHS.progress, {
       ...data,

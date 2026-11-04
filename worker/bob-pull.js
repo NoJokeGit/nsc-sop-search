@@ -1,16 +1,10 @@
-/**
- * Cloudflare Worker: button bridge for the maintenance console.
- *
- * The static site cannot trigger GitHub Actions by itself, so this tiny proxy
- * holds a fine-grained token and dispatches the workflow. No AI, no data
- * processing, no storage — three routes and nothing else.
- *
- * Deploy: see worker/README.md. Required secrets:
- *   GITHUB_TOKEN  fine-grained PAT, Actions: read and write, this repo only
- *   BOB_PASS      the passphrase the console sends
- * Optional vars:
- *   ALLOWED_ORIGIN  defaults to https://nojokegit.github.io
- */
+// Small proxy for the console's pull button. Static pages can't trigger Actions
+// on their own, so this holds the token and does it.
+//
+// Secrets: GITHUB_TOKEN (fine-grained, Actions read+write, this repo only)
+//          BOB_PASS     (must match the console password)
+// Vars:    ALLOWED_ORIGIN (comma-separated)
+
 
 const OWNER = "NoJokeGit";
 const REPO = "nsc-sop-search";
@@ -18,8 +12,7 @@ const WORKFLOW = "refresh-index.yml";
 
 export default {
   async fetch(request, env) {
-    // ALLOWED_ORIGIN accepts a comma-separated list so local development can
-    // call the deployed Worker without weakening production.
+    // Comma-separated so localhost can call a deployed Worker.
     const allowed = (env.ALLOWED_ORIGIN ?? "https://nojokegit.github.io")
       .split(",")
       .map((value) => value.trim())
@@ -128,7 +121,7 @@ async function dispatch(env, inputs) {
     throw new Error(`dispatch failed (${response.status}): ${detail.slice(0, 160)}`);
   }
 
-  // The dispatch endpoint returns nothing, so read the newest run back.
+  // Dispatch returns nothing, so read the newest run back.
   await new Promise((resolve) => setTimeout(resolve, 1500));
   const latest = await latestRun(env).catch(() => null);
   return {

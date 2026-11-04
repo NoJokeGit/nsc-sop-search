@@ -1,11 +1,5 @@
-/**
- * Step-level answers.
- *
- * Given a query and the guide the search engine ranked first, find the steps
- * inside that guide which actually address the question. This is deliberately
- * not a language model: it only ever quotes real steps, so it cannot invent a
- * procedure. When it is unsure it returns nothing and the caller stays quiet.
- */
+// Pulls the matching steps out of whichever guide ranked first. Quotes the
+// steps verbatim and gives up quietly when nothing lines up well enough.
 
 const STOPWORDS = new Set([
   "a", "an", "the", "to", "of", "in", "on", "for", "and", "or", "is", "it",
@@ -18,17 +12,17 @@ const STOPWORDS = new Set([
   "about", "would", "should", "could", "some", "any", "all", "just", "also",
 ]);
 
-/** Tunables. Raising these makes answers rarer but more trustworthy. */
+// Raise these and answers get rarer but safer.
 export const ANSWER_CONFIG = {
-  /** Minimum words in the raw query before an answer is attempted at all. */
+  // A single word is too vague to quote steps at.
   minQueryWords: 2,
-  /** The top-ranked guide must be at least this strong (0..1, higher = better). */
+  // How confident the search has to be before we quote anything.
   minGuideConfidence: 0.3,
-  /** Steps in the chosen window. */
+  // Show at most this many steps.
   windowSize: 3,
-  /** At least this many steps in the window must match something. */
+  // Fewer than this and it isn't really an answer.
   minMatchingSteps: 2,
-  /** Minimum share of query concepts a step must hit to count as a match. */
+  // How much of the query one step has to cover.
   minStepScore: 0.34,
 };
 
@@ -44,10 +38,8 @@ function words(value) {
   return normalize(value).split(" ").filter(Boolean);
 }
 
-/**
- * Turn a query into concept groups. Each group is a set of interchangeable
- * words, so "log in" and "sign in" count as one concept rather than two.
- */
+// Splits the query into concepts. A synonym group counts once, so log in and
+// sign in don't get treated as two separate things.
 function buildConcepts(query, synonymGroups = []) {
   const raw = words(query).filter((word) => word.length > 1);
   const groups = synonymGroups.map((group) => group.map(normalize));
@@ -57,8 +49,7 @@ function buildConcepts(query, synonymGroups = []) {
   const consumedWords = new Set();
   const haystackQuery = normalize(query);
 
-  // Multi-word phrases first, longest first, so "cant log in" is one concept
-  // and its shorter sibling "log in" does not get counted again.
+  // Longest phrase first, so cant log in doesn't also get counted as log in.
   const phraseCandidates = [];
   for (const group of groups) {
     for (const phrase of group) {
@@ -71,7 +62,7 @@ function buildConcepts(query, synonymGroups = []) {
 
   for (const { group, phrase } of phraseCandidates) {
     if (usedGroups.has(group[0])) continue;
-    // Skip a phrase whose words are already fully covered by a longer match.
+    // Already covered by a longer match.
     const words_ = phrase.split(" ");
     if (words_.every((word) => consumedWords.has(word))) continue;
     usedGroups.add(group[0]);
@@ -80,8 +71,7 @@ function buildConcepts(query, synonymGroups = []) {
   }
 
   for (const word of raw) {
-    // A word that was already part of a matched phrase must not become its own
-    // concept, or it silently multiplies the denominator.
+    // Words used by a matched phrase don't get a second turn.
     if (consumedWords.has(word)) continue;
     if (STOPWORDS.has(word)) continue;
 
@@ -99,7 +89,7 @@ function buildConcepts(query, synonymGroups = []) {
   return concepts;
 }
 
-/** Prefix rule shared with the search: short words must match whole. */
+// Same prefix rule as search.js.
 function contains(haystack, term) {
   const padded = ` ${haystack} `;
   if (term.includes(" ")) return padded.includes(` ${term}`);
@@ -121,12 +111,8 @@ function scoreStep(stepText, concepts) {
   };
 }
 
-/**
- * Build an answer for a query given ranked search results.
- *
- * Returns null far more often than not, by design: a wrong procedure is worse
- * than no answer on a live call.
- */
+// Returns null most of the time. Someone on a call is better off with no answer
+// than a wrong one.
 export function buildAnswer(query, results, synonymGroups = []) {
   if (words(query).filter((word) => word.length > 1).length < ANSWER_CONFIG.minQueryWords) {
     return null;
@@ -141,9 +127,8 @@ export function buildAnswer(query, results, synonymGroups = []) {
 
   const concepts = buildConcepts(query, synonymGroups);
   if (!concepts.length) return null;
-  // One concept is allowed (for example "export report", where both words are
-  // the same synonym group), but then every shown step must actually contain
-  // it, so a bare one-word hit cannot drag in unrelated steps.
+  // One concept is fine when both words are the same group (export report),
+  // but then the step has to actually contain it.
   const strictSingle = concepts.length === 1;
 
   const steps = top.item.steps;
@@ -153,8 +138,7 @@ export function buildAnswer(query, results, synonymGroups = []) {
     ...scoreStep(step.t, concepts),
   }));
 
-  // Find the window of consecutive steps with the highest total score. Reading
-  // a contiguous run gives an answer that makes sense in order.
+  // Look for a run of consecutive steps. Jumps around the guide don't read well.
   let bestScore = -1;
   let bestIndex = -1;
   for (let i = 0; i <= scored.length - 2; i++) {
@@ -175,13 +159,12 @@ export function buildAnswer(query, results, synonymGroups = []) {
     .filter((step) => step.score > 0);
 
   if (window.length < ANSWER_CONFIG.minMatchingSteps) return null;
-  // The best step must clear the bar, or this is just noise that happens to sit
-  // next to a match.
+  // If the strongest step is weak this is just noise sitting next to a match.
   const floor = strictSingle ? 0.99 : ANSWER_CONFIG.minStepScore;
   if (Math.max(...window.map((step) => step.score)) < floor) return null;
 
   return { guide: top.item, steps: window };
 }
 
-/** Exposed for the test suite. */
+// Used by the tests.
 export { buildConcepts, scoreStep };

@@ -38,8 +38,7 @@ async function init() {
   els.clear.addEventListener("click", clearSearch);
   els.categories.addEventListener("click", onCategoryClick);
 
-  // Keep typed text when the browser restores focus, but never steal focus
-  // from a user who has already clicked elsewhere.
+  // Don't steal focus if someone already clicked somewhere else.
   window.addEventListener("pageshow", () => {
     if (!document.activeElement || document.activeElement === document.body) {
       els.input.focus({ preventScroll: true });
@@ -79,7 +78,7 @@ async function loadJson(path) {
 
 /* ---------------- categories ---------------- */
 
-/** Human name for a category id ("seats" -> "Seats & learners"). */
+// "seats" -> "Seats & learners"
 function categoryName(id) {
   const found = state.taxonomy.categories?.find((entry) => entry.id === id);
   return found?.name ?? id;
@@ -95,9 +94,8 @@ function countCategories() {
 }
 
 function renderCategoryTiles() {
-  // Ordered by the taxonomy so the tiles follow the task flow rather than the
-  // alphabet. Any category present in the data but missing from the taxonomy is
-  // appended so nothing becomes unreachable.
+  // Order comes from categories.json. Anything in the data that isn't listed
+  // gets appended instead of dropped.
   const declared = (state.taxonomy.categories ?? []).map((entry) => entry.id);
   const extra = [...state.counts.keys()].filter((id) => !declared.includes(id));
   const ordered = [...declared, ...extra].filter((id) => state.counts.has(id));
@@ -265,7 +263,7 @@ function renderAnswer(query, results) {
     text.className = "answer-step-t";
     text.textContent = step.t;
 
-    // Screen readers get the step number as words, not a bare digit.
+    // Screen readers need the number as words, not a bare digit.
     const label = document.createElement("span");
     label.className = "visually-hidden";
     label.textContent = `Step ${step.n}: `;

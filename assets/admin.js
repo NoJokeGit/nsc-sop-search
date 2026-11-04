@@ -1,15 +1,9 @@
-/**
- * Maintenance console.
- *
- * This is a speed bump, not a security boundary: the passphrase lives in this
- * file, so anyone who reads the source can bypass it. That is accepted -- the
- * button can only re-read public Scribe pages, and the real credential is the
- * GitHub token held by the Worker, never here.
- */
+// Maintenance console. Password is in this file and anyone can read it. That's
+// fine. The button only re-reads public guide pages, and the GitHub token that
+// can actually do damage lives on the Worker.
 
 const CONFIG = {
-  // Filled in once the Cloudflare Worker is deployed. Leave empty to hide the
-  // run button and fall back to the direct GitHub links.
+  // Worker URL. Leave this empty and the run button hides, leaving the GitHub links.
   endpoint: "https://sop-pull.nsc-sop-guide.workers.dev",
   passphrase: "Atlas123",
   storageKey: "sop-admin-unlocked",
@@ -244,7 +238,7 @@ function startPolling() {
         }
       }
     } catch {
-      // transient; keep polling
+      // network blip, try again next tick
     }
   }, CONFIG.pollMs);
 }

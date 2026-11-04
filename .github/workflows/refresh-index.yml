@@ -1,10 +1,7 @@
 name: Refresh guide index
 
-# Re-reads the Scribe hub pages and commits the refreshed index. GitHub Pages
-# then redeploys automatically.
-#
-# Runs on demand (from the maintenance console, or the Actions tab) and every
-# Friday at 14:00 UTC.
+# Re-reads the hub pages and commits the refreshed index. Pages redeploys on its
+# own afterwards. Runs on demand and every Friday at 14:00 UTC.
 
 on:
   workflow_dispatch:

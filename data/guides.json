@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-guide overrides, hand-maintained. The scraper fills everything from Scribe; this file adds the wording a caller actually uses, as tags. Tags are weighted above body text in search, so this is the main lever for making customer phrasing find the right SOP. Ids match the Scribe guide id (the part after '__' in the viewer URL).",
+  "_comment": "Per-guide category, tags and title overrides. Everything else comes from the scraper.",
   "guides": [
     {
       "id": "BqMRCe-tScu3EmM0EC1ayw",

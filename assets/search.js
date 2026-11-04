@@ -1,13 +1,8 @@
 import Fuse from "../vendor/fuse.min.mjs";
 
-/**
- * Search engine for the SOP index.
- *
- * Ranking is phrase-first: an exact phrase in the title beats the same phrase in
- * the body, and a synonym phrase is discounted slightly so a literal match
- * always outranks an inferred one. Fuzzy per-word matching is the fallback that
- * catches typos such as "pasword".
- */
+// Search over the SOP index. An exact phrase in the title beats the same phrase
+// in body text, and synonyms score slightly lower so real matches win. Fuzzy
+// per-word is the fallback for typos.
 
 export const CONFIG = {
   fieldWeight: { title: 1, tags: 0.72, category: 0.5, text: 0.42 },
@@ -20,7 +15,7 @@ export const CONFIG = {
   fuzzySpan: 0.45,
   fuzzyMinQuality: 0.25,
   fuzzyMinLength: 5,
-  /** Blend of mean term coverage (precision) and best term (recall). */
+  // mean = how much of the query matched, best = did any one word land cleanly
   meanShare: 0.6,
   bestShare: 0.4,
   coveragePenalty: 0.7,
@@ -58,7 +53,7 @@ function meaningful(value) {
   );
 }
 
-/** Collapse an entry into the normalized haystacks used for scoring. */
+// Normalize once up front so scoring doesn't redo it per comparison.
 function prepare(entry) {
   return {
     ...entry,
@@ -72,14 +67,9 @@ function prepare(entry) {
   };
 }
 
-/**
- * Match a phrase against a field.
- *
- * A word of four or more characters may match the start of a longer word
- * ("pass" -> "password") so search feels live while typing. Shorter words must
- * match a whole word, otherwise "add" matches "address" and "in" matches
- * "instructor". Multi-word phrases match as plain substrings at a word start.
- */
+// Prefix match. Words of 4+ chars can match the start of a longer one so typing
+// feels live (pass -> password). Shorter words need a whole word, otherwise add
+// starts matching address and in starts matching instructor.
 function contains(haystack, phrase) {
   if (!phrase) return 0;
   const padded = " " + haystack;
@@ -94,10 +84,7 @@ function contains(haystack, phrase) {
   return 0;
 }
 
-/**
- * Light suffix stripping so "moved" finds "move" and "resetting" finds "reset".
- * Deliberately small: this is for verb tense, not full stemming.
- */
+// Cheap suffix stripping for verb tense: moved -> move, resetting -> reset.
 export function wordForms(word) {
   const forms = new Set([word]);
   const add = (value) => {
@@ -118,10 +105,7 @@ export function wordForms(word) {
   return [...forms];
 }
 
-/**
- * Best field score for an exact phrase.
- * Returns 0 when the phrase is absent from every field.
- */
+// Highest weight any field gives this phrase. 0 means it isn't there.
 function phraseScore(entry, phrase) {
   const weights = CONFIG.fieldWeight;
   let best = 0;
@@ -133,9 +117,7 @@ function phraseScore(entry, phrase) {
   return best;
 }
 
-/**
- * Per-word score: exact containment first, fuzzy match as the typo fallback.
- */
+// Per-word score. Exact containment first, fuzzy as the typo fallback.
 function termScore(entry, term) {
   const weights = CONFIG.fieldWeight;
   let best = 0;
@@ -234,16 +216,13 @@ export function createEngine(rawIndex, synonymGroups = []) {
     const category = options.category ?? "";
     const scored = new Map();
 
-    // Fuzzy per-word lookup for the literal query, so typos still match.
-    // Restricted to longer words: short ones fuzzy-match unrelated neighbours
-    // ("add" -> "and") and inflate the score.
+    // Typo lookup, longer words only. Short ones fuzzy into unrelated neighbours.
     const fuzzyByWord = new Map();
     for (const word of meaningful(normalize(rawQuery))) {
       if (word.length < CONFIG.fuzzyMinLength) continue;
       const hits = new Map();
       for (const hit of fuzzy.search(word)) {
-        // Where the typo matched matters: a near miss in the title is worth far
-        // more than the same near miss buried in the body text.
+        // A near miss in the title is worth more than one buried in body text.
         const field = hit.matches?.[0]?.key ?? "text";
         const weight = CONFIG.fieldWeight[field] ?? CONFIG.fieldWeight.text;
         const quality = 1 - hit.score;
@@ -257,8 +236,7 @@ export function createEngine(rawIndex, synonymGroups = []) {
       const allWords = normalize(variant.value).split(" ").filter(Boolean);
       const variantWords = meaningful(variant.value);
       if (!variantWords.length) continue;
-      // A phrase is any multi-word input, even when some words are stopwords
-      // ("locked out"), otherwise the phrase pass never runs for it.
+      // Multi-word input counts as a phrase even if some words are stopwords.
       const isPhrase = allWords.length > 1;
 
       for (const entry of index) {
@@ -266,17 +244,16 @@ export function createEngine(rawIndex, synonymGroups = []) {
 
         let best = 0;
 
-        // Phrase pass: strongest signal, only for multi-word variants.
+        // Phrase pass. Strongest signal we have.
         if (isPhrase) {
           const exact = phraseScore(entry, variant.value);
           if (exact > 0) {
-            // An exact phrase hit is worth more than a single matching word.
+            // Whole phrase outranks a single word.
             best = Math.max(best, Math.min(1, exact * CONFIG.phraseBonus));
           }
         }
 
-        // A substituted phrase ("sign in" -> "login") is scored on the
-        // replacement itself, so it competes with literal word matches.
+        // For a substituted phrase, score the replacement itself.
         if (variant.phrase) {
           const substituted = phraseScore(entry, variant.phrase);
           if (substituted > 0) {
@@ -287,19 +264,15 @@ export function createEngine(rawIndex, synonymGroups = []) {
           }
         }
 
-        // Term pass: blend of mean coverage and the single best term, scaled by
-        // how many of the query words actually matched. A guide that covers
-        // every word outranks one that matches a single common word strongly.
+        // Coverage and best-term blend, scaled by how many words matched.
         let sum = 0;
         let top = 0;
         let matched = 0;
         for (const word of variantWords) {
-          // A phrase substitution must match as a phrase. Letting its words
-          // fall back to loose matching makes "sign in" hit "sign up".
+          // Phrase subs match as a phrase, or sign in starts hitting sign up.
           if (variant.kind === "phrase") break;
           const exact = termScore(entry, word);
-          // A close typo counts almost as much as an exact hit; a distant one
-          // is ignored so it cannot drag unrelated guides into the results.
+          // Close typos score nearly full. Distant ones are dropped.
           const quality = fuzzyByWord.get(word)?.get(entry.id) ?? 0;
           const fuzzyWeighted =
             quality >= CONFIG.fuzzyMinQuality
@@ -340,8 +313,7 @@ export function createEngine(rawIndex, synonymGroups = []) {
       .map((result) => ({
         item: result.item,
         score: 1 - Math.min(result.score, 1),
-        // Highlight any query (or synonym) word that really appears in the
-        // body, not just the variant that happened to win.
+        // Highlight any query word that actually appears in the body.
         matches: buildMatches(
           result.item,
           variants.flatMap((variant) => [variant.value, variant.phrase]),
@@ -367,14 +339,8 @@ export function createEngine(rawIndex, synonymGroups = []) {
   return { search, suggest };
 }
 
-/**
-/**
- * Ranges to highlight in the guide body.
- *
- * Indices must be computed against the ORIGINAL text, not the normalized
- * haystack: normalization lowercases and strips punctuation, so offsets would
- * not line up and highlights would land a few characters off.
- */
+// Highlight ranges, computed against the original text. The normalized copy is
+// lowercased and stripped, so its offsets don't line up with what's rendered.
 function buildMatches(entry, candidates) {
   const text = String(entry.text ?? "");
   if (!text) return [];
@@ -403,9 +369,8 @@ function buildMatches(entry, candidates) {
   }
   if (!ranges.length) return [];
 
-  // Snap each range out to whole words. A prefix match inside a longer word
-  // ("assign" in "Unassigned") otherwise paints a highlight that slices the
-  // word in half, which reads as a typo rather than an emphasis.
+  // Widen to whole words. A prefix hit inside Unassigned otherwise slices the
+  // word in half and reads like a typo.
   const isWordChar = (char) => /[A-Za-z0-9']/.test(char);
   const snapped = ranges.map(([start, end]) => {
     let left = start;

@@ -1,11 +1,6 @@
-/**
- * Admin entry point on the search page.
- *
- * The password is deliberately visible in this file. It is a speed bump, not a
- * security boundary: the only thing it protects is a console that can re-read
- * public Scribe pages. The credential that actually matters lives in the
- * Worker, never here.
- */
+// Password check for the admin bubble. The password sits in plain sight here
+// and that's fine. All it unlocks is a console that re-reads public guide pages.
+// The token that actually matters stays on the Worker.
 
 const ADMIN_PASSWORD = "Atlas123";
 const SESSION_KEY = "sop-admin-unlocked";
@@ -31,7 +26,7 @@ function init() {
 
   form.addEventListener("submit", onSubmit);
 
-  // Clicking anywhere outside the bubble dismisses it.
+  // Click outside to dismiss.
   document.addEventListener("pointerdown", (event) => {
     if (pop.hidden) return;
     if (pop.contains(event.target) || trigger.contains(event.target)) return;
@@ -51,7 +46,7 @@ function open() {
   trigger.setAttribute("aria-expanded", "true");
   error.hidden = true;
   input.value = "";
-  // Focus on the next frame so the bubble is laid out before the caret moves.
+  // Next frame, so the bubble has a layout before focus moves into it.
   requestAnimationFrame(() => input.focus());
 }
 
@@ -67,7 +62,7 @@ function onSubmit(event) {
 
   if (input.value === ADMIN_PASSWORD) {
     sessionStorage.setItem(SESSION_KEY, "1");
-    // Full navigation keeps the console's CSS and JS off the search page.
+    // Full page load keeps the console's CSS and JS off the search view.
     window.location.href = "admin.html";
     return;
   }

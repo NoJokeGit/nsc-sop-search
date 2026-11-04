@@ -72,7 +72,7 @@ describe("answers: concept building", () => {
   it("counts a phrase synonym as one concept", () => {
     const concepts = buildConcepts("cant log in", synonyms.groups);
     const labels = concepts.map((concept) => concept.label);
-    // "log in" is one idea; it must not also be counted as "log" and "in".
+    // log in is one idea, not also "log" and "in".
     assert.equal(labels.filter((label) => label.includes("log")).length, 1);
   });
 

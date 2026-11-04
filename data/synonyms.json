@@ -1,25 +1,149 @@
 {
-  "_comment": "Hand-maintained. Each inner array is a group of interchangeable terms. Phrases are allowed. Keep groups tight: a wrong synonym pulls irrelevant guides to the top.",
+  "_comment": "Synonym groups. Keep each group tight or ranking suffers.",
   "groups": [
-    ["login", "log in", "log-in", "signin", "sign in", "sign-in", "logon"],
-    ["locked out", "locked", "lock out", "cant log in", "can't log in", "cannot log in", "cant login", "no access", "cannot access", "unable to log in"],
-    ["password reset", "reset password", "forgot password", "pasword reset", "change password", "new password"],
-    ["password", "passcode", "credentials"],
-    ["learner", "student", "trainee", "attendee", "employee"],
-    ["user", "login name", "username"],
-    ["organization", "organisation", "company", "customer", "client", "account"],
-    ["register", "registration", "sign up", "signup", "enroll", "enrol", "onboard"],
-    ["class", "session", "course date", "training event"],
-    ["course", "training", "curriculum", "module"],
-    ["seat", "license", "licence", "entitlement", "quota", "allocation"],
-    ["csv", "spreadsheet", "excel", "roster", "bulk upload", "bulk import", "import"],
-    ["export", "download", "extract", "report"],
-    ["certificate", "cert", "completion certificate", "diploma"],
-    ["refund", "money back", "reimbursement", "credit back"],
-    ["reschedule", "move class", "change date", "transfer", "swap class", "postpone"],
-    ["admin", "administrator", "superuser", "manager"],
-    ["permissions", "role", "access level", "rights", "privileges"],
-    ["remove", "delete", "deactivate", "disable", "revoke"],
-    ["legacy", "old system", "old lms", "previous lms"]
+    [
+      "login",
+      "log in",
+      "log-in",
+      "signin",
+      "sign in",
+      "sign-in",
+      "logon"
+    ],
+    [
+      "locked out",
+      "locked",
+      "lock out",
+      "cant log in",
+      "can't log in",
+      "cannot log in",
+      "cant login",
+      "no access",
+      "cannot access",
+      "unable to log in"
+    ],
+    [
+      "password reset",
+      "reset password",
+      "forgot password",
+      "pasword reset",
+      "change password",
+      "new password"
+    ],
+    [
+      "password",
+      "passcode",
+      "credentials"
+    ],
+    [
+      "learner",
+      "student",
+      "trainee",
+      "attendee",
+      "employee"
+    ],
+    [
+      "user",
+      "login name",
+      "username"
+    ],
+    [
+      "organization",
+      "organisation",
+      "company",
+      "customer",
+      "client",
+      "account"
+    ],
+    [
+      "register",
+      "registration",
+      "sign up",
+      "signup",
+      "enroll",
+      "enrol",
+      "onboard"
+    ],
+    [
+      "class",
+      "session",
+      "course date",
+      "training event"
+    ],
+    [
+      "course",
+      "training",
+      "curriculum",
+      "module"
+    ],
+    [
+      "seat",
+      "license",
+      "licence",
+      "entitlement",
+      "quota",
+      "allocation"
+    ],
+    [
+      "csv",
+      "spreadsheet",
+      "excel",
+      "roster",
+      "bulk upload",
+      "bulk import",
+      "import"
+    ],
+    [
+      "export",
+      "download",
+      "extract",
+      "report"
+    ],
+    [
+      "certificate",
+      "cert",
+      "completion certificate",
+      "diploma"
+    ],
+    [
+      "refund",
+      "money back",
+      "reimbursement",
+      "credit back"
+    ],
+    [
+      "reschedule",
+      "move class",
+      "change date",
+      "transfer",
+      "swap class",
+      "postpone"
+    ],
+    [
+      "admin",
+      "administrator",
+      "superuser",
+      "manager"
+    ],
+    [
+      "permissions",
+      "role",
+      "access level",
+      "rights",
+      "privileges"
+    ],
+    [
+      "remove",
+      "delete",
+      "deactivate",
+      "disable",
+      "revoke"
+    ],
+    [
+      "legacy",
+      "old system",
+      "old lms",
+      "previous lms"
+    ]
   ]
 }
