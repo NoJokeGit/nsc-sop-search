@@ -32,7 +32,7 @@ const CASES = [
   { q: "reschedule seats", want: ["How to Reschedule Seats in SafetyAtlas"] },
   { q: "move seat to organization", want: ["Move Course Seat From A Retail Account To An Organization Account"] },
   { q: "seat inventory", want: ["Seat (Course Inventory) Management"] },
-  { q: "unassign a course", want: ["How To Unassign A User From A Safety Course"] },
+  { q: "unassign a course", want: ["How To Unassign A Learner From A Safety Course"] },
 
   // --- students and classes --------------------------------------------
   { q: "student lookup", want: ["Student Management", "Student Management (TC)"] },

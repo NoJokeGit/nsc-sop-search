@@ -114,7 +114,7 @@ async function main() {
     if (args.dryRun) {
       console.log("Dry run - nothing written.");
       for (const guide of targets) {
-        console.log(`  ${guide.category.padEnd(24)} ${guide.slug}`);
+        console.log(`  ${(guide.hub ?? "").padEnd(24)} ${guide.slug}`);
       }
       await writeProgress({ state: "dry-run", done: 0, total: targets.length });
       return;

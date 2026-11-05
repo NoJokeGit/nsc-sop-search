@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-04T00:38:38.867Z",
-  "count": 50,
+  "generated": "2026-11-05T17:52:29.515Z",
+  "count": 51,
   "guides": [
     {
       "id": "ns1lqfjxSpCHT2kDveoIng",
@@ -29,6 +29,109 @@
         {
           "n": 3,
           "t": "There is visibility to the Payroc Account Number, Merchant ID, Terminal ID, and the NSC Split Percentage."
+        }
+      ]
+    },
+    {
+      "id": "GSoL59bqTvSOLFTlg5JISw",
+      "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Adding_NSC_Memebership_to_Organization_Account__GSoL59bqTvSOLFTlg5JISw",
+      "category": "orders",
+      "scope": "Organization",
+      "hub": "Company Administrator",
+      "tags": [
+        "membership",
+        "nsc membership",
+        "member number",
+        "membership number",
+        "add membership",
+        "join nsc"
+      ],
+      "title": "Adding NSC Membership to Organization Account",
+      "text": "Navigate to https://safetyatlas.nsc.org/ Click \"Get Started\" Click \"Register Your Organization\" Enter the work email address and the NSC membership number. \\ Click \"Validate\" A notice will appear stating if the NSC member number is recognized, click \"Continue\" Enter the work email, complete the login process with the OTP (one time password). Fill in all fields to create the organization account. The type of access granted to the account will be determined based on the answer to, \"Do you manage trainings in your Organization?\" **Yes -** Grants access to ordering multiple courses and assigning the courses to others.\\ **No-** Makes the account visible to the Organization and Administrators but has limited ability to assign courses to others. Select the checkbox agreeing to the terms and policy, then click \"Continue\" **Homepage** - Returns to the SafetyAtlas homepage to purchase courses and materials.\\ **My Courses** - Goes into the My Courses page. Confirm the account is set-to the Organization Learner account. Add multiple items to a shopping cart. Since the account is set as a Organization Learner. If \"Add Membership to Cart\" is selected and the Organization is already a NSC Memeber, an error will appear. Click \"No thanks, continue without membership\" Review the order and click \"Proceed to checkout\" A pop-up appears stating the purchase can be completed and the courses distributed to others. There will be limitations to what Organization details that will be visible. Click \"Who are my admins?\" to view who in the Organization has full access. This information assists with who can grant additional Organization Administrator access. If additional access is desired, cick \"Request Full Organizaton Admin Access\" This will notify the Organization Administrators of your desire and they can grant or deny the access. Click \"Proceed\" Complete the payment process. The profile type \"Limited Admin\" will be added to the account. Limited Admin access gives the ability to Manage seats for the courses purchased.",
+      "steps": [
+        {
+          "n": 1,
+          "t": "Navigate to https://safetyatlas.nsc.org/"
+        },
+        {
+          "n": 2,
+          "t": "Click \"Get Started\""
+        },
+        {
+          "n": 3,
+          "t": "Click \"Register Your Organization\""
+        },
+        {
+          "n": 4,
+          "t": "Enter the work email address and the NSC membership number. \\ Click \"Validate\""
+        },
+        {
+          "n": 5,
+          "t": "A notice will appear stating if the NSC member number is recognized, click \"Continue\""
+        },
+        {
+          "n": 6,
+          "t": "Enter the work email, complete the login process with the OTP (one time password)."
+        },
+        {
+          "n": 7,
+          "t": "Fill in all fields to create the organization account. The type of access granted to the account will be determined based on the answer to, \"Do you manage trainings in your Organization?\" **Yes -** Grants access to ordering multiple courses and assigning the courses to others.\\ **No-** Makes the account visible to the Organization and Administrators but has limited ability to assign courses to others."
+        },
+        {
+          "n": 8,
+          "t": "Select the checkbox agreeing to the terms and policy, then click \"Continue\""
+        },
+        {
+          "n": 9,
+          "t": "**Homepage** - Returns to the SafetyAtlas homepage to purchase courses and materials.\\ **My Courses** - Goes into the My Courses page."
+        },
+        {
+          "n": 10,
+          "t": "Confirm the account is set-to the Organization Learner account."
+        },
+        {
+          "n": 11,
+          "t": "Add multiple items to a shopping cart."
+        },
+        {
+          "n": 12,
+          "t": "Since the account is set as a Organization Learner. If \"Add Membership to Cart\" is selected and the Organization is already a NSC Memeber, an error will appear."
+        },
+        {
+          "n": 13,
+          "t": "Click \"No thanks, continue without membership\""
+        },
+        {
+          "n": 14,
+          "t": "Review the order and click \"Proceed to checkout\""
+        },
+        {
+          "n": 15,
+          "t": "A pop-up appears stating the purchase can be completed and the courses distributed to others. There will be limitations to what Organization details that will be visible."
+        },
+        {
+          "n": 16,
+          "t": "Click \"Who are my admins?\" to view who in the Organization has full access. This information assists with who can grant additional Organization Administrator access."
+        },
+        {
+          "n": 17,
+          "t": "If additional access is desired, cick \"Request Full Organizaton Admin Access\" This will notify the Organization Administrators of your desire and they can grant or deny the access."
+        },
+        {
+          "n": 18,
+          "t": "Click \"Proceed\""
+        },
+        {
+          "n": 19,
+          "t": "Complete the payment process."
+        },
+        {
+          "n": 20,
+          "t": "The profile type \"Limited Admin\" will be added to the account."
+        },
+        {
+          "n": 21,
+          "t": "Limited Admin access gives the ability to Manage seats for the courses purchased."
         }
       ]
     },
@@ -2138,7 +2241,7 @@
         "revoke course",
         "take away access"
       ],
-      "title": "How To Unassign A User From A Safety Course",
+      "title": "How To Unassign A Learner From A Safety Course",
       "text": "Navigate to https://safetyatlas.nsc.org/ Click \"Seat Management\" Click \"Assigned Courses\" Click the \"Search by learner or course...\" field. The \"Assigned Courses\" can be searched by Learner's name or by the Course name. Search results can be sorted by \"Course\" or \"Assigned On\" Click the Learner's name next to the desired course. Example: \"Alan alex\" for Chapter test in Assigned Status. Click \"Unassign\" Click \"Unassign\" To verify the seat has been unassigned, click \"Seat Assignments\" Find the course tile to see the Assigned and Unassigned quantity.",
       "steps": [
         {

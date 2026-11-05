@@ -2,6 +2,154 @@
   "_comment": "Per-guide category, tags and title overrides. Everything else comes from the scraper.",
   "guides": [
     {
+      "id": "1etima9PQiyxhluRSZC03g",
+      "tags": [
+        "register",
+        "registration",
+        "enroll student",
+        "add student to class",
+        "training center"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "1HAYH_pKSOWZQ8LvgD345g",
+      "tags": [
+        "invite",
+        "bulk invite",
+        "invite employees",
+        "add learners",
+        "csv invite",
+        "import learners"
+      ],
+      "category": "seats"
+    },
+    {
+      "id": "3k51_A75Qr66U0AN-ycDvg",
+      "tags": [
+        "resource library",
+        "resources",
+        "documents",
+        "downloads"
+      ],
+      "category": "courses"
+    },
+    {
+      "id": "4Unbr-g_RLqNO30E0EWnXA",
+      "tags": [
+        "reschedule",
+        "reschedule student",
+        "change class date",
+        "move class",
+        "postpone class"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "6HcVAkYUQFuVV83KazJqtg",
+      "tags": [
+        "impersonate",
+        "impersonation",
+        "ti",
+        "skip"
+      ],
+      "category": "access"
+    },
+    {
+      "id": "76hUD2WnShWZM8Q1xyu27Q",
+      "tags": [
+        "training material",
+        "materials",
+        "inventory",
+        "order materials"
+      ],
+      "category": "courses"
+    },
+    {
+      "id": "9dx2IL6jTRGAp0MUg4EFNw",
+      "tags": [
+        "impersonate",
+        "impersonation",
+        "ddc",
+        "skip"
+      ],
+      "category": "access"
+    },
+    {
+      "id": "9e-xc5ojSqWEpNAH76aS8Q",
+      "tags": [
+        "certificate",
+        "share certificate",
+        "download certificate",
+        "completion record",
+        "learner certificate"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "abGBUl2KQu2Sp7uDF9G5IA",
+      "tags": [
+        "organization",
+        "profile",
+        "company details",
+        "update address",
+        "account details"
+      ],
+      "category": "orgs"
+    },
+    {
+      "id": "AHR6TwY4R7-nx3G4Eo7BEg",
+      "tags": [
+        "instructor login",
+        "instructor profile",
+        "steve login",
+        "training center instructor"
+      ],
+      "category": "access"
+    },
+    {
+      "id": "AxVJyp7KR-6jZfhxMqfXkQ",
+      "tags": [
+        "class",
+        "roster",
+        "student communications",
+        "my classes"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "AzjHJzTzS4aamJTbMnh7zg",
+      "tags": [
+        "training",
+        "purchase",
+        "buy training",
+        "courses",
+        "products"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "B7PyAU6TQSeHUN8f8UA9PQ",
+      "tags": [
+        "register",
+        "registration",
+        "enroll student",
+        "add student to class",
+        "sign up student"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "B9UuxugjR-OPsLCB7Ohhog",
+      "tags": [
+        "registration fields",
+        "custom fields",
+        "form fields",
+        "add field"
+      ],
+      "category": "orgs"
+    },
+    {
       "id": "BqMRCe-tScu3EmM0EC1ayw",
       "tags": [
         "login",
@@ -18,27 +166,15 @@
       "category": "access"
     },
     {
-      "id": "AHR6TwY4R7-nx3G4Eo7BEg",
+      "id": "diUcKbI9SX6V9o2TnsJXkg",
       "tags": [
-        "instructor login",
-        "instructor profile",
-        "steve login",
-        "training center instructor"
+        "financials",
+        "finance",
+        "billing",
+        "payments",
+        "invoices"
       ],
-      "category": "access"
-    },
-    {
-      "id": "k-AzI85iTqKuncjNZ3m-FA",
-      "tags": [
-        "seat",
-        "seats",
-        "assign",
-        "assignment",
-        "allocate",
-        "enroll",
-        "learner seat"
-      ],
-      "category": "seats"
+      "category": "orders"
     },
     {
       "id": "DyGrQCItQS6E2AFSAx0L3w",
@@ -50,6 +186,84 @@
         "seat expiry"
       ],
       "category": "seats"
+    },
+    {
+      "id": "Dz0Owp5bQ6i9otCD-yx67g",
+      "tags": [
+        "class",
+        "roster",
+        "class list",
+        "session",
+        "attendance"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "F0TdJKmfSiGwByNPQX5Rsw",
+      "tags": [
+        "refund",
+        "refunds",
+        "refund policy",
+        "money back",
+        "cancellation",
+        "training center refund"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "fo_XL-jGQf676G6R90DO_w",
+      "tags": [
+        "certificate",
+        "certificates",
+        "template",
+        "completion certificate",
+        "design certificate"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "FZ7gJpVASeGmuB-e58PefA",
+      "tags": [
+        "training center",
+        "training centers",
+        "centers list"
+      ],
+      "category": "courses"
+    },
+    {
+      "id": "fZnTJWrWRY-fjbAIv0WLog",
+      "tags": [
+        "location",
+        "locations",
+        "site",
+        "branch",
+        "training center location"
+      ],
+      "category": "orgs"
+    },
+    {
+      "id": "GH176qZqSay5J8SRMW5EKw",
+      "tags": [
+        "refund",
+        "refunds",
+        "refund policy",
+        "money back",
+        "cancellation"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "GSoL59bqTvSOLFTlg5JISw",
+      "category": "orders",
+      "title": "Adding NSC Membership to Organization Account",
+      "tags": [
+        "membership",
+        "nsc membership",
+        "member number",
+        "membership number",
+        "add membership",
+        "join nsc"
+      ]
     },
     {
       "id": "I03H0gHMTIKnOxnXXQLU-w",
@@ -75,14 +289,49 @@
       "category": "seats"
     },
     {
-      "id": "oK7cZy6sTGKQjs9hmYdkWg",
+      "id": "k-AzI85iTqKuncjNZ3m-FA",
       "tags": [
-        "unassign",
-        "remove seat",
-        "revoke course",
-        "take away access"
+        "seat",
+        "seats",
+        "assign",
+        "assignment",
+        "allocate",
+        "enroll",
+        "learner seat"
       ],
       "category": "seats"
+    },
+    {
+      "id": "KEGLHM8USdqqdFeT4g9UMw",
+      "tags": [
+        "student",
+        "lookup",
+        "find student",
+        "search student",
+        "training center student"
+      ],
+      "category": "students"
+    },
+    {
+      "id": "klW-3AxYQZq3KgYyq7BwLw",
+      "tags": [
+        "organization",
+        "organization management",
+        "company account",
+        "customer account"
+      ],
+      "category": "orgs"
+    },
+    {
+      "id": "mAaIZ_RoSe-imcvP9z84rg",
+      "tags": [
+        "profile",
+        "wallet",
+        "my profile",
+        "update profile",
+        "safety wallet"
+      ],
+      "category": "access"
     },
     {
       "id": "mTXBWA3BQxGzEqkZeDS8Zw",
@@ -97,69 +346,15 @@
       "category": "students"
     },
     {
-      "id": "KEGLHM8USdqqdFeT4g9UMw",
+      "id": "NCYWZ96fS2ylDFCeY9CdYw",
       "tags": [
-        "student",
-        "lookup",
-        "find student",
-        "search student",
-        "training center student"
+        "learner",
+        "learners",
+        "organization learners",
+        "manage learners",
+        "add learners"
       ],
-      "category": "students"
-    },
-    {
-      "id": "4Unbr-g_RLqNO30E0EWnXA",
-      "tags": [
-        "reschedule",
-        "reschedule student",
-        "change class date",
-        "move class",
-        "postpone class"
-      ],
-      "category": "students"
-    },
-    {
-      "id": "B7PyAU6TQSeHUN8f8UA9PQ",
-      "tags": [
-        "register",
-        "registration",
-        "enroll student",
-        "add student to class",
-        "sign up student"
-      ],
-      "category": "students"
-    },
-    {
-      "id": "1etima9PQiyxhluRSZC03g",
-      "tags": [
-        "register",
-        "registration",
-        "enroll student",
-        "add student to class",
-        "training center"
-      ],
-      "category": "students"
-    },
-    {
-      "id": "Dz0Owp5bQ6i9otCD-yx67g",
-      "tags": [
-        "class",
-        "roster",
-        "class list",
-        "session",
-        "attendance"
-      ],
-      "category": "students"
-    },
-    {
-      "id": "AxVJyp7KR-6jZfhxMqfXkQ",
-      "tags": [
-        "class",
-        "roster",
-        "student communications",
-        "my classes"
-      ],
-      "category": "students"
+      "category": "seats"
     },
     {
       "id": "NKUFTzQUQYKSZr8tF7WoHw",
@@ -174,203 +369,15 @@
       "category": "orgs"
     },
     {
-      "id": "abGBUl2KQu2Sp7uDF9G5IA",
+      "id": "ns1lqfjxSpCHT2kDveoIng",
       "tags": [
-        "organization",
-        "profile",
-        "company details",
-        "update address",
-        "account details"
+        "chapter",
+        "payment settings",
+        "payroc",
+        "merchant id",
+        "chapter payment"
       ],
       "category": "orgs"
-    },
-    {
-      "id": "klW-3AxYQZq3KgYyq7BwLw",
-      "tags": [
-        "organization",
-        "organization management",
-        "company account",
-        "customer account"
-      ],
-      "category": "orgs"
-    },
-    {
-      "id": "w1vB7T5jQU2Qi67UiCFpcw",
-      "tags": [
-        "location",
-        "locations",
-        "add location",
-        "site",
-        "branch"
-      ],
-      "category": "orgs"
-    },
-    {
-      "id": "fZnTJWrWRY-fjbAIv0WLog",
-      "tags": [
-        "location",
-        "locations",
-        "site",
-        "branch",
-        "training center location"
-      ],
-      "category": "orgs"
-    },
-    {
-      "id": "1HAYH_pKSOWZQ8LvgD345g",
-      "tags": [
-        "invite",
-        "bulk invite",
-        "invite employees",
-        "add learners",
-        "csv invite",
-        "import learners"
-      ],
-      "category": "seats"
-    },
-    {
-      "id": "WvkMEljHQ6OMGEUQYIASAg",
-      "tags": [
-        "admin",
-        "permissions",
-        "role",
-        "access level",
-        "add administrator",
-        "admin rights"
-      ],
-      "category": "access"
-    },
-    {
-      "id": "Q0syA5kURqugxjVRNpVBbQ",
-      "tags": [
-        "admin",
-        "administrator",
-        "admin users",
-        "permissions",
-        "role"
-      ],
-      "category": "access"
-    },
-    {
-      "id": "Ttw-ucEJQhe83WiYG1ssqA",
-      "tags": [
-        "report",
-        "reports",
-        "export",
-        "export report",
-        "csv",
-        "download report"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "fo_XL-jGQf676G6R90DO_w",
-      "tags": [
-        "certificate",
-        "certificates",
-        "template",
-        "completion certificate",
-        "design certificate"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "9e-xc5ojSqWEpNAH76aS8Q",
-      "tags": [
-        "certificate",
-        "share certificate",
-        "download certificate",
-        "completion record",
-        "learner certificate"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "GH176qZqSay5J8SRMW5EKw",
-      "tags": [
-        "refund",
-        "refunds",
-        "refund policy",
-        "money back",
-        "cancellation"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "F0TdJKmfSiGwByNPQX5Rsw",
-      "tags": [
-        "refund",
-        "refunds",
-        "refund policy",
-        "money back",
-        "cancellation",
-        "training center refund"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "PFulMgfqRPG7y3eHu5l61A",
-      "tags": [
-        "health snapshot",
-        "dashboard",
-        "overview",
-        "seats",
-        "activity"
-      ],
-      "category": "orgs"
-    },
-    {
-      "id": "V7jPzpx7RhypNUSHC5hQyQ",
-      "tags": [
-        "subscription",
-        "subscriptions",
-        "seats",
-        "renewal",
-        "billing"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "NCYWZ96fS2ylDFCeY9CdYw",
-      "tags": [
-        "learner",
-        "learners",
-        "organization learners",
-        "manage learners",
-        "add learners"
-      ],
-      "category": "seats"
-    },
-    {
-      "id": "UXaNRwS7Ty-5jdmDsifMOw",
-      "tags": [
-        "course",
-        "courses",
-        "course management",
-        "learner courses"
-      ],
-      "category": "courses"
-    },
-    {
-      "id": "AzjHJzTzS4aamJTbMnh7zg",
-      "tags": [
-        "training",
-        "purchase",
-        "buy training",
-        "courses",
-        "products"
-      ],
-      "category": "orders"
-    },
-    {
-      "id": "tzdiu8f8TZW95KOd54GKSw",
-      "tags": [
-        "orders",
-        "my orders",
-        "order history",
-        "review order"
-      ],
-      "category": "orders"
     },
     {
       "id": "NSgJ4pQ2RCy7UsGsu0Qq9w",
@@ -384,33 +391,43 @@
       "category": "orders"
     },
     {
-      "id": "mAaIZ_RoSe-imcvP9z84rg",
+      "id": "oK7cZy6sTGKQjs9hmYdkWg",
       "tags": [
-        "profile",
-        "wallet",
-        "my profile",
-        "update profile",
-        "safety wallet"
+        "unassign",
+        "remove seat",
+        "revoke course",
+        "take away access"
       ],
-      "category": "access"
+      "category": "seats"
     },
     {
-      "id": "B9UuxugjR-OPsLCB7Ohhog",
+      "id": "PFulMgfqRPG7y3eHu5l61A",
       "tags": [
-        "registration fields",
-        "custom fields",
-        "form fields",
-        "add field"
+        "health snapshot",
+        "dashboard",
+        "overview",
+        "seats",
+        "activity"
       ],
       "category": "orgs"
     },
     {
-      "id": "x_NEZIzOTR6iY8PHoX_Egg",
+      "id": "Q0syA5kURqugxjVRNpVBbQ",
       "tags": [
-        "instructor",
-        "instructors",
-        "instructor management",
-        "training center instructor"
+        "admin",
+        "administrator",
+        "admin users",
+        "permissions",
+        "role"
+      ],
+      "category": "access"
+    },
+    {
+      "id": "reM1aIfdSWmmp_F4qglJwQ",
+      "tags": [
+        "training center",
+        "my training center",
+        "center management"
       ],
       "category": "courses"
     },
@@ -425,45 +442,7 @@
       "category": "courses"
     },
     {
-      "id": "reM1aIfdSWmmp_F4qglJwQ",
-      "tags": [
-        "training center",
-        "my training center",
-        "center management"
-      ],
-      "category": "courses"
-    },
-    {
-      "id": "FZ7gJpVASeGmuB-e58PefA",
-      "tags": [
-        "training center",
-        "training centers",
-        "centers list"
-      ],
-      "category": "courses"
-    },
-    {
-      "id": "76hUD2WnShWZM8Q1xyu27Q",
-      "tags": [
-        "training material",
-        "materials",
-        "inventory",
-        "order materials"
-      ],
-      "category": "courses"
-    },
-    {
       "id": "SN5kZbFbR6GoLhxUHUutZQ",
-      "tags": [
-        "resource library",
-        "resources",
-        "documents",
-        "downloads"
-      ],
-      "category": "courses"
-    },
-    {
-      "id": "3k51_A75Qr66U0AN-ycDvg",
       "tags": [
         "resource library",
         "resources",
@@ -482,56 +461,47 @@
       "category": "orgs"
     },
     {
-      "id": "ns1lqfjxSpCHT2kDveoIng",
+      "id": "Ttw-ucEJQhe83WiYG1ssqA",
       "tags": [
-        "chapter",
-        "payment settings",
-        "payroc",
-        "merchant id",
-        "chapter payment"
-      ],
-      "category": "orgs"
-    },
-    {
-      "id": "diUcKbI9SX6V9o2TnsJXkg",
-      "tags": [
-        "financials",
-        "finance",
-        "billing",
-        "payments",
-        "invoices"
+        "report",
+        "reports",
+        "export",
+        "export report",
+        "csv",
+        "download report"
       ],
       "category": "orders"
     },
     {
-      "id": "Yhxh8ExjTiKD3bm8Od7Uvg",
+      "id": "tzdiu8f8TZW95KOd54GKSw",
       "tags": [
-        "product",
-        "products",
-        "product management",
-        "catalog"
+        "orders",
+        "my orders",
+        "order history",
+        "review order"
+      ],
+      "category": "orders"
+    },
+    {
+      "id": "UXaNRwS7Ty-5jdmDsifMOw",
+      "tags": [
+        "course",
+        "courses",
+        "course management",
+        "learner courses"
       ],
       "category": "courses"
     },
     {
-      "id": "9dx2IL6jTRGAp0MUg4EFNw",
+      "id": "V7jPzpx7RhypNUSHC5hQyQ",
       "tags": [
-        "impersonate",
-        "impersonation",
-        "ddc",
-        "skip"
+        "subscription",
+        "subscriptions",
+        "seats",
+        "renewal",
+        "billing"
       ],
-      "category": "access"
-    },
-    {
-      "id": "6HcVAkYUQFuVV83KazJqtg",
-      "tags": [
-        "impersonate",
-        "impersonation",
-        "ti",
-        "skip"
-      ],
-      "category": "access"
+      "category": "orders"
     },
     {
       "id": "VGqwbJVYT7mYAi2C3uDIkA",
@@ -542,6 +512,49 @@
         "different account"
       ],
       "category": "seats"
+    },
+    {
+      "id": "w1vB7T5jQU2Qi67UiCFpcw",
+      "tags": [
+        "location",
+        "locations",
+        "add location",
+        "site",
+        "branch"
+      ],
+      "category": "orgs"
+    },
+    {
+      "id": "WvkMEljHQ6OMGEUQYIASAg",
+      "tags": [
+        "admin",
+        "permissions",
+        "role",
+        "access level",
+        "add administrator",
+        "admin rights"
+      ],
+      "category": "access"
+    },
+    {
+      "id": "x_NEZIzOTR6iY8PHoX_Egg",
+      "tags": [
+        "instructor",
+        "instructors",
+        "instructor management",
+        "training center instructor"
+      ],
+      "category": "courses"
+    },
+    {
+      "id": "Yhxh8ExjTiKD3bm8Od7Uvg",
+      "tags": [
+        "product",
+        "products",
+        "product management",
+        "catalog"
+      ],
+      "category": "courses"
     }
   ]
 }
