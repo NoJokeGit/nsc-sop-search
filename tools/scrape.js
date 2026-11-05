@@ -179,8 +179,16 @@ async function main() {
     const preserveMissing = Boolean(args.limit || args.only);
     const merged = mergeIndex(harvested, previousById, preserveMissing);
 
+    // Keep the old timestamp when nothing changed, so an idle run produces a
+    // byte-identical file and the workflow has nothing to commit.
+    const unchanged =
+      JSON.stringify(merged) === JSON.stringify(previous.guides ?? []);
+    const generated = unchanged
+      ? (previous.generated ?? new Date().toISOString())
+      : new Date().toISOString();
+
     await writeAtomic(PATHS.index, {
-      generated: new Date().toISOString(),
+      generated,
       count: merged.length,
       guides: merged,
     });

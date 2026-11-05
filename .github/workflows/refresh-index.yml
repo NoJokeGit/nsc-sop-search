@@ -49,7 +49,15 @@ jobs:
         run: npm ci --no-audit --no-fund
 
       # The scraper prefers Edge then Chrome. Runners have neither, so install
-      # the bundled Chromium that Playwright manages.
+      # the bundled Chromium that Playwright manages. Cached, otherwise this
+      # downloads ~150MB every run and can take ten minutes on a slow mirror.
+      - name: Cache Chromium
+        id: chromium-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('tools/package-lock.json') }}
+
       - name: Install Chromium
         working-directory: tools
         run: npx playwright install --with-deps chromium
