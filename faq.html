@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>[Example] SafetyAtlas Help &amp; FAQ</title>
+    <meta
+      name="description"
+      content="Design concept: a help and FAQ page for SafetyAtlas."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="[Example] SafetyAtlas Help &amp; FAQ" />
+    <meta property="og:description" content="Design concept: a help and FAQ page for SafetyAtlas." />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="assets/faq.css" />
+    <link
+      rel="preload"
+      href="assets/fonts/funnel-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+  </head>
+  <body>
+    <div class="example-banner" role="note">
+      <strong id="banner-title">Example page</strong>
+      <span id="banner-text"
+        >A design concept for SafetyAtlas. Not an official NSC page.</span
+      >
+    </div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="https://safetyatlas.nsc.org/" aria-label="SafetyAtlas home">
+          <img src="assets/logo.svg" alt="safetyatlas, an NSC platform" width="195" height="42" />
+        </a>
+        <span class="brand-divider" aria-hidden="true"></span>
+
+        <nav class="site-nav" aria-label="Main">
+          <a href="https://safetyatlas.nsc.org/trainings">Trainings</a>
+          <a href="https://safetyatlas.nsc.org/safety-products">Safety Products</a>
+          <a href="https://safetyatlas.nsc.org/provider">Providers</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="login-btn" href="https://safetyatlas.nsc.org/auth/sign-in">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <div class="top-row">
+        <div class="hero-card">
+          <div class="hero-content">
+            <p class="hero-eyebrow" id="hero-eyebrow">Help center</p>
+            <h1 id="hero-title">How can we help?</h1>
+            <p class="hero-sub" id="hero-sub">
+              Answers to the questions our support team hears most.
+            </p>
+
+            <form class="hero-search" role="search" onsubmit="return false;">
+              <label class="visually-hidden" for="faq-search"
+                >Search help articles</label
+              >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M10.5 3a7.5 7.5 0 1 0 4.55 13.46l4.24 4.25a1 1 0 0 0 1.42-1.42l-4.25-4.24A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"
+                />
+              </svg>
+              <input
+                id="faq-search"
+                type="search"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="Search help articles"
+              />
+              <button
+                id="faq-clear"
+                class="hero-clear"
+                type="button"
+                hidden
+                aria-label="Clear search"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 10.59 6.7 5.29 5.29 6.7 10.59 12l-5.3 5.3 1.41 1.41L12 13.41l5.3 5.3 1.41-1.41L13.41 12l5.3-5.3-1.41-1.41L12 10.59Z"
+                  />
+                </svg>
+              </button>
+            </form>
+
+            <div class="hero-popular" aria-labelledby="popular-title">
+              <span class="hero-popular-title" id="popular-title">Popular:</span>
+              <ul id="popular-list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <section class="video-card" aria-labelledby="video-title">
+          <div class="video-frame">
+            <video
+              id="video-player"
+              aria-label="Short overview of setting up SafetyAtlas"
+              controls
+              playsinline
+              preload="metadata"
+              poster="media/welcome.jpg"
+            ></video>
+            <span class="video-badge" id="video-badge">1:54</span>
+          </div>
+          <div class="video-copy">
+            <h2 id="video-title">New to SafetyAtlas?</h2>
+            <p id="video-text">
+              A short walkthrough of setting up your organization and getting
+              your team into their first course.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <nav class="section-nav" aria-label="Help topics">
+        <div class="chips" id="faq-chips"></div>
+      </nav>
+
+      <p class="results-meta" id="faq-meta" role="status" aria-live="polite"></p>
+
+      <div id="faq-sections"></div>
+
+      <div class="empty" id="faq-empty" hidden>
+        <h2>No matching questions</h2>
+        <p>
+          Try a shorter phrase, or clear the filters to browse everything. If you
+          still cannot find it, contact NSC through the
+          <a href="https://www.nsc.org/company/contact-nsc" target="_blank" rel="noopener noreferrer">contact form</a>.
+        </p>
+        <p class="empty-hint" id="empty-hint" hidden></p>
+        <button class="empty-reset" id="empty-reset" type="button">
+          Clear search and filters
+        </button>
+      </div>
+
+      <noscript>
+        <div class="empty">
+          <h2>JavaScript is required</h2>
+          <p>
+            This example page builds the question list in the browser. Turn on
+            JavaScript to view it, or
+            <a href="https://www.nsc.org/company/contact-nsc">contact NSC</a> for help.
+          </p>
+        </div>
+      </noscript>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <img src="assets/logo.svg" alt="safetyatlas, an NSC platform" width="195" height="42" />
+            <h3>Save lives, from the workplace to anyplace.</h3>
+            <p>
+              The National Safety Council is America's leading nonprofit safety
+              advocate. We focus on eliminating the leading causes of preventable
+              injuries and deaths.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <a href="https://www.nsc.org/newsroom" target="_blank" rel="noopener noreferrer">Newsroom</a>
+            <a href="https://www.nsc.org/careers" target="_blank" rel="noopener noreferrer">Careers</a>
+            <a href="https://www.nsc.org/company/shop-return-policy" target="_blank" rel="noopener noreferrer">Shop Return Policy</a>
+            <a href="https://www.nsc.org/company/contact-nsc" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            <a href="https://www.nsc.org/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy &amp; Terms</a>
+            <a href="https://safetyatlas.nsc.org/cookie-policy">Cookie Policy</a>
+          </div>
+
+          <div class="footer-signup">
+            <h4>Get the Latest Safety News</h4>
+            <a class="signup-btn" href="https://safetyatlas.nsc.org/auth/sign-up">Sign Up Now</a>
+            <ul class="socials">
+              <li>
+                <a href="https://www.facebook.com/NatlSafetyCouncil" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/nationalsafetycouncil" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/national-safety-council" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v2"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/NSCsafety" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@NatlSafetyCouncil" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-base">
+          <span>© 2026 National Safety Council. All rights reserved.</span>
+          <span class="footer-disclaimer" id="footer-disclaimer"
+            >Example page. Not an official NSC site.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/faq.js"></script>
+  </body>
+</html>

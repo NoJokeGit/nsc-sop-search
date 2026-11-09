@@ -1,0 +1,432 @@
+{
+  "banner": {
+    "title": "Example page",
+    "text": "A design concept for SafetyAtlas. Not an official NSC page, and nothing here is live support."
+  },
+  "hero": {
+    "eyebrow": "Help center",
+    "title": "How can we help?",
+    "subtitle": "Answers and step-by-step guides for the tasks our support team hears most.",
+    "searchPlaceholder": "Search help articles",
+    "popularTitle": "Popular questions",
+    "popular": [
+      { "label": "How do I log in?", "target": "how-to-log-in" },
+      { "label": "Assign a seat to an employee", "target": "assign-a-seat" },
+      { "label": "Invite my whole team", "target": "invite-whole-team" },
+      { "label": "A learner cannot find their certificate", "target": "certificate-missing" }
+    ],
+    "video": {
+      "title": "New to SafetyAtlas?",
+      "text": "A short walkthrough of setting up your organization and adding learners.",
+      "src": "media/welcome.mp4",
+      "poster": "media/welcome.jpg",
+      "duration": "1:54"
+    }
+  },
+  "sections": [
+    {
+      "id": "getting-started",
+      "name": "Getting started",
+      "icon": "rocket",
+      "items": [
+        {
+          "id": "what-is-safetyatlas",
+          "q": "What is SafetyAtlas?",
+          "a": "SafetyAtlas is the NSC platform where an organization buys safety training, assigns it to employees, and tracks who has completed what. Learners use the same platform to take their courses and download certificates.",
+          "guide": null
+        },
+        {
+          "id": "create-organization-account",
+          "q": "How do I create an organization account?",
+          "a": "Add a training or product to your cart, then choose <strong>Others in my organization</strong> at checkout. Enter the email address tied to the company, fill in every field, and answer <strong>Yes</strong> when asked whether you manage trainings; that answer is what gives the account permission to assign courses to employees.",
+          "guide": {
+            "title": "Registering An Organization in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Registering_An_Organization_in_SafetyAtlas__NKUFTzQUQYKSZr8tF7WoHw",
+            "steps": "Step 4 onward"
+          }
+        },
+        {
+          "id": "membership-number",
+          "q": "Do I need an NSC membership number to register?",
+          "a": "No, but having one changes what you pay. Enter the membership number during registration and select <strong>Validate</strong>; if the number is recognized you continue straight through. If the organization is already a member, choosing <strong>Add Membership to Cart</strong> again will produce an error, so pick <em>No thanks, continue without membership</em>.",
+          "guide": {
+            "title": "Adding NSC Membership to Organization Account",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Adding_NSC_Memebership_to_Organization_Account__GSoL59bqTvSOLFTlg5JISw",
+            "steps": "Steps 4 to 13"
+          }
+        },
+        {
+          "id": "admin-vs-learner",
+          "q": "What is the difference between an administrator and a learner?",
+          "a": "An administrator can buy training, assign seats, invite employees and run reports. A learner can only see their own courses and certificates. The account you create at registration decides which one you are, and an administrator can change somebody's role later from <strong>Admin Management</strong>.",
+          "guide": {
+            "title": "Managing Organization Admin Permissions",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Managing_Organization_Admin_Permissions__WvkMEljHQ6OMGEUQYIASAg",
+            "steps": "Steps 4 to 7"
+          }
+        },
+        {
+          "id": "how-to-log-in",
+          "q": "How do I log in?",
+          "a": "Go to safetyatlas.nsc.org and enter your email address. NSC emails you a six-digit code rather than using a password. The email arrives with the subject <strong>NSC Sign-in code</strong>; enter that code and you are in. You can skip setting up an authenticator app if you prefer to receive a code each time.",
+          "guide": {
+            "title": "How to Log In to the NSC SafetyAtlas Portal",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Log_In_to_the_NSC_SafetyAtlas_Portal__BqMRCe-tScu3EmM0EC1ayw",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "code-not-arriving",
+          "q": "My sign-in code never arrived",
+          "a": "Check the inbox for the address you typed, not an alias, and look for a message from NSC with the subject <strong>NSC Sign-in code</strong>. It is worth refreshing the inbox: the code is sent as soon as you press <strong>Send OTP</strong>, but mail can lag by a minute. If nothing arrives at all, the address may not be the one on your account, in which case contact NSC support.",
+          "guide": {
+            "title": "How to Log In to the NSC SafetyAtlas Portal",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Log_In_to_the_NSC_SafetyAtlas_Portal__BqMRCe-tScu3EmM0EC1ayw",
+            "steps": "Steps 3 to 10"
+          },
+          "note": "Content gap in this mockup: no sign-in troubleshooting article exists yet."
+        },
+        {
+          "id": "forgot-password",
+          "q": "I forgot my password",
+          "a": "There is no password to forget. SafetyAtlas signs you in with a one-time code sent to your email address, so start at the sign-in page and request a new code. If the code does not arrive, contact NSC support rather than creating a second account.",
+          "guide": null,
+          "note": "Content gap in this mockup. Sign-in uses emailed codes rather than passwords."
+        }
+      ]
+    },
+    {
+      "id": "seats-learners",
+      "name": "Seats & learners",
+      "icon": "users",
+      "items": [
+        {
+          "id": "assign-a-seat",
+          "q": "How do I assign a seat to an employee?",
+          "a": "Open <strong>My Organization</strong>, then <strong>Seat Management</strong>, then filter to <strong>Has Unassigned Seats</strong>. Each open seat has an <strong>Assign</strong> button. Choose the training, then select learners by name, or use the department and location filters to select a whole group at once.",
+          "guide": {
+            "title": "Assign Seats in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Assign_Unassigned_Seats_in_SafetyAtlas__k-AzI85iTqKuncjNZ3m-FA",
+            "steps": "Steps 4 to 12"
+          }
+        },
+        {
+          "id": "how-many-seats",
+          "q": "How many seats do we have left?",
+          "a": "Two places show it. <strong>Seat Management</strong> lists Assigned and Unassigned quantities per course, and the <strong>Health Snapshot</strong> breaks out subscription seats and learning seats with the remaining count and expiry date.",
+          "guide": {
+            "title": "Health Snapshot",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Health_Snapshot__PFulMgfqRPG7y3eHu5l61A",
+            "steps": "Step 4"
+          }
+        },
+        {
+          "id": "invite-whole-team",
+          "q": "How do I invite my whole team at once?",
+          "a": "Use the CSV route. From <strong>Organization Profile</strong> open <strong>Learner Management</strong>, choose <strong>Add New</strong> then <strong>Upload CSV</strong>, and download the template first so the columns match. Fill in every column, save, then upload the file.",
+          "guide": {
+            "title": "Bulk Invite Employees in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Bulk_Invite_Employees_in_SafetyAtlas__1HAYH_pKSOWZQ8LvgD345g",
+            "steps": "Steps 1 to 12"
+          }
+        },
+        {
+          "id": "csv-import-failed",
+          "q": "Why did my CSV invite fail?",
+          "a": "Usually a column mismatch. Download the template from the upload screen and use it unmodified, because the import expects specific headers. Save the file somewhere you can find again before uploading, and check that every row has the fields the template asks for.",
+          "guide": {
+            "title": "Bulk Invite Employees in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Bulk_Invite_Employees_in_SafetyAtlas__1HAYH_pKSOWZQ8LvgD345g",
+            "steps": "Steps 6 to 9"
+          }
+        },
+        {
+          "id": "remove-access",
+          "q": "How do I remove someone's access to a course?",
+          "a": "Open <strong>Seat Management</strong>, then <strong>Assigned Courses</strong>, and search by learner or course. Click the learner's name beside the course and choose <strong>Unassign</strong>. To confirm, check <strong>Seat Assignments</strong>; the unassigned quantity should have gone up and the assigned count down.",
+          "guide": {
+            "title": "How To Unassign A Learner From A Safety Course",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Unassign_A_User_From_A_Safety_Course__oK7cZy6sTGKQjs9hmYdkWg",
+            "steps": "Steps 2 to 10"
+          }
+        },
+        {
+          "id": "move-seat-to-another-learner",
+          "q": "Can I move a seat from one learner to another?",
+          "a": "Yes. Unassign it from the current learner first, which returns it to the unassigned pool, then assign it to the new person. Note that any progress on the course stays with the learner who started it, so a partly finished course is not transferred.",
+          "guide": {
+            "title": "How To Unassign A Learner From A Safety Course",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Unassign_A_User_From_A_Safety_Course__oK7cZy6sTGKQjs9hmYdkWg",
+            "steps": "Steps 2 to 10"
+          }
+        },
+        {
+          "id": "reschedule-seat",
+          "q": "How do I reschedule a seat to a later date?",
+          "a": "Go to <strong>Seat Management</strong>, then <strong>Assigned Courses</strong>, and search for the learner by name or the course by title. Click the learner name for the right course and choose <strong>Reschedule</strong>.",
+          "guide": {
+            "title": "How to Reschedule Seats in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_to_Reschedule_Seats_in_SafetyAtlas__DyGrQCItQS6E2AFSAx0L3w",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "seat-expiry",
+          "q": "What happens when a seat expires?",
+          "a": "The expiry date is shown against the subscription and against individual course inventory in <strong>Organization Profile</strong>. An expired seat can no longer be assigned, so it needs to be renewed before the training can be delivered.",
+          "guide": {
+            "title": "Organization Profile Details",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Organization_Profile_Details_in_Safety_Atlas__abGBUl2KQu2Sp7uDF9G5IA",
+            "steps": "Steps 9 to 10"
+          }
+        }
+      ]
+    },
+    {
+      "id": "courses",
+      "name": "Courses & training",
+      "icon": "book",
+      "items": [
+        {
+          "id": "buy-training",
+          "q": "How do I buy training for my organization?",
+          "a": "Browse <strong>Trainings</strong> or <strong>Safety Products</strong>, open a course and choose <strong>Add to cart</strong>, then select <strong>Others in my organization</strong> at checkout so the seats land in the company account rather than your personal one. Assigning courses to employees is the <strong>Yes</strong> answer when registration asks whether you manage trainings.",
+          "guide": {
+            "title": "How To Purchase And Manage Training For Your Organization",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_To_Purchase_And_Manage_Training_For_Your_Organization__AzjHJzTzS4aamJTbMnh7zg",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "what-do-we-own",
+          "q": "How do I see what training we already own?",
+          "a": "<strong>Organization Profile</strong> shows the current subscription plan and a per-course inventory with seats and expiry beside each one. <strong>Seat Management</strong> gives the same picture with assigned and unassigned counts.",
+          "guide": {
+            "title": "Organization Profile Details",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Organization_Profile_Details_in_Safety_Atlas__abGBUl2KQu2Sp7uDF9G5IA",
+            "steps": "Steps 9 to 10"
+          }
+        },
+        {
+          "id": "find-a-course",
+          "q": "How do I find the right course?",
+          "a": "Start from <strong>Explore Trainings</strong> and narrow by topic. Each course page lists what is covered and how long it takes. If you are unsure which course fits a requirement, NSC support can point you at the right one.",
+          "guide": {
+            "title": "How to Search and Purchase Trainings and Products on SafetyAtlas",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Navigate_and_Purchase_Training_on_Safety_Atlas__NSgJ4pQ2RCy7UsGsu0Qq9w",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "subscription-renewal",
+          "q": "How does our subscription renewal work?",
+          "a": "<strong>Organization Subscription Management</strong> shows the current plan, the seats included and the renewal date. Renewal itself is handled through NSC, so contact support if you need to change the plan size or the billing details.",
+          "guide": {
+            "title": "Organization Subscription Management",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Subscription_Management__V7jPzpx7RhypNUSHC5hQyQ",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "learner-course-view",
+          "q": "Where does a learner find their courses?",
+          "a": "Learners open the profile menu and choose <strong>My Courses</strong>. Anything assigned to them appears there with its status, and completed courses stay listed so certificates remain reachable.",
+          "guide": {
+            "title": "Navigating Course Management in SafetyAtlas",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Navigating_Course_Management_in_SafetyAtlas__UXaNRwS7Ty-5jdmDsifMOw",
+            "steps": "All steps"
+          }
+        }
+      ]
+    },
+    {
+      "id": "certificates",
+      "name": "Certificates",
+      "icon": "award",
+      "items": [
+        {
+          "id": "learner-certificate",
+          "q": "How does a learner get their certificate?",
+          "a": "It appears automatically once the course is completed. From the profile menu open <strong>My Profile</strong>, then <strong>Completion Record</strong>; each certificate can be viewed with the eye icon or downloaded with the arrow beside it.",
+          "guide": {
+            "title": "How to Manage and Share Your SafetyAtlas Certificates",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Manage_and_Share_Your_SafetyAtlas_Certificates__9e-xc5ojSqWEpNAH76aS8Q",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "admin-certificate",
+          "q": "As an administrator, where do I find a learner's certificate?",
+          "a": "Open <strong>Organization Profile</strong>, then <strong>Learner Management</strong>, and click the employee's name. Under <strong>Training &amp; Certifications</strong> every completed course is listed, with an eye icon to view and an arrow to download.",
+          "guide": {
+            "title": "Organization Learner Management",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Learner_Management__NCYWZ96fS2ylDFCeY9CdYw",
+            "steps": "Steps 11 to 12"
+          }
+        },
+        {
+          "id": "certificate-missing",
+          "q": "A learner cannot find their certificate",
+          "a": "Check first that the course actually shows as completed in <strong>Learner Management</strong>. A pending invitation means the course was never started, and an in-progress course has no certificate yet. Once it reads complete, the certificate sits in the learner's <strong>Completion Record</strong>.",
+          "guide": {
+            "title": "Organization Learner Management",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Learner_Management__NCYWZ96fS2ylDFCeY9CdYw",
+            "steps": "Steps 7 to 12"
+          }
+        }
+      ]
+    },
+    {
+      "id": "orders-billing",
+      "name": "Orders, billing & refunds",
+      "icon": "card",
+      "items": [
+        {
+          "id": "see-orders",
+          "q": "How do I see my orders and receipts?",
+          "a": "Open the profile menu and choose <strong>My Orders</strong>. Every order is listed with its date, items and total, and each one opens for the full detail.",
+          "guide": {
+            "title": "How to Review My Orders on NSC SafetyAtlas",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Request_a_Refund_on_NSC_Safety_Atlas__tzdiu8f8TZW95KOd54GKSw",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "refund-policy",
+          "q": "What is the refund policy?",
+          "a": "Refund terms are set by NSC and vary by course, so the answer depends on what was purchased and when. Check the policy shown on the order, or ask NSC support before cancelling. There is no single universal window, and staff cannot promise a refund that the policy does not allow.",
+          "guide": null,
+          "note": "Content gap in this mockup. Refund wording should come from NSC policy, not be restated here."
+        },
+        {
+          "id": "request-refund",
+          "q": "How do I request a refund?",
+          "a": "Contact NSC support with the order number, which you can find under <strong>My Orders</strong>. Refunds are processed by NSC rather than through the platform, so support will confirm eligibility against the policy for that course and tell you the expected timeline.",
+          "guide": null,
+          "note": "Content gap in this mockup: no public refund request article exists yet."
+        },
+        {
+          "id": "export-reports",
+          "q": "How do I export a completion report for my organization?",
+          "a": "Reports live under the organization tools in SafetyAtlas and can be exported as a CSV for a chosen period. Exporting is an administrator task, so if you do not see the option, ask an admin on your account.",
+          "guide": null,
+          "note": "Content gap in this mockup: reporting needs a customer-facing walkthrough."
+        },
+        {
+          "id": "update-profile",
+          "q": "How do I update my name, email or wallet details?",
+          "a": "From the profile menu open <strong>My Profile</strong> and choose <strong>Edit Profile</strong>. Profile image, contact details and Safety Wallet information can all be changed there.",
+          "guide": {
+            "title": "Updating Your Profile and Wallet Information",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Your_Safety_Wallet_Profile_Information__mAaIZ_RoSe-imcvP9z84rg",
+            "steps": "All steps"
+          }
+        }
+      ]
+    },
+    {
+      "id": "organization",
+      "name": "Organization settings",
+      "icon": "building",
+      "items": [
+        {
+          "id": "update-org-details",
+          "q": "How do I update our organization name, logo or address?",
+          "a": "Sign in as the organization administrator, open the profile avatar and choose <strong>Organization Profile</strong>. The company name, logo and contact details are editable there; the accepted logo file type and size are shown on the tile.",
+          "guide": {
+            "title": "Organization Profile Details",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Updating_Organization_Profile_Details_in_Safety_Atlas__abGBUl2KQu2Sp7uDF9G5IA",
+            "steps": "Steps 1 to 8"
+          }
+        },
+        {
+          "id": "add-remove-admin",
+          "q": "How do I add or remove an administrator?",
+          "a": "Open <strong>Admin Management</strong>, click the person's name and choose <strong>Edit</strong>. Changing the role from Admin to User removes their administrator access; <strong>Add New</strong> promotes somebody by searching their name or email.",
+          "guide": {
+            "title": "Managing Organization Admin Permissions",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Managing_Organization_Admin_Permissions__WvkMEljHQ6OMGEUQYIASAg",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "add-location",
+          "q": "How do I add a new location?",
+          "a": "Open <strong>Location Management</strong> from the organization tools and use <strong>Add New</strong>. Locations can then be used to filter learners, seats and reporting, so it is worth adding them before inviting staff.",
+          "guide": {
+            "title": "Manage Organization Locations in SafetyAtlas",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Manage_Organization_Locations_in_SafetyAtlas__w1vB7T5jQU2Qi67UiCFpcw",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "health-snapshot",
+          "q": "What is the Health Snapshot?",
+          "a": "<strong>Health Snapshot</strong> is the at-a-glance view of your account. It shows subscription seats and learning seats with how many are left, and filters let you narrow everything by department, location and date range.",
+          "guide": {
+            "title": "Health Snapshot",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Health_Snapshot__PFulMgfqRPG7y3eHu5l61A",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "registration-fields",
+          "q": "Can I ask learners for extra information at sign-up?",
+          "a": "Yes. <strong>Organization Registration Fields</strong> lets you add your own sections and fields to the learner sign-up form, which is useful for collecting employee numbers, job titles or site codes that you want to report on later.",
+          "guide": {
+            "title": "How To Create Organization Registration Fields",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/How_To_Create_Organization_Registration_Fields__B9UuxugjR-OPsLCB7Ohhog",
+            "steps": "All steps"
+          }
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "name": "Troubleshooting",
+      "icon": "lifebuoy",
+      "items": [
+        {
+          "id": "cant-log-in",
+          "q": "I cannot log in",
+          "a": "Request a fresh sign-in code from the sign-in page and make sure you are checking the inbox for the exact address on your account. If the code arrives but is rejected, it may have expired, so request another. If no code arrives at all, contact NSC support rather than registering again.",
+          "guide": {
+            "title": "How to Log In to the NSC SafetyAtlas Portal",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/How_to_Log_In_to_the_NSC_SafetyAtlas_Portal__BqMRCe-tScu3EmM0EC1ayw",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "learner-never-got-invite",
+          "q": "My learner never received the invite",
+          "a": "Open <strong>Learner Management</strong> and look under <strong>Pending Invitations</strong>: if the person is listed there the invitation was sent but not accepted. Click the name to view the invitation and resend or revoke it. It is also worth asking them to check a spam folder.",
+          "guide": {
+            "title": "Organization Learner Management",
+            "url": "https://scribehow.com/o/py3bGFyBTLOyd4wFxveW4Q/viewer/Organization_Learner_Management__NCYWZ96fS2ylDFCeY9CdYw",
+            "steps": "Steps 6 to 9"
+          }
+        },
+        {
+          "id": "dont-see-courses",
+          "q": "I do not see the courses assigned to me",
+          "a": "Courses only appear once a seat has actually been assigned to you, not when the organization buys them. If you were invited but never accepted, accept the invitation first. Otherwise ask your administrator to check that a seat is assigned to your name.",
+          "guide": {
+            "title": "Navigating Course Management in SafetyAtlas",
+            "url": "https://scribehow.com/o/_4zyZpc5S8mkA6SAqErgJw/viewer/Navigating_Course_Management_in_SafetyAtlas__UXaNRwS7Ty-5jdmDsifMOw",
+            "steps": "All steps"
+          }
+        },
+        {
+          "id": "contact-support",
+          "q": "Still stuck. Who do I contact?",
+          "a": "Contact the National Safety Council directly through the contact form at nsc.org. Have your order number and the email address on the account ready, as both speed things up considerably.",
+          "guide": null,
+          "external": {
+            "title": "Contact NSC",
+            "url": "https://www.nsc.org/company/contact-nsc"
+          }
+        }
+      ]
+    }
+  ]
+}
