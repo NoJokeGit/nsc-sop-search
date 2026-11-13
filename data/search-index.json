@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T18:07:16.389Z",
+  "generated": "2026-11-13T19:21:35.729Z",
   "count": 51,
   "guides": [
     {
@@ -857,7 +857,7 @@
         "my classes"
       ],
       "title": "Class Management and Student Communications",
-      "text": "Click Classes \"My Classes\" shows classes that have been accepted by the instructor to teach. The classes can be searched or filtered based on class name and date range. Each class has its own tile showing the details of the class. Click on Session to see the course name, date, start time, and end time in a pop-up. Close the session details. Click View Details for a class to view additional inforamtion. To see all learners enrolled in the training click View Roster The roster includes the number of learners, the learner's names, and contact information. The roster can be printed by clicking \"Print Roster\". Depending on the device settings will determine how the roster prints and if it is able to be saved as a PDF. Click Communicate, to send email notifications to the learners. Select the students that the communication is being sent to. If it is for all learners, click \"Select All\". Click the \"Subject\" field to enter the email subject line. Click the text box under \"Mail\" to type the email message. Click Share Communication. A notification will appear stating if the communication was successfully sent. \"Communication sent successfully\" All class communications can be viewedunder \"Communication Log\" Click Submit Attendance Each learner has a tab next to their name. Click \"v\" to view the learner's attendance details. Checkmark each session that was Attended Open the session status menu Click attendance type that matches that learner and session. When \"Left Early\" is selected a reason must be selected. Click \"Personal Reasons\" Select course Status. Select Completed - Pass or Completed - Failed Input the Grade the learner received. Click Save attendance Return to the class details page Click Pending Acceptance Classess available to teach will show and are able to be searched by course name and filtered by date range. Open the session details for each class by selecting \"Session\". Class tiles show the class details and option to Reject or Accept the class. Close the session details dialog. Click Accept for Classes wanted by the Instructor. Confirm the class assignment by clicking Accept A notification appears stating the class has been accepted and the class will then be visible in \"My Courses\" Open CH classroom BY NSC Click \"Completed\" to view previously taught classes. Click View Details for the desired class Click View Submitted Roster Click \"Close\"",
+      "text": "Click Classes \"My Classes\" shows classes that have been accepted by the instructor to teach. The classes can be searched or filtered based on class name and date range. Each class has its own tile showing the details of the class. Click on Session to see the course name, date, start time, and end time in a pop-up. Close the session details. Click View Details for a class to view additional inforamtion. To see all learners enrolled in the training click View Roster The roster includes the Instructor, Location, the number of learners, the learner's names, and contact information. The roster can be printed by clicking \"Print Roster\". Depending on the device settings will determine how the roster prints and if it is able to be saved as a PDF. Click Communicate, to send email notifications to the learners. Select the students that the communication is being sent to. If it is for all learners, click \"Select All\". Click the \"Subject\" field to enter the email subject line. Click the text box under \"Mail\" to type the email message. Click Share Communication. A notification will appear stating if the communication was successfully sent. \"Communication sent successfully\" All class communications can be viewedunder \"Communication Log\" Click Submit Attendance Each learner has a tab next to their name. Click \"v\" to view the learner's attendance details. Checkmark each session that was Attended Open the session status menu Click attendance type that matches that learner and session. When \"Left Early\" is selected a reason must be selected. Click \"Personal Reasons\" Select course Status. Select Completed - Pass or Completed - Failed Input the Grade the learner received. Click Save attendance Return to the class details page Click Pending Acceptance Classess available to teach will show and are able to be searched by course name and filtered by date range. Open the session details for each class by selecting \"Session\". Class tiles show the class details and option to Reject or Accept the class. Close the session details dialog. Click Accept for Classes wanted by the Instructor. Confirm the class assignment by clicking Accept A notification appears stating the class has been accepted and the class will then be visible in \"My Courses\" Open CH classroom BY NSC Click \"Completed\" to view previously taught classes. Click View Details for the desired class Click View Submitted Roster Click \"Close\"",
       "steps": [
         {
           "n": 1,
@@ -885,7 +885,7 @@
         },
         {
           "n": 7,
-          "t": "The roster includes the number of learners, the learner's names, and contact information. The roster can be printed by clicking \"Print Roster\". Depending on the device settings will determine how the roster prints and if it is able to be saved as a PDF."
+          "t": "The roster includes the Instructor, Location, the number of learners, the learner's names, and contact information. The roster can be printed by clicking \"Print Roster\". Depending on the device settings will determine how the roster prints and if it is able to be saved as a PDF."
         },
         {
           "n": 8,
@@ -3270,7 +3270,7 @@
         "customer account"
       ],
       "title": "Organization Management",
-      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Organization Management\" All Organizations within the Chapter can be searched by Organization Name or Location. Organizations can also be filtered based on Size, NSC Membership, and Status. Click the Organization name. Example \"Greenfiled Road\" \"Organization Details\" tab shows, and allows edits, to the organization's information. Click \"Edit\" to make changes. Click \"Upload logo\" to add or change the organization's logo. Organization Information can be updated. Address & Location information can be updated. Training Scope can be updated, with \"Primary Training Needs\" being a drop-down field. Click \"Save changes\" Click \"Orders\" All orders placed by the Organization are visible. \\ \\ Orders can be searched based on order number or item name. \\ Orders can be filtered based on date, type, payment status, and status.\\ Columns can be sorted chronologically by clicking the column header of date or amount. Click \"Courses\" All courses purchased by the organization are visible. Courses can be searched based on course name. \\ Orders can be filtered based on availability.\\ Columns can be sorted alphabetically by clicking the column header of Course Name, Format, Total Seats, Assigned Seats, or Available Seats. \"View Notes\" shows the history of the course's inventory with reference to the Order Number. Click the pencil icon of a note to make changes and then \"Save\" Click \"Close\" Click \"Manage\" next to the desired course. Click \"Add Seats\" Update the \"Seats to add\" and input the \"Order ID\" with \"Notes\" Click \"Confirm\" The \"Course Management\" tab will show the updated \"Total Seats\" Open \"View Notes\" The most recent change will show at the top of the pop-up. Click \"Learners\" All learners associated with the organization are visible based on their status with the organization. The learner's can be searched for based on first name, last name, or email address. The learner's visible can be filtered based on: has assigned course, past due, and has completions. Columns can be sorted alphabetically by clicking the column header of First Name, Last Name, Email, Department, Location, Assigned, Completed, Overdue, or Status. \"Learners\" tab allows for NSC Administrator to add a learner to an organization. Click \"Add New\" to invite a new learner to the organization. This is also a feature that the organization administrator has. The ability to add learner(s)/employee(s), has two options. 1. Add a single employee by selecting \"By Email\" 2. Add multiple employees by selecting \"Upload CSV\" Click on the option that best fits the customer's request. This example is for an individual, click on \"By Email\" Fill in the information for all required fields. Required fields are marked with a red astrict. \"Role\" defaults to \"User\" but can be updated to \"Admin\" When all desired fields and required fields are entered, select \"Send Invite\" A notification at the top of the screen will appear confirming the invitation, or stating why it was not sent. \"Pending Invitations\" shows learners who have been invited to join the organization but have not responded to the email invitation. \"Disabled Learners\" show the learners who have had their accounts disabled but were part of the organization. Click \"Admins\" All the organization administrators are visible, including their administrator access type. Selecting an administrators Full Name will show additional details. A user can their administrator access removed by selecint \"Disable Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. Administrator's can also be returned to Learner status by using the toggle under \"Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. A notification appears in the corner of the screen confirming the status change. Organization administrator's can be added to an organization by clicking \"Add new\" Click the drop-down for \"Search Employee\" and click on the desired organization learner that is becoming an administrator. \\ Example: \"an example learner (example@nsc.org)\" Click \"Save\" A notification appears on the screen confirming the administrator access has been granted and the person appears in the list of administrators in the center of the screen. Click \"Seats\" Seats are viewed by \"Seat Assignments\" or \"Assigned Courses\" There is a quick view of total purchased, assigned, and unassigend (available). The seats can be searched based on \"Course Name\" and filtered based on Availability. Each course displays on a tile reflecting an overview of the course and the seat division. To assign a course seat to a learner, select \"Assign\" on the correct course tile. The organization's learners will appear on the screen with the ability to search based on a learner's name or email address. The learners can be filtered based on Department and/or Location. The list of learners can be sorted based on the quantity of coures Assigned, Completed, and Overdue. To select individual learners click on the box to the left of the learner's name. To select all learners click on the box to the left of \"Name\" in the green banner. Once the desired learner(s) are selected click \"Continue\" The length of time the learner(s) have access to course can be selected. \"No due date\" means the learner(s) will have access to the course material indefinetly. \"Quick range\" gives the options of 30 days, 60 days, or 90 days of acess. \"Due date\" can be manually updated to be a unique period of time. Once the desired course access period has been determined, click \"Continue\" The screen will show an overview of the selections made. If something is not correct click \"Back\" If everything is correct click\"Assign courses\" A notification appears on the screen confirming the course assingment. The course tile automatically updates to reflect the updated seat assignment(s). \"Assigned Coures\" shows each learner and the course(s) they have been assigned. The list can be searched by a learner's name, learner's email address, or the course name. The list can be filtered based on the course format: classroom, hybrid, online, virtual, and webinar. The results can be sorted based on Learner, Course, Assigned On, or Status. To view details about a learner's course select the learner's name next to the desired course. The course \"Due Date\" can be updated by selecting the pencil icon. The course can also be removed from the learner and returned to inventory by clicking \"Unassign\" Click \"Locations\" Shows all locations associated with the organization. The locations can be searched by address and location name. The location list can sorted by Location, Time Zone, and Status. Locations can be updated and disable by clicking on the Location name. To update a location's information click \"Edit\" Once the changes are made click on \"Save Changes\"\\ If no changes are needed click on \"Cancel\" If a location is no longer in use by an organization it can be deactivated. To deactiate a location click on the \"Status\" A pop-up will ask if the location should be disabled, click on \"Disable\" Click \"Save Changes\" The tiles on the \"Loctations\" tab will update to reflect the \"Disabled\" location. To view disabled location click the toggle for \"Show Disabled\" The disabled location(s) will show. To edit a disabled location, including enabling the location, click the location name. Click \"Edit\" Click the toggle next to \"Status\" Click \"Save Changes\" A notification appears on the screen confirming the change,the tiles for the locations update, and the location is returned to the list of active locations. Locations can be added by clicking on \"Add New\" Fill in all required fields. Click \"Save Location\" The location will be respresented on the Location Management screen. Click \"Reports\" Learners can be searched and filtered. Click \"Columns\" to add additional information to the results by selecting the desired column(s). Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column Click \"Export\" to have the report exported as a .csv file. \"Usage Reports\" shows the all courses, total purchased, and how many are in each status. The courses can be searched by name and filtered by date. \"Export\" allows the list to be downloaded by .csv. \"Assessment Reports\" view all completed courses. \"Select a course\" shows all courses with completed trainings. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. Click \"Get Report\" \"Export\" allows the list to be downloaded by .csv. \"Inventory Reports\" see all seats available and their status. \"Search by course name\" shows the all courses, total purchased, and how many are in each status. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. \"Export\" allows the list to be downloaded by .csv. Click \"Custom Profile Fields\" \"Custom Profile Fields\" are optional custom fields new users are presented with when creating accounts. Existing Sections can be viewed by selecting the Section header. To add additional registration sections, click \"+Add New Section\" In the pop-up enter the title of the new registration section and click \"Add Section\" Click the \"+\" to the right of the section heading to add a new registration field. \"Field Type\" can be selected and it will update the field options below. \"Field Label\" is the wording the learner will see when presented with the registration page. Fields can have the option of being \"Mandatory Field\" and \"Allow Editing Field\" Fill in the different field type options based. Example: \"Dropdown Options\" needs to have the different options the learner will be presented with typed. Once the \"Add New Field\" options have been set, click \"Add Field\" Click \"Field NameField TypeLocationDropdownRequired\" Click this icon. Click this button. Click \"Save Changes\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes. Fields and sections can be removed from registration by clicking the trash can icon and \"Delete Section\" from the pop-up. Click \"Delete Section\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes.",
+      "text": "Navigate to https://steve-admin.nsc.org/ Click \"Organization Management\" All Organizations within the Chapter can be searched by Organization Name or Location. Organizations can also be filtered based on Organization Name, Created On date, and Location. Additional information is provided in the table: Size, NSC Member Status, and Purchases. Click the Organization name. Example \"Greenfiled Road\" \"Organization Details\" tab shows, and allows edits, to the organization's information. Click \"Edit\" to make changes. Click \"Upload logo\" to add or change the organization's logo. Organization Information can be updated. Address & Location information can be updated. Training Scope can be updated, with \"Primary Training Needs\" being a drop-down field. Click \"Save changes\" Click \"Orders\" All orders placed by the Organization are visible. \\ \\ Orders can be searched based on order number or item name. \\ Orders can be filtered based on date, type, payment status, and status.\\ Columns can be sorted chronologically by clicking the column header of date or amount. Click \"Courses\" All courses purchased by the organization are visible. Courses can be searched based on course name. \\ Orders can be filtered based on availability.\\ Columns can be sorted alphabetically by clicking the column header of Course Name, Format, Total Seats, Assigned Seats, or Available Seats. \"View Notes\" shows the history of the course's inventory with reference to the Order Number. Click the pencil icon of a note to make changes and then \"Save\" Click \"Close\" Click \"Manage\" next to the desired course. Click \"Add Seats\" Update the \"Seats to add\" and input the \"Order ID\" with \"Notes\" Click \"Confirm\" The \"Course Management\" tab will show the updated \"Total Seats\" Open \"View Notes\" The most recent change will show at the top of the pop-up. Click \"Learners\" All learners associated with the organization are visible based on their status with the organization. The learner's can be searched for based on first name, last name, or email address. The learner's visible can be filtered based on: has assigned course, past due, and has completions. Columns can be sorted alphabetically by clicking the column header of First Name, Last Name, Email, Department, Location, Assigned, Completed, Overdue, or Status. \"Learners\" tab allows for NSC Administrator to add a learner to an organization. Click \"Add New\" to invite a new learner to the organization. This is also a feature that the organization administrator has. The ability to add learner(s)/employee(s), has two options. 1. Add a single employee by selecting \"By Email\" 2. Add multiple employees by selecting \"Upload CSV\" Click on the option that best fits the customer's request. This example is for an individual, click on \"By Email\" Fill in the information for all required fields. Required fields are marked with a red astrict. \"Role\" defaults to \"User\" but can be updated to \"Admin\" When all desired fields and required fields are entered, select \"Send Invite\" A notification at the top of the screen will appear confirming the invitation, or stating why it was not sent. \"Pending Invitations\" shows learners who have been invited to join the organization but have not responded to the email invitation. \"Disabled Learners\" show the learners who have had their accounts disabled but were part of the organization. Click \"Admins\" All the organization administrators are visible, including their administrator access type. Selecting an administrators Full Name will show additional details. A user can their administrator access removed by selecint \"Disable Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. Administrator's can also be returned to Learner status by using the toggle under \"Admin Access\" Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner. A notification appears in the corner of the screen confirming the status change. Organization administrator's can be added to an organization by clicking \"Add new\" Click the drop-down for \"Search Employee\" and click on the desired organization learner that is becoming an administrator. \\ Example: \"an example learner (example@nsc.org)\" Click \"Save\" A notification appears on the screen confirming the administrator access has been granted and the person appears in the list of administrators in the center of the screen. Click \"Seats\" Seats are viewed by \"Seat Assignments\" or \"Assigned Courses\" There is a quick view of total purchased, assigned, and unassigend (available). The seats can be searched based on \"Course Name\" and filtered based on Availability. Each course displays on a tile reflecting an overview of the course and the seat division. To assign a course seat to a learner, select \"Assign\" on the correct course tile. The organization's learners will appear on the screen with the ability to search based on a learner's name or email address. The learners can be filtered based on Department and/or Location. The list of learners can be sorted based on the quantity of coures Assigned, Completed, and Overdue. To select individual learners click on the box to the left of the learner's name. To select all learners click on the box to the left of \"Name\" in the green banner. Once the desired learner(s) are selected click \"Continue\" The length of time the learner(s) have access to course can be selected. \"No due date\" means the learner(s) will have access to the course material indefinetly. \"Quick range\" gives the options of 30 days, 60 days, or 90 days of acess. \"Due date\" can be manually updated to be a unique period of time. Once the desired course access period has been determined, click \"Continue\" The screen will show an overview of the selections made. If something is not correct click \"Back\" If everything is correct click\"Assign courses\" A notification appears on the screen confirming the course assingment. The course tile automatically updates to reflect the updated seat assignment(s). \"Assigned Coures\" shows each learner and the course(s) they have been assigned. The list can be searched by a learner's name, learner's email address, or the course name. The list can be filtered based on the course format: classroom, hybrid, online, virtual, and webinar. The results can be sorted based on Learner, Course, Assigned On, or Status. To view details about a learner's course select the learner's name next to the desired course. The course \"Due Date\" can be updated by selecting the pencil icon. The course can also be removed from the learner and returned to inventory by clicking \"Unassign\" Click \"Locations\" Shows all locations associated with the organization. The locations can be searched by address and location name. The location list can sorted by Location, Time Zone, and Status. Locations can be updated and disable by clicking on the Location name. To update a location's information click \"Edit\" Once the changes are made click on \"Save Changes\"\\ If no changes are needed click on \"Cancel\" If a location is no longer in use by an organization it can be deactivated. To deactiate a location click on the \"Status\" A pop-up will ask if the location should be disabled, click on \"Disable\" Click \"Save Changes\" The tiles on the \"Loctations\" tab will update to reflect the \"Disabled\" location. To view disabled location click the toggle for \"Show Disabled\" The disabled location(s) will show. To edit a disabled location, including enabling the location, click the location name. Click \"Edit\" Click the toggle next to \"Status\" Click \"Save Changes\" A notification appears on the screen confirming the change,the tiles for the locations update, and the location is returned to the list of active locations. Locations can be added by clicking on \"Add New\" Fill in all required fields. Click \"Save Location\" The location will be respresented on the Location Management screen. Click \"Reports\" Learners can be searched and filtered. Click \"Columns\" to add additional information to the results by selecting the desired column(s). Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column Click \"Export\" to have the report exported as a .csv file. \"Usage Reports\" shows the all courses, total purchased, and how many are in each status. The courses can be searched by name and filtered by date. \"Export\" allows the list to be downloaded by .csv. \"Assessment Reports\" view all completed courses. \"Select a course\" shows all courses with completed trainings. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. Click \"Get Report\" \"Export\" allows the list to be downloaded by .csv. \"Inventory Reports\" see all seats available and their status. \"Search by course name\" shows the all courses, total purchased, and how many are in each status. Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar. \"Export\" allows the list to be downloaded by .csv. Click \"Custom Profile Fields\" \"Custom Profile Fields\" are optional custom fields new users are presented with when creating accounts. Existing Sections can be viewed by selecting the Section header. To add additional registration sections, click \"+Add New Section\" In the pop-up enter the title of the new registration section and click \"Add Section\" Click the \"+\" to the right of the section heading to add a new registration field. \"Field Type\" can be selected and it will update the field options below. \"Field Label\" is the wording the learner will see when presented with the registration page. Fields can have the option of being \"Mandatory Field\" and \"Allow Editing Field\" Fill in the different field type options based. Example: \"Dropdown Options\" needs to have the different options the learner will be presented with typed. Once the \"Add New Field\" options have been set, click \"Add Field\" Click \"Field NameField TypeLocationDropdownRequired\" Click this icon. Click this button. Click \"Save Changes\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes. Fields and sections can be removed from registration by clicking the trash can icon and \"Delete Section\" from the pop-up. Click \"Delete Section\" To save changes to the learner registration, click \"Save Changes\" A pop-up will appear confirming the changes.",
       "steps": [
         {
           "n": 1,
@@ -3282,470 +3282,474 @@
         },
         {
           "n": 3,
-          "t": "All Organizations within the Chapter can be searched by Organization Name or Location. Organizations can also be filtered based on Size, NSC Membership, and Status."
+          "t": "All Organizations within the Chapter can be searched by Organization Name or Location."
         },
         {
           "n": 4,
-          "t": "Click the Organization name. Example \"Greenfiled Road\""
+          "t": "Organizations can also be filtered based on Organization Name, Created On date, and Location. Additional information is provided in the table: Size, NSC Member Status, and Purchases."
         },
         {
           "n": 5,
-          "t": "\"Organization Details\" tab shows, and allows edits, to the organization's information. Click \"Edit\" to make changes."
+          "t": "Click the Organization name. Example \"Greenfiled Road\""
         },
         {
           "n": 6,
-          "t": "Click \"Upload logo\" to add or change the organization's logo."
+          "t": "\"Organization Details\" tab shows, and allows edits, to the organization's information. Click \"Edit\" to make changes."
         },
         {
           "n": 7,
-          "t": "Organization Information can be updated."
+          "t": "Click \"Upload logo\" to add or change the organization's logo."
         },
         {
           "n": 8,
-          "t": "Address & Location information can be updated."
+          "t": "Organization Information can be updated."
         },
         {
           "n": 9,
-          "t": "Training Scope can be updated, with \"Primary Training Needs\" being a drop-down field."
+          "t": "Address & Location information can be updated."
         },
         {
           "n": 10,
-          "t": "Click \"Save changes\""
+          "t": "Training Scope can be updated, with \"Primary Training Needs\" being a drop-down field."
         },
         {
           "n": 11,
-          "t": "Click \"Orders\""
+          "t": "Click \"Save changes\""
         },
         {
           "n": 12,
-          "t": "All orders placed by the Organization are visible. \\ \\ Orders can be searched based on order number or item name. \\ Orders can be filtered based on date, type, payment status, and status.\\ Columns can be sorted chronologically by clicking the column header of date or amount."
+          "t": "Click \"Orders\""
         },
         {
           "n": 13,
-          "t": "Click \"Courses\""
+          "t": "All orders placed by the Organization are visible. \\ \\ Orders can be searched based on order number or item name. \\ Orders can be filtered based on date, type, payment status, and status.\\ Columns can be sorted chronologically by clicking the column header of date or amount."
         },
         {
           "n": 14,
-          "t": "All courses purchased by the organization are visible. Courses can be searched based on course name. \\ Orders can be filtered based on availability.\\ Columns can be sorted alphabetically by clicking the column header of Course Name, Format, Total Seats, Assigned Seats, or Available Seats."
+          "t": "Click \"Courses\""
         },
         {
           "n": 15,
-          "t": "\"View Notes\" shows the history of the course's inventory with reference to the Order Number."
+          "t": "All courses purchased by the organization are visible. Courses can be searched based on course name. \\ Orders can be filtered based on availability.\\ Columns can be sorted alphabetically by clicking the column header of Course Name, Format, Total Seats, Assigned Seats, or Available Seats."
         },
         {
           "n": 16,
-          "t": "Click the pencil icon of a note to make changes and then \"Save\""
+          "t": "\"View Notes\" shows the history of the course's inventory with reference to the Order Number."
         },
         {
           "n": 17,
-          "t": "Click \"Close\""
+          "t": "Click the pencil icon of a note to make changes and then \"Save\""
         },
         {
           "n": 18,
-          "t": "Click \"Manage\" next to the desired course."
+          "t": "Click \"Close\""
         },
         {
           "n": 19,
-          "t": "Click \"Add Seats\""
+          "t": "Click \"Manage\" next to the desired course."
         },
         {
           "n": 20,
-          "t": "Update the \"Seats to add\" and input the \"Order ID\" with \"Notes\""
+          "t": "Click \"Add Seats\""
         },
         {
           "n": 21,
-          "t": "Click \"Confirm\""
+          "t": "Update the \"Seats to add\" and input the \"Order ID\" with \"Notes\""
         },
         {
           "n": 22,
-          "t": "The \"Course Management\" tab will show the updated \"Total Seats\""
+          "t": "Click \"Confirm\""
         },
         {
           "n": 23,
-          "t": "Open \"View Notes\""
+          "t": "The \"Course Management\" tab will show the updated \"Total Seats\""
         },
         {
           "n": 24,
-          "t": "The most recent change will show at the top of the pop-up."
+          "t": "Open \"View Notes\""
         },
         {
           "n": 25,
-          "t": "Click \"Learners\""
+          "t": "The most recent change will show at the top of the pop-up."
         },
         {
           "n": 26,
-          "t": "All learners associated with the organization are visible based on their status with the organization."
+          "t": "Click \"Learners\""
         },
         {
           "n": 27,
-          "t": "The learner's can be searched for based on first name, last name, or email address. The learner's visible can be filtered based on: has assigned course, past due, and has completions. Columns can be sorted alphabetically by clicking the column header of First Name, Last Name, Email, Department, Location, Assigned, Completed, Overdue, or Status."
+          "t": "All learners associated with the organization are visible based on their status with the organization."
         },
         {
           "n": 28,
-          "t": "\"Learners\" tab allows for NSC Administrator to add a learner to an organization. Click \"Add New\" to invite a new learner to the organization. This is also a feature that the organization administrator has."
+          "t": "The learner's can be searched for based on first name, last name, or email address. The learner's visible can be filtered based on: has assigned course, past due, and has completions. Columns can be sorted alphabetically by clicking the column header of First Name, Last Name, Email, Department, Location, Assigned, Completed, Overdue, or Status."
         },
         {
           "n": 29,
-          "t": "The ability to add learner(s)/employee(s), has two options. 1. Add a single employee by selecting \"By Email\" 2. Add multiple employees by selecting \"Upload CSV\""
+          "t": "\"Learners\" tab allows for NSC Administrator to add a learner to an organization. Click \"Add New\" to invite a new learner to the organization. This is also a feature that the organization administrator has."
         },
         {
           "n": 30,
-          "t": "Click on the option that best fits the customer's request. This example is for an individual, click on \"By Email\""
+          "t": "The ability to add learner(s)/employee(s), has two options. 1. Add a single employee by selecting \"By Email\" 2. Add multiple employees by selecting \"Upload CSV\""
         },
         {
           "n": 31,
-          "t": "Fill in the information for all required fields. Required fields are marked with a red astrict."
+          "t": "Click on the option that best fits the customer's request. This example is for an individual, click on \"By Email\""
         },
         {
           "n": 32,
-          "t": "\"Role\" defaults to \"User\" but can be updated to \"Admin\""
+          "t": "Fill in the information for all required fields. Required fields are marked with a red astrict."
         },
         {
           "n": 33,
-          "t": "When all desired fields and required fields are entered, select \"Send Invite\""
+          "t": "\"Role\" defaults to \"User\" but can be updated to \"Admin\""
         },
         {
           "n": 34,
-          "t": "A notification at the top of the screen will appear confirming the invitation, or stating why it was not sent."
+          "t": "When all desired fields and required fields are entered, select \"Send Invite\""
         },
         {
           "n": 35,
-          "t": "\"Pending Invitations\" shows learners who have been invited to join the organization but have not responded to the email invitation."
+          "t": "A notification at the top of the screen will appear confirming the invitation, or stating why it was not sent."
         },
         {
           "n": 36,
-          "t": "\"Disabled Learners\" show the learners who have had their accounts disabled but were part of the organization."
+          "t": "\"Pending Invitations\" shows learners who have been invited to join the organization but have not responded to the email invitation."
         },
         {
           "n": 37,
-          "t": "Click \"Admins\""
+          "t": "\"Disabled Learners\" show the learners who have had their accounts disabled but were part of the organization."
         },
         {
           "n": 38,
-          "t": "All the organization administrators are visible, including their administrator access type."
+          "t": "Click \"Admins\""
         },
         {
           "n": 39,
-          "t": "Selecting an administrators Full Name will show additional details."
+          "t": "All the organization administrators are visible, including their administrator access type."
         },
         {
           "n": 40,
-          "t": "A user can their administrator access removed by selecint \"Disable Admin Access\""
+          "t": "Selecting an administrators Full Name will show additional details."
         },
         {
           "n": 41,
-          "t": "Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner."
+          "t": "A user can their administrator access removed by selecint \"Disable Admin Access\""
         },
         {
           "n": 42,
-          "t": "Administrator's can also be returned to Learner status by using the toggle under \"Admin Access\""
-        },
-        {
-          "n": 43,
           "t": "Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner."
         },
         {
+          "n": 43,
+          "t": "Administrator's can also be returned to Learner status by using the toggle under \"Admin Access\""
+        },
+        {
           "n": 44,
-          "t": "A notification appears in the corner of the screen confirming the status change."
+          "t": "Click \"Cancel\" to keep the user as an administrator. Click \"Disable Admin Access\" to have the user's access reduced to an organization learner."
         },
         {
           "n": 45,
-          "t": "Organization administrator's can be added to an organization by clicking \"Add new\""
+          "t": "A notification appears in the corner of the screen confirming the status change."
         },
         {
           "n": 46,
-          "t": "Click the drop-down for \"Search Employee\" and click on the desired organization learner that is becoming an administrator. \\ Example: \"an example learner (example@nsc.org)\""
+          "t": "Organization administrator's can be added to an organization by clicking \"Add new\""
         },
         {
           "n": 47,
-          "t": "Click \"Save\""
+          "t": "Click the drop-down for \"Search Employee\" and click on the desired organization learner that is becoming an administrator. \\ Example: \"an example learner (example@nsc.org)\""
         },
         {
           "n": 48,
-          "t": "A notification appears on the screen confirming the administrator access has been granted and the person appears in the list of administrators in the center of the screen."
+          "t": "Click \"Save\""
         },
         {
           "n": 49,
-          "t": "Click \"Seats\""
+          "t": "A notification appears on the screen confirming the administrator access has been granted and the person appears in the list of administrators in the center of the screen."
         },
         {
           "n": 50,
-          "t": "Seats are viewed by \"Seat Assignments\" or \"Assigned Courses\" There is a quick view of total purchased, assigned, and unassigend (available). The seats can be searched based on \"Course Name\" and filtered based on Availability."
+          "t": "Click \"Seats\""
         },
         {
           "n": 51,
-          "t": "Each course displays on a tile reflecting an overview of the course and the seat division."
+          "t": "Seats are viewed by \"Seat Assignments\" or \"Assigned Courses\" There is a quick view of total purchased, assigned, and unassigend (available). The seats can be searched based on \"Course Name\" and filtered based on Availability."
         },
         {
           "n": 52,
-          "t": "To assign a course seat to a learner, select \"Assign\" on the correct course tile."
+          "t": "Each course displays on a tile reflecting an overview of the course and the seat division."
         },
         {
           "n": 53,
-          "t": "The organization's learners will appear on the screen with the ability to search based on a learner's name or email address. The learners can be filtered based on Department and/or Location. The list of learners can be sorted based on the quantity of coures Assigned, Completed, and Overdue."
+          "t": "To assign a course seat to a learner, select \"Assign\" on the correct course tile."
         },
         {
           "n": 54,
-          "t": "To select individual learners click on the box to the left of the learner's name. To select all learners click on the box to the left of \"Name\" in the green banner."
+          "t": "The organization's learners will appear on the screen with the ability to search based on a learner's name or email address. The learners can be filtered based on Department and/or Location. The list of learners can be sorted based on the quantity of coures Assigned, Completed, and Overdue."
         },
         {
           "n": 55,
-          "t": "Once the desired learner(s) are selected click \"Continue\""
+          "t": "To select individual learners click on the box to the left of the learner's name. To select all learners click on the box to the left of \"Name\" in the green banner."
         },
         {
           "n": 56,
-          "t": "The length of time the learner(s) have access to course can be selected. \"No due date\" means the learner(s) will have access to the course material indefinetly. \"Quick range\" gives the options of 30 days, 60 days, or 90 days of acess. \"Due date\" can be manually updated to be a unique period of time."
+          "t": "Once the desired learner(s) are selected click \"Continue\""
         },
         {
           "n": 57,
-          "t": "Once the desired course access period has been determined, click \"Continue\""
+          "t": "The length of time the learner(s) have access to course can be selected. \"No due date\" means the learner(s) will have access to the course material indefinetly. \"Quick range\" gives the options of 30 days, 60 days, or 90 days of acess. \"Due date\" can be manually updated to be a unique period of time."
         },
         {
           "n": 58,
-          "t": "The screen will show an overview of the selections made. If something is not correct click \"Back\" If everything is correct click\"Assign courses\""
+          "t": "Once the desired course access period has been determined, click \"Continue\""
         },
         {
           "n": 59,
-          "t": "A notification appears on the screen confirming the course assingment. The course tile automatically updates to reflect the updated seat assignment(s)."
+          "t": "The screen will show an overview of the selections made. If something is not correct click \"Back\" If everything is correct click\"Assign courses\""
         },
         {
           "n": 60,
-          "t": "\"Assigned Coures\" shows each learner and the course(s) they have been assigned. The list can be searched by a learner's name, learner's email address, or the course name. The list can be filtered based on the course format: classroom, hybrid, online, virtual, and webinar. The results can be sorted based on Learner, Course, Assigned On, or Status."
+          "t": "A notification appears on the screen confirming the course assingment. The course tile automatically updates to reflect the updated seat assignment(s)."
         },
         {
           "n": 61,
-          "t": "To view details about a learner's course select the learner's name next to the desired course."
+          "t": "\"Assigned Coures\" shows each learner and the course(s) they have been assigned. The list can be searched by a learner's name, learner's email address, or the course name. The list can be filtered based on the course format: classroom, hybrid, online, virtual, and webinar. The results can be sorted based on Learner, Course, Assigned On, or Status."
         },
         {
           "n": 62,
-          "t": "The course \"Due Date\" can be updated by selecting the pencil icon. The course can also be removed from the learner and returned to inventory by clicking \"Unassign\""
+          "t": "To view details about a learner's course select the learner's name next to the desired course."
         },
         {
           "n": 63,
-          "t": "Click \"Locations\""
+          "t": "The course \"Due Date\" can be updated by selecting the pencil icon. The course can also be removed from the learner and returned to inventory by clicking \"Unassign\""
         },
         {
           "n": 64,
-          "t": "Shows all locations associated with the organization. The locations can be searched by address and location name. The location list can sorted by Location, Time Zone, and Status."
+          "t": "Click \"Locations\""
         },
         {
           "n": 65,
-          "t": "Locations can be updated and disable by clicking on the Location name."
+          "t": "Shows all locations associated with the organization. The locations can be searched by address and location name. The location list can sorted by Location, Time Zone, and Status."
         },
         {
           "n": 66,
-          "t": "To update a location's information click \"Edit\""
+          "t": "Locations can be updated and disable by clicking on the Location name."
         },
         {
           "n": 67,
-          "t": "Once the changes are made click on \"Save Changes\"\\ If no changes are needed click on \"Cancel\""
+          "t": "To update a location's information click \"Edit\""
         },
         {
           "n": 68,
-          "t": "If a location is no longer in use by an organization it can be deactivated. To deactiate a location click on the \"Status\""
+          "t": "Once the changes are made click on \"Save Changes\"\\ If no changes are needed click on \"Cancel\""
         },
         {
           "n": 69,
-          "t": "A pop-up will ask if the location should be disabled, click on \"Disable\""
+          "t": "If a location is no longer in use by an organization it can be deactivated. To deactiate a location click on the \"Status\""
         },
         {
           "n": 70,
-          "t": "Click \"Save Changes\""
+          "t": "A pop-up will ask if the location should be disabled, click on \"Disable\""
         },
         {
           "n": 71,
-          "t": "The tiles on the \"Loctations\" tab will update to reflect the \"Disabled\" location."
+          "t": "Click \"Save Changes\""
         },
         {
           "n": 72,
-          "t": "To view disabled location click the toggle for \"Show Disabled\""
+          "t": "The tiles on the \"Loctations\" tab will update to reflect the \"Disabled\" location."
         },
         {
           "n": 73,
-          "t": "The disabled location(s) will show."
+          "t": "To view disabled location click the toggle for \"Show Disabled\""
         },
         {
           "n": 74,
-          "t": "To edit a disabled location, including enabling the location, click the location name."
+          "t": "The disabled location(s) will show."
         },
         {
           "n": 75,
-          "t": "Click \"Edit\""
+          "t": "To edit a disabled location, including enabling the location, click the location name."
         },
         {
           "n": 76,
-          "t": "Click the toggle next to \"Status\""
+          "t": "Click \"Edit\""
         },
         {
           "n": 77,
-          "t": "Click \"Save Changes\""
+          "t": "Click the toggle next to \"Status\""
         },
         {
           "n": 78,
-          "t": "A notification appears on the screen confirming the change,the tiles for the locations update, and the location is returned to the list of active locations."
-        },
-        {
-          "n": 79,
-          "t": "Locations can be added by clicking on \"Add New\""
-        },
-        {
-          "n": 80,
-          "t": "Fill in all required fields."
-        },
-        {
-          "n": 81,
-          "t": "Click \"Save Location\""
-        },
-        {
-          "n": 82,
-          "t": "The location will be respresented on the Location Management screen."
-        },
-        {
-          "n": 83,
-          "t": "Click \"Reports\""
-        },
-        {
-          "n": 84,
-          "t": "Learners can be searched and filtered."
-        },
-        {
-          "n": 85,
-          "t": "Click \"Columns\" to add additional information to the results by selecting the desired column(s)."
-        },
-        {
-          "n": 86,
-          "t": "Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column"
-        },
-        {
-          "n": 87,
-          "t": "Click \"Export\" to have the report exported as a .csv file."
-        },
-        {
-          "n": 88,
-          "t": "\"Usage Reports\" shows the all courses, total purchased, and how many are in each status."
-        },
-        {
-          "n": 89,
-          "t": "The courses can be searched by name and filtered by date."
-        },
-        {
-          "n": 90,
-          "t": "\"Export\" allows the list to be downloaded by .csv."
-        },
-        {
-          "n": 91,
-          "t": "\"Assessment Reports\" view all completed courses."
-        },
-        {
-          "n": 92,
-          "t": "\"Select a course\" shows all courses with completed trainings."
-        },
-        {
-          "n": 93,
-          "t": "Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar."
-        },
-        {
-          "n": 94,
-          "t": "Click \"Get Report\""
-        },
-        {
-          "n": 95,
-          "t": "\"Export\" allows the list to be downloaded by .csv."
-        },
-        {
-          "n": 96,
-          "t": "\"Inventory Reports\" see all seats available and their status."
-        },
-        {
-          "n": 97,
-          "t": "\"Search by course name\" shows the all courses, total purchased, and how many are in each status."
-        },
-        {
-          "n": 98,
-          "t": "Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar."
-        },
-        {
-          "n": 99,
-          "t": "\"Export\" allows the list to be downloaded by .csv."
-        },
-        {
-          "n": 100,
-          "t": "Click \"Custom Profile Fields\""
-        },
-        {
-          "n": 101,
-          "t": "\"Custom Profile Fields\" are optional custom fields new users are presented with when creating accounts."
-        },
-        {
-          "n": 102,
-          "t": "Existing Sections can be viewed by selecting the Section header."
-        },
-        {
-          "n": 103,
-          "t": "To add additional registration sections, click \"+Add New Section\""
-        },
-        {
-          "n": 104,
-          "t": "In the pop-up enter the title of the new registration section and click \"Add Section\""
-        },
-        {
-          "n": 105,
-          "t": "Click the \"+\" to the right of the section heading to add a new registration field."
-        },
-        {
-          "n": 106,
-          "t": "\"Field Type\" can be selected and it will update the field options below."
-        },
-        {
-          "n": 107,
-          "t": "\"Field Label\" is the wording the learner will see when presented with the registration page."
-        },
-        {
-          "n": 108,
-          "t": "Fields can have the option of being \"Mandatory Field\" and \"Allow Editing Field\""
-        },
-        {
-          "n": 109,
-          "t": "Fill in the different field type options based. Example: \"Dropdown Options\" needs to have the different options the learner will be presented with typed."
-        },
-        {
-          "n": 110,
-          "t": "Once the \"Add New Field\" options have been set, click \"Add Field\""
-        },
-        {
-          "n": 111,
-          "t": "Click \"Field NameField TypeLocationDropdownRequired\""
-        },
-        {
-          "n": 112,
-          "t": "Click this icon."
-        },
-        {
-          "n": 113,
-          "t": "Click this button."
-        },
-        {
-          "n": 114,
           "t": "Click \"Save Changes\""
         },
         {
+          "n": 79,
+          "t": "A notification appears on the screen confirming the change,the tiles for the locations update, and the location is returned to the list of active locations."
+        },
+        {
+          "n": 80,
+          "t": "Locations can be added by clicking on \"Add New\""
+        },
+        {
+          "n": 81,
+          "t": "Fill in all required fields."
+        },
+        {
+          "n": 82,
+          "t": "Click \"Save Location\""
+        },
+        {
+          "n": 83,
+          "t": "The location will be respresented on the Location Management screen."
+        },
+        {
+          "n": 84,
+          "t": "Click \"Reports\""
+        },
+        {
+          "n": 85,
+          "t": "Learners can be searched and filtered."
+        },
+        {
+          "n": 86,
+          "t": "Click \"Columns\" to add additional information to the results by selecting the desired column(s)."
+        },
+        {
+          "n": 87,
+          "t": "Sort the list based on any of the columns by selecting Column title. It will sort the list alphabetically based on the selected column"
+        },
+        {
+          "n": 88,
+          "t": "Click \"Export\" to have the report exported as a .csv file."
+        },
+        {
+          "n": 89,
+          "t": "\"Usage Reports\" shows the all courses, total purchased, and how many are in each status."
+        },
+        {
+          "n": 90,
+          "t": "The courses can be searched by name and filtered by date."
+        },
+        {
+          "n": 91,
+          "t": "\"Export\" allows the list to be downloaded by .csv."
+        },
+        {
+          "n": 92,
+          "t": "\"Assessment Reports\" view all completed courses."
+        },
+        {
+          "n": 93,
+          "t": "\"Select a course\" shows all courses with completed trainings."
+        },
+        {
+          "n": 94,
+          "t": "Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar."
+        },
+        {
+          "n": 95,
+          "t": "Click \"Get Report\""
+        },
+        {
+          "n": 96,
+          "t": "\"Export\" allows the list to be downloaded by .csv."
+        },
+        {
+          "n": 97,
+          "t": "\"Inventory Reports\" see all seats available and their status."
+        },
+        {
+          "n": 98,
+          "t": "\"Search by course name\" shows the all courses, total purchased, and how many are in each status."
+        },
+        {
+          "n": 99,
+          "t": "Click \"Pick a date\" to select the desired date range. Their are predetermined ranges or a custome range can be selected suing the calendar."
+        },
+        {
+          "n": 100,
+          "t": "\"Export\" allows the list to be downloaded by .csv."
+        },
+        {
+          "n": 101,
+          "t": "Click \"Custom Profile Fields\""
+        },
+        {
+          "n": 102,
+          "t": "\"Custom Profile Fields\" are optional custom fields new users are presented with when creating accounts."
+        },
+        {
+          "n": 103,
+          "t": "Existing Sections can be viewed by selecting the Section header."
+        },
+        {
+          "n": 104,
+          "t": "To add additional registration sections, click \"+Add New Section\""
+        },
+        {
+          "n": 105,
+          "t": "In the pop-up enter the title of the new registration section and click \"Add Section\""
+        },
+        {
+          "n": 106,
+          "t": "Click the \"+\" to the right of the section heading to add a new registration field."
+        },
+        {
+          "n": 107,
+          "t": "\"Field Type\" can be selected and it will update the field options below."
+        },
+        {
+          "n": 108,
+          "t": "\"Field Label\" is the wording the learner will see when presented with the registration page."
+        },
+        {
+          "n": 109,
+          "t": "Fields can have the option of being \"Mandatory Field\" and \"Allow Editing Field\""
+        },
+        {
+          "n": 110,
+          "t": "Fill in the different field type options based. Example: \"Dropdown Options\" needs to have the different options the learner will be presented with typed."
+        },
+        {
+          "n": 111,
+          "t": "Once the \"Add New Field\" options have been set, click \"Add Field\""
+        },
+        {
+          "n": 112,
+          "t": "Click \"Field NameField TypeLocationDropdownRequired\""
+        },
+        {
+          "n": 113,
+          "t": "Click this icon."
+        },
+        {
+          "n": 114,
+          "t": "Click this button."
+        },
+        {
           "n": 115,
-          "t": "To save changes to the learner registration, click \"Save Changes\""
+          "t": "Click \"Save Changes\""
         },
         {
           "n": 116,
-          "t": "A pop-up will appear confirming the changes."
-        },
-        {
-          "n": 117,
-          "t": "Fields and sections can be removed from registration by clicking the trash can icon and \"Delete Section\" from the pop-up. Click \"Delete Section\""
-        },
-        {
-          "n": 118,
           "t": "To save changes to the learner registration, click \"Save Changes\""
         },
         {
+          "n": 117,
+          "t": "A pop-up will appear confirming the changes."
+        },
+        {
+          "n": 118,
+          "t": "Fields and sections can be removed from registration by clicking the trash can icon and \"Delete Section\" from the pop-up. Click \"Delete Section\""
+        },
+        {
           "n": 119,
+          "t": "To save changes to the learner registration, click \"Save Changes\""
+        },
+        {
+          "n": 120,
           "t": "A pop-up will appear confirming the changes."
         }
       ]
